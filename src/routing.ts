@@ -11,7 +11,7 @@ export function resolveRoute(pathname: string, base = import.meta.env.BASE_URL, 
   const path = pathname.replace(/\/$/, "");
   const relative = path.startsWith(`${root}/`) ? path.slice(root.length + 1) : null;
   const requestedYear = relative && /^\d{4}$/.test(relative) ? Number(relative) : null;
-  if (path === root || (requestedYear !== null && requestedYear > year)) {
+  if (path === '' || path === root || path === `${root}/index.html` || (requestedYear !== null && requestedYear > year)) {
     return { kind: "redirect" as const, currentPath };
   }
   if (path === editionPath || path === `${editionPath}/index.html`) {

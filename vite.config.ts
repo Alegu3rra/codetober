@@ -9,7 +9,7 @@ function editionFallback(): Plugin {
     const path = request.url?.split('?')[0] ?? '';
     const root = base.replace(/\d{4}\/$/, '');
     if (request.headers.accept?.includes('text/html') &&
-        (path === root.slice(0, -1) || path.startsWith(root)) &&
+        (path === '/' || path === root.slice(0, -1) || path.startsWith(root)) &&
         !path.startsWith(base)) {
       request.url = `${base}index.html`;
     }
