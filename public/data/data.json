@@ -1,10 +1,10 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-09-30T13:53:54.345Z",
+  "generatedAt": "2026-09-30T14:06:02.849Z",
   "lastSuccessfulSyncAt": "2026-09-30T13:53:54.345Z",
   "participantsLastSuccessAt": "2026-09-30T13:53:54.345Z",
-  "participantsFailed": false,
+  "participantsFailed": true,
   "event": {
     "timezone": "America/Mexico_City",
     "startAt": "2026-10-01T12:00:00Z",
@@ -148,7 +148,7 @@
       "currentStreak": 0,
       "bestStreak": 0,
       "results": [],
-      "lastSyncedAt": "2026-09-30T13:53:54.345Z",
+      "lastSyncedAt": "2026-09-30T14:06:02.849Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -161,7 +161,7 @@
       "currentStreak": 0,
       "bestStreak": 0,
       "results": [],
-      "lastSyncedAt": "2026-09-30T13:53:54.345Z",
+      "lastSyncedAt": "2026-09-30T14:06:02.849Z",
       "syncFailed": false,
       "rank": 1
     }
