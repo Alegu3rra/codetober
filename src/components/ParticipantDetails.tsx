@@ -1,6 +1,7 @@
 import React from "react";
 import { type Participant, type EventData } from "../data";
 import { Timestamp } from "./Timestamp";
+import { StreakFlame } from "./StreakFlame";
 
 export function ParticipantDetails({
   person,
@@ -16,8 +17,14 @@ export function ParticipantDetails({
       <summary>View recorded progress</summary>
       <div className="result-list">
         {data.days.length === 0 && <p>No problems published yet.</p>}
-        {data.days.flatMap((day) =>
-          day.problems.map((problem) => {
+        {data.days.map((day) => (
+          <section key={day.id} className="day-progress" aria-label={`Progress for ${day.date}`}>
+            <h3>{day.date} {person.dayProgress && (() => {
+              const count = person.dayProgress.find(d => d.date === day.date)?.onTimeProblems ?? 0;
+              return <StreakFlame value={count} goldRatio={count === 2 ? 1 : 0}
+                label={`${day.date} · ${count} of 2 problems on time${count === 2 ? " · Golden day" : ""}`} />;
+            })()}</h3>
+          {day.problems.map((problem) => {
             const accepted =
               person.results.find((r) => r.titleSlug === problem.titleSlug)
                 ?.firstAcceptedAt ?? null;
@@ -37,8 +44,9 @@ export function ParticipantDetails({
                 </span>
               </div>
             );
-          }),
-        )}
+          })}
+          </section>
+        ))}
       </div>
     </details>
   );

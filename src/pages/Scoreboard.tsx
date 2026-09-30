@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { filterParticipants, type EventData } from "../data";
 import { Timestamp } from "../components/Timestamp";
 import { ParticipantDetails } from "../components/ParticipantDetails";
+import { StreakFlame } from "../components/StreakFlame";
 
 export function Scoreboard({
   data,
@@ -68,11 +69,15 @@ export function Scoreboard({
               </div>
               <div>
                 <dt>Current streak</dt>
-                <dd>{person.currentStreak}</dd>
+                <dd><StreakFlame value={person.currentStreak}
+                  goldRatio={person.currentStreakLevel === 2 ? 1 : 0}
+                  label={`${person.currentStreak}-day current streak · ${person.currentStreakLevel === 2 ? "Latest qualifying day is golden: both problems on time" : person.currentStreak ? "At least one problem on time per day" : "No active streak"}`} /></dd>
               </div>
               <div>
                 <dt>Best streak</dt>
-                <dd>{person.bestStreak}</dd>
+                <dd><StreakFlame value={person.bestStreak}
+                  goldRatio={person.bestStreak ? (person.bestStreakGoldenDays ?? 0) / person.bestStreak : 0}
+                  label={`${person.bestStreak}-day best streak · ${person.bestStreakGoldenDays ?? 0} golden days`} /></dd>
               </div>
             </dl>
             <progress

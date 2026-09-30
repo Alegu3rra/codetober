@@ -9,6 +9,9 @@ const currentDataSchema = z.object({
   days: z.array(z.object({ id: z.string(), date: z.string(), title: z.string(), releaseAt: instant, problems: z.array(problem).length(2) })),
   participants: z.array(z.object({ participant_id: z.string(), display_name: z.string(), leetcode_username: z.string().regex(/^[a-zA-Z0-9_-]{1,30}$/), rank: z.number().int().positive(),
     problemsCompleted: z.number().int().min(0).max(62), daysCompleted: z.number().int().min(0).max(31), currentStreak: z.number().int().min(0).max(31), bestStreak: z.number().int().min(0).max(31),
+    currentStreakLevel: z.number().int().min(0).max(2).optional(),
+    bestStreakGoldenDays: z.number().int().min(0).max(31).optional(),
+    dayProgress: z.array(z.object({ date: z.string(), onTimeProblems: z.number().int().min(0).max(2) })).optional(),
     lastSyncedAt: instant.nullable(), syncFailed: z.boolean(), results: z.array(z.object({ titleSlug: z.string(), firstAcceptedAt: instant.nullable() })),
   })),
 }).superRefine((data, context) => {

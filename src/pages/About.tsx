@@ -21,37 +21,33 @@ export function About({ now = Date.now() }: { now?: number }) {
       <h2>How it works</h2>
       <ul className="rules">
         <li>
-          Two problems are released together at 06:00 each day, October 1–31, in
-          Guadalajara (<code>America/Mexico_City</code>).
+          Two problems daily, October 1–31 at 06:00 Guadalajara time
+          (<code>America/Mexico_City</code>).
         </li>
         <li>
-          Each unique problem earns one point, up to 62. Both problems earn a
-          completed day. Equal totals share a rank; names order tied entries.
+          One point per unique problem, up to 62. Solve both to complete a day.
+          Equal scores share a rank.
         </li>
         <li>
-          An accepted submission must be at or after the problem’s release and
-          before November 1, 2026 at 06:00. Previously solved problems need a
-          new accepted submission within this window.
+          Accepted submissions count from release until November 1 at 06:00.
+          Previously solved problems need a new accepted submission.
         </li>
         <li>
-          A day is on time when both problems are accepted before 06:00 the
-          following morning. Consecutive on-time days build your streak. An open
-          day does not break it.
+          Keep your streak by solving at least one of that day’s problems before
+          06:00 the next morning. One lights a teal flame; both turn it gold.
         </li>
         <li>
-          Late solves earn points and completed days, but do not rebuild an
-          on-time streak. Your best streak records your longest on-time
-          sequence.
+          Your streak stays active until the daily window closes. Late solves
+          still earn points, but do not restore streaks or golden days.
         </li>
         <li>
-          Public LeetCode activity is checked about hourly. Queries, releases
-          and deployment can be delayed. Results use submission times, not query
-          times.
+          Best streak is your longest run; ties favor more golden days.
+          Its flame reflects the share of golden days in that run.
         </li>
         <li>
-          The recent accepted list is limited. Missed submissions can be
-          reviewed and corrected by the organizer. No password, cookies, or
-          LeetCode session is needed.
+          Updates run about hourly and may be delayed. Submission times determine
+          results. LeetCode’s recent history is limited; contact the organizer
+          about missing solves. No LeetCode login is needed.
         </li>
       </ul>
       <h2>Join the challenge</h2>
