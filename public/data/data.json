@@ -1,10 +1,10 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-09-30T22:14:26.199Z",
-  "lastSuccessfulSyncAt": "2026-09-30T19:24:32.468Z",
-  "participantsLastSuccessAt": "2026-09-30T19:24:32.468Z",
-  "participantsFailed": true,
+  "generatedAt": "2026-09-30T22:40:49.732Z",
+  "lastSuccessfulSyncAt": "2026-09-30T22:40:49.732Z",
+  "participantsLastSuccessAt": "2026-09-30T22:40:49.732Z",
+  "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
     "startAt": "2026-10-01T12:00:00Z",
@@ -151,7 +151,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T22:14:26.199Z",
+      "lastSyncedAt": "2026-09-30T22:40:49.732Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -167,7 +167,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T22:14:26.199Z",
+      "lastSyncedAt": "2026-09-30T22:40:49.732Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -183,7 +183,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T22:14:26.199Z",
+      "lastSyncedAt": "2026-09-30T22:40:49.732Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -199,7 +199,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T22:14:26.199Z",
+      "lastSyncedAt": "2026-09-30T22:40:49.732Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -215,7 +215,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T22:14:26.199Z",
+      "lastSyncedAt": "2026-09-30T22:40:49.732Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -231,7 +231,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T22:14:26.199Z",
+      "lastSyncedAt": "2026-09-30T22:40:49.732Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -247,7 +247,23 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T22:14:26.199Z",
+      "lastSyncedAt": "2026-09-30T22:40:49.732Z",
+      "syncFailed": false,
+      "rank": 1
+    },
+    {
+      "participant_id": "participant-010",
+      "display_name": "Ivan",
+      "leetcode_username": "felicianothegoat",
+      "problemsCompleted": 0,
+      "daysCompleted": 0,
+      "currentStreak": 0,
+      "bestStreak": 0,
+      "currentStreakLevel": 0,
+      "bestStreakGoldenDays": 0,
+      "dayProgress": [],
+      "results": [],
+      "lastSyncedAt": "2026-09-30T22:40:49.732Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -263,7 +279,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T22:14:26.199Z",
+      "lastSyncedAt": "2026-09-30T22:40:49.732Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -279,7 +295,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T22:14:26.199Z",
+      "lastSyncedAt": "2026-09-30T22:40:49.732Z",
       "syncFailed": false,
       "rank": 1
     }
