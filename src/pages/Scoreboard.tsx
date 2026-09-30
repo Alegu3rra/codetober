@@ -13,17 +13,18 @@ export function Scoreboard({
   zone: string;
 }) {
   const [query, setQuery] = useState("");
+  const started = now >= Date.parse(data.event.startAt);
   const participants = filterParticipants(data.participants, query);
   return (
     <section>
       <p className="muted">
-        One problem, one point. Equal scores share a rank.
+        {started ? "One problem, one point. Equal scores share a rank." : "Participants are registered. Rankings will appear when the challenge begins."}
       </p>
       <input
         id="search"
         aria-label="Find a participant"
         type="search"
-        placeholder="Search a LeetCode username participant"
+        placeholder="Search name or username participant"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
@@ -39,9 +40,9 @@ export function Scoreboard({
         return (
           <article className="participant" key={person.participant_id}>
             <div className="person-heading">
-              <span className="rank" aria-label={`Rank ${person.rank}`}>
+              {started && <span className="rank" aria-label={`Rank ${person.rank}`}>
                 #{person.rank}
-              </span>
+              </span>}
               <div>
                 <h2>{person.display_name}</h2>
                 <a

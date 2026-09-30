@@ -40,7 +40,7 @@ test('keyboard tabs, search, participant details and error labels', async () => 
   expect(screen.getByText('No participants match your search.')).toBeVisible();
   fireEvent.keyDown(tab, { key: 'End' });
   expect(screen.getByRole('tab', { name: 'About / Join' })).toHaveFocus();
-  expect(screen.getByText(/Registration is not open yet/)).toBeVisible();
+  expect(screen.getByText(/Registration closes October 30/)).toBeVisible();
 });
 test('request failures have retry, and About remains available', async () => {
   vi.mocked(fetch).mockRejectedValue(Error('offline'));

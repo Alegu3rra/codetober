@@ -95,7 +95,7 @@ export function EventPage() {
             tabIndex={0}
           >
             {i === 2 ? (
-              <About />
+              <About now={now} />
             ) : loading && !data ? (
               <p className="empty" role="status">
                 Loading challenge data…

@@ -27,7 +27,6 @@ jobs:
           REPOSITORY_NAME: ${{ github.event.repository.name }}
           VITE_EVENT_NAME: ${{ vars.VITE_EVENT_NAME || 'Codetober 2026' }}
           VITE_EVENT_TIMEZONE: ${{ vars.VITE_EVENT_TIMEZONE || 'America/Mexico_City' }}
-          VITE_JOIN_FORM_EMBED_URL: ${{ vars.VITE_JOIN_FORM_EMBED_URL }}
           VITE_JOIN_FORM_URL: ${{ vars.VITE_JOIN_FORM_URL }}
           VITE_PUBLIC_DATA_BASE_URL: ${{ vars.VITE_PUBLIC_DATA_BASE_URL }}
       - name: Assemble current and archived editions

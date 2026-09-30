@@ -38,7 +38,6 @@ Todas estas variables se integran en el bundle. **Nunca incluir secretos en `VIT
 | --- | --- |
 | `VITE_EVENT_NAME` | `Codetober 2026` |
 | `VITE_EVENT_TIMEZONE` | `America/Mexico_City`, usado como fallback antes de cargar datos; el snapshot privado es la autoridad para fechas |
-| `VITE_JOIN_FORM_EMBED_URL` | URL `https://docs.google.com/forms/d/e/.../viewform?embedded=true` |
 | `VITE_JOIN_FORM_URL` | Enlace alternativo de Forms: `docs.google.com/forms/...` o `forms.gle/...` |
 | `VITE_PUBLIC_DATA_BASE_URL` | Vacío = `BASE_URL + data/`. Alternativa: directorio HTTPS con `data.json`, con CORS que permita el sitio |
 
@@ -48,7 +47,7 @@ En GitHub, definirlas en **Settings → Secrets and variables → Actions → Va
 
 1. Crear un Form de inscripción. Explicar que el nombre público, usuario de LeetCode y progreso serán visibles. No solicitar credenciales de LeetCode.
 2. Conectar las respuestas con una hoja de solicitudes **privada**. El sincronizador no lee esa hoja: las aprobaciones se registran en `private/participants.json` del repositorio privado.
-3. Publicar el formulario, copiar su enlace para responder y obtener el iframe desde **⋮ → Insertar HTML**; copiar solo su URL `src` y configurar ambas variables de Forms.
+3. Publicar el formulario y configurar `VITE_JOIN_FORM_URL` con su enlace para responder. El sitio muestra solo el enlace, sin iframe.
 4. Comprobar el formulario en una ventana sin sesión y el enlace alternativo. La disponibilidad real depende de los permisos del Form. No publicar su hoja de respuestas.
 5. Editar `src/content.ts` con la biografía aprobada de Alejandra Guerra Castañeda. Actualmente solo se muestra su nombre y la descripción de la iniciativa.
 
@@ -84,3 +83,15 @@ Si la descarga de Chromium no está disponible y tienes Chrome instalado, usar `
 
 - [Vite: despliegue estático y ruta base](https://vite.dev/guide/static-deploy).
 - [GitHub: eventos, retrasos de schedule y disparo de workflows](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows).
+
+## Inscripción y vista local de problemas
+
+La inscripción en el sitio está abierta hasta terminar el 30 de octubre de 2026, Guadalajara. A las 00:00 del 31 de octubre (`2026-10-31T06:00:00Z`) se oculta el enlace. No se incrusta el Form; `VITE_JOIN_FORM_EMBED_URL` ya no se utiliza. `VITE_JOIN_FORM_URL` permite configurar el enlace alternativo. El cierre del sitio no modifica Google Forms: en el editor de Forms, Published → Accepting responses → Set close date or response limit, programa el mismo instante y comprueba la zona horaria. https://support.google.com/docs/answer/139706
+
+Para ver tarjetas de problemas sin liberar el calendario privado:
+
+```bash
+npm run dev
+```
+
+Abre `http://localhost:5173/codetober/2026/?preview=1`. Muestra dos problemas ficticios y un participante de prueba el 1 de octubre simulado. Los enlaces ficticios solo sirven para revisar la interfaz. Sin `?preview=1` ves los datos normales. Este modo solo funciona en Vite de desarrollo; el build de producción elimina el módulo de prueba y no permite adelantar liberaciones.
