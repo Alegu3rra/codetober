@@ -1,0 +1,56 @@
+name: Build and deploy public site
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Build for this repository path
+        run: npm run build -- --base="/$REPOSITORY_NAME/2026/"
+        env:
+          REPOSITORY_NAME: ${{ github.event.repository.name }}
+          VITE_EVENT_NAME: ${{ vars.VITE_EVENT_NAME || 'Codetober 2026' }}
+          VITE_EVENT_TIMEZONE: ${{ vars.VITE_EVENT_TIMEZONE || 'America/Mexico_City' }}
+          VITE_JOIN_FORM_EMBED_URL: ${{ vars.VITE_JOIN_FORM_EMBED_URL }}
+          VITE_JOIN_FORM_URL: ${{ vars.VITE_JOIN_FORM_URL }}
+          VITE_PUBLIC_DATA_BASE_URL: ${{ vars.VITE_PUBLIC_DATA_BASE_URL }}
+      - name: Assemble current and archived editions
+        run: |
+          mkdir -p _site
+          if [ -d archives ]; then cp -R archives/. _site/; fi
+          test ! -e _site/2026
+          cp -R dist _site/2026
+          cp dist/index.html _site/404.html
+          cp dist/index.html _site/index.html
+      - uses: actions/upload-pages-artifact@v3
+        if: github.ref == 'refs/heads/main' && vars.ENABLE_DEPLOYMENT == 'true'
+        with:
+          path: _site
+  deploy:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && vars.ENABLE_DEPLOYMENT == 'true'
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
