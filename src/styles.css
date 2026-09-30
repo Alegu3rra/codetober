@@ -224,13 +224,7 @@ section + section {
 .problem h3 {
   margin: 18px 0 24px;
   overflow-wrap: anywhere;
-}
-.problem h3 a {
-  text-decoration: none;
   color: #e4efed;
-}
-.problem h3 a span {
-  color: var(--teal);
 }
 .problem-meta {
   display: flex;

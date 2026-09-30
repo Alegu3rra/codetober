@@ -12,11 +12,7 @@ export function ProblemCards({ day }: { day: Day }) {
               {problem.difficulty}
             </span>
           </div>
-          <h3>
-            <a href={problem.url} target="_blank" rel="noreferrer">
-              {problem.title} <span aria-label="opens in a new tab">↗</span>
-            </a>
-          </h3>
+          <h3>{problem.title}</h3>
           <a
             className="solve-link"
             href={problem.url}

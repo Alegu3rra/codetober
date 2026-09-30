@@ -12,7 +12,7 @@ export function SiteHeader() {
           <span aria-hidden="true">[</span> {eventName}{" "}
           <span aria-hidden="true">]</span>
         </a>
-        <span className="header-note">By: Alejandra Guerra</span>
+        <a className="header-note" href="https://alegu3rra.github.io/">By: Alejandra Guerra</a>
       </header>
   );
 }
