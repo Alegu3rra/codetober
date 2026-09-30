@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-09-30T15:00:32.364Z",
-  "lastSuccessfulSyncAt": "2026-09-30T15:00:32.364Z",
-  "participantsLastSuccessAt": "2026-09-30T15:00:32.364Z",
+  "generatedAt": "2026-09-30T15:35:16.027Z",
+  "lastSuccessfulSyncAt": "2026-09-30T15:35:16.027Z",
+  "participantsLastSuccessAt": "2026-09-30T15:35:16.027Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -151,7 +151,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T15:00:32.364Z",
+      "lastSyncedAt": "2026-09-30T15:35:16.027Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -167,7 +167,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T15:00:32.364Z",
+      "lastSyncedAt": "2026-09-30T15:35:16.027Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -183,7 +183,39 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T15:00:32.364Z",
+      "lastSyncedAt": "2026-09-30T15:35:16.027Z",
+      "syncFailed": false,
+      "rank": 1
+    },
+    {
+      "participant_id": "participant-005",
+      "display_name": "Moroni Silverio Flores",
+      "leetcode_username": "ElectroLet",
+      "problemsCompleted": 0,
+      "daysCompleted": 0,
+      "currentStreak": 0,
+      "bestStreak": 0,
+      "currentStreakLevel": 0,
+      "bestStreakGoldenDays": 0,
+      "dayProgress": [],
+      "results": [],
+      "lastSyncedAt": "2026-09-30T15:35:16.027Z",
+      "syncFailed": false,
+      "rank": 1
+    },
+    {
+      "participant_id": "participant-004",
+      "display_name": "Rafael López",
+      "leetcode_username": "Jirafa745",
+      "problemsCompleted": 0,
+      "daysCompleted": 0,
+      "currentStreak": 0,
+      "bestStreak": 0,
+      "currentStreakLevel": 0,
+      "bestStreakGoldenDays": 0,
+      "dayProgress": [],
+      "results": [],
+      "lastSyncedAt": "2026-09-30T15:35:16.027Z",
       "syncFailed": false,
       "rank": 1
     }
