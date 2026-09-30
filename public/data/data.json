@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-09-30T01:23:14.114Z",
-  "lastSuccessfulSyncAt": null,
-  "participantsLastSuccessAt": null,
+  "generatedAt": "2026-09-30T06:45:52.003Z",
+  "lastSuccessfulSyncAt": "2026-09-30T06:45:52.003Z",
+  "participantsLastSuccessAt": "2026-09-30T06:45:52.003Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -138,5 +138,19 @@
     ]
   },
   "days": [],
-  "participants": []
+  "participants": [
+    {
+      "participant_id": "participant-001",
+      "display_name": "Alejandra Guerra Castañeda",
+      "leetcode_username": "alegu3rra",
+      "problemsCompleted": 0,
+      "daysCompleted": 0,
+      "currentStreak": 0,
+      "bestStreak": 0,
+      "results": [],
+      "lastSyncedAt": "2026-09-30T06:45:52.003Z",
+      "syncFailed": false,
+      "rank": 1
+    }
+  ]
 }
