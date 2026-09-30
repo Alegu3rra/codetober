@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-09-30T15:54:11.023Z",
-  "lastSuccessfulSyncAt": "2026-09-30T15:54:11.023Z",
-  "participantsLastSuccessAt": "2026-09-30T15:54:11.023Z",
+  "generatedAt": "2026-09-30T17:54:52.525Z",
+  "lastSuccessfulSyncAt": "2026-09-30T17:54:52.525Z",
+  "participantsLastSuccessAt": "2026-09-30T17:54:52.525Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -151,7 +151,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T15:54:11.023Z",
+      "lastSyncedAt": "2026-09-30T17:54:52.525Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -167,7 +167,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T15:54:11.023Z",
+      "lastSyncedAt": "2026-09-30T17:54:52.525Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -183,7 +183,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T15:54:11.023Z",
+      "lastSyncedAt": "2026-09-30T17:54:52.525Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -199,7 +199,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T15:54:11.023Z",
+      "lastSyncedAt": "2026-09-30T17:54:52.525Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -215,7 +215,7 @@
       "bestStreakGoldenDays": 0,
       "dayProgress": [],
       "results": [],
-      "lastSyncedAt": "2026-09-30T15:54:11.023Z",
+      "lastSyncedAt": "2026-09-30T17:54:52.525Z",
       "syncFailed": false,
       "rank": 1
     }
