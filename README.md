@@ -95,3 +95,13 @@ npm run dev
 ```
 
 Abre `http://localhost:5173/codetober/2026/?preview=1`, o ejecuta `npm run dev:demo` para iniciar el servidor y abrir automáticamente la vista de prueba en el puerto disponible. Muestra dos problemas ficticios y un participante de prueba el 1 de octubre simulado. Los enlaces ficticios solo sirven para revisar la interfaz. Sin `?preview=1` ves los datos normales. Este modo solo funciona en Vite de desarrollo; el build de producción elimina el módulo de prueba y no permite adelantar liberaciones. `npm run preview` y GitHub Pages no activan esta demo.
+
+## Vista previa al compartir
+
+`index.html` incluye Open Graph y Twitter Cards con URLs HTTPS absolutas para la edición 2026. La imagen pública `public/social-card-2026.png` mide 1200 × 630 y no contiene datos del calendario privado. Para regenerarla con Chrome instalado:
+
+```bash
+PLAYWRIGHT_CHANNEL=chrome node scripts/generate-share-image.mjs
+```
+
+Si cambia el dominio o la edición, actualizar las URLs y textos de los metadatos y la portada. Las aplicaciones de mensajería pueden conservar una vista previa anterior en caché.
