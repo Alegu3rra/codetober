@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-01T06:01:25.094Z",
-  "lastSuccessfulSyncAt": "2026-10-01T06:01:25.094Z",
-  "participantsLastSuccessAt": "2026-10-01T06:01:25.094Z",
+  "generatedAt": "2026-10-01T13:25:15.300Z",
+  "lastSuccessfulSyncAt": "2026-10-01T13:25:15.300Z",
+  "participantsLastSuccessAt": "2026-10-01T13:25:15.300Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -137,7 +137,28 @@
       }
     ]
   },
-  "days": [],
+  "days": [
+    {
+      "id": "day-01",
+      "date": "2026-10-01",
+      "title": "One Pass",
+      "releaseAt": "2026-10-01T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "title": "Best Time to Buy and Sell Stock",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "title": "Maximum Subarray",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/maximum-subarray/"
+        }
+      ]
+    }
+  ],
   "participants": [
     {
       "participant_id": "participant-001",
@@ -149,9 +170,23 @@
       "bestStreak": 0,
       "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
-      "dayProgress": [],
-      "results": [],
-      "lastSyncedAt": "2026-10-01T06:01:25.094Z",
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T13:25:15.300Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -165,9 +200,23 @@
       "bestStreak": 0,
       "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
-      "dayProgress": [],
-      "results": [],
-      "lastSyncedAt": "2026-10-01T06:01:25.094Z",
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T13:25:15.300Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -181,9 +230,23 @@
       "bestStreak": 0,
       "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
-      "dayProgress": [],
-      "results": [],
-      "lastSyncedAt": "2026-10-01T06:01:25.094Z",
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T13:25:15.300Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -197,9 +260,23 @@
       "bestStreak": 0,
       "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
-      "dayProgress": [],
-      "results": [],
-      "lastSyncedAt": "2026-10-01T06:01:25.094Z",
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T13:25:15.300Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -213,9 +290,23 @@
       "bestStreak": 0,
       "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
-      "dayProgress": [],
-      "results": [],
-      "lastSyncedAt": "2026-10-01T06:01:25.094Z",
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T13:25:15.300Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -229,9 +320,23 @@
       "bestStreak": 0,
       "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
-      "dayProgress": [],
-      "results": [],
-      "lastSyncedAt": "2026-10-01T06:01:25.094Z",
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T13:25:15.300Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -245,9 +350,23 @@
       "bestStreak": 0,
       "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
-      "dayProgress": [],
-      "results": [],
-      "lastSyncedAt": "2026-10-01T06:01:25.094Z",
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T13:25:15.300Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -261,9 +380,23 @@
       "bestStreak": 0,
       "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
-      "dayProgress": [],
-      "results": [],
-      "lastSyncedAt": "2026-10-01T06:01:25.094Z",
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T13:25:15.300Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -277,9 +410,23 @@
       "bestStreak": 0,
       "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
-      "dayProgress": [],
-      "results": [],
-      "lastSyncedAt": "2026-10-01T06:01:25.094Z",
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T13:25:15.300Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -293,9 +440,23 @@
       "bestStreak": 0,
       "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
-      "dayProgress": [],
-      "results": [],
-      "lastSyncedAt": "2026-10-01T06:01:25.094Z",
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T13:25:15.300Z",
       "syncFailed": false,
       "rank": 1
     }
