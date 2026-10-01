@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-01T13:35:18.253Z",
-  "lastSuccessfulSyncAt": "2026-10-01T13:35:18.253Z",
-  "participantsLastSuccessAt": "2026-10-01T13:35:18.253Z",
+  "generatedAt": "2026-10-01T13:46:41.998Z",
+  "lastSuccessfulSyncAt": "2026-10-01T13:46:41.998Z",
+  "participantsLastSuccessAt": "2026-10-01T13:46:41.998Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -164,29 +164,29 @@
       "participant_id": "participant-001",
       "display_name": "Alejandra Guerra Castañeda",
       "leetcode_username": "alegu3rra",
-      "problemsCompleted": 0,
+      "problemsCompleted": 1,
       "daysCompleted": 0,
-      "currentStreak": 0,
-      "bestStreak": 0,
-      "currentStreakLevel": 0,
+      "currentStreak": 1,
+      "bestStreak": 1,
+      "currentStreakLevel": 1,
       "bestStreakGoldenDays": 0,
       "dayProgress": [
         {
           "date": "2026-10-01",
-          "onTimeProblems": 0
+          "onTimeProblems": 1
         }
       ],
       "results": [
         {
           "titleSlug": "best-time-to-buy-and-sell-stock",
-          "firstAcceptedAt": null
+          "firstAcceptedAt": "2026-10-01T13:45:07.000Z"
         },
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -194,29 +194,29 @@
       "participant_id": "participant-002",
       "display_name": "alex_rangi",
       "leetcode_username": "thorinzme",
-      "problemsCompleted": 0,
+      "problemsCompleted": 1,
       "daysCompleted": 0,
-      "currentStreak": 0,
-      "bestStreak": 0,
-      "currentStreakLevel": 0,
+      "currentStreak": 1,
+      "bestStreak": 1,
+      "currentStreakLevel": 1,
       "bestStreakGoldenDays": 0,
       "dayProgress": [
         {
           "date": "2026-10-01",
-          "onTimeProblems": 0
+          "onTimeProblems": 1
         }
       ],
       "results": [
         {
           "titleSlug": "best-time-to-buy-and-sell-stock",
-          "firstAcceptedAt": null
+          "firstAcceptedAt": "2026-10-01T13:45:31.000Z"
         },
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -246,9 +246,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
-      "rank": 1
+      "rank": 3
     },
     {
       "participant_id": "participant-009",
@@ -276,9 +276,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
-      "rank": 1
+      "rank": 3
     },
     {
       "participant_id": "participant-006",
@@ -306,9 +306,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
-      "rank": 1
+      "rank": 3
     },
     {
       "participant_id": "participant-008",
@@ -336,9 +336,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
-      "rank": 1
+      "rank": 3
     },
     {
       "participant_id": "participant-007",
@@ -366,9 +366,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
-      "rank": 1
+      "rank": 3
     },
     {
       "participant_id": "participant-010",
@@ -396,9 +396,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
-      "rank": 1
+      "rank": 3
     },
     {
       "participant_id": "participant-005",
@@ -426,9 +426,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
-      "rank": 1
+      "rank": 3
     },
     {
       "participant_id": "participant-004",
@@ -456,9 +456,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
-      "rank": 1
+      "rank": 3
     },
     {
       "participant_id": "participant-011",
@@ -486,9 +486,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T13:35:18.253Z",
+      "lastSyncedAt": "2026-10-01T13:46:41.998Z",
       "syncFailed": false,
-      "rank": 1
+      "rank": 3
     }
   ]
 }
