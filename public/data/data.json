@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-01T18:17:39.011Z",
-  "lastSuccessfulSyncAt": "2026-10-01T18:17:39.011Z",
-  "participantsLastSuccessAt": "2026-10-01T18:17:39.011Z",
+  "generatedAt": "2026-10-01T18:20:29.228Z",
+  "lastSuccessfulSyncAt": "2026-10-01T18:20:29.228Z",
+  "participantsLastSuccessAt": "2026-10-01T18:20:29.228Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -186,7 +186,7 @@
           "firstAcceptedAt": "2026-10-01T14:13:07.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -216,7 +216,7 @@
           "firstAcceptedAt": "2026-10-01T14:55:41.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -246,7 +246,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -276,7 +276,7 @@
           "firstAcceptedAt": "2026-10-01T15:36:37.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -306,7 +306,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -336,7 +336,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -366,7 +366,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -396,7 +396,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -426,7 +426,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -456,7 +456,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -486,7 +486,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -516,7 +516,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -546,7 +546,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T18:17:39.011Z",
+      "lastSyncedAt": "2026-10-01T18:20:29.228Z",
       "syncFailed": false,
       "rank": 5
     }
