@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-01T15:20:12.888Z",
-  "lastSuccessfulSyncAt": "2026-10-01T15:20:12.888Z",
-  "participantsLastSuccessAt": "2026-10-01T15:20:12.888Z",
+  "generatedAt": "2026-10-01T16:16:24.692Z",
+  "lastSuccessfulSyncAt": "2026-10-01T16:16:24.692Z",
+  "participantsLastSuccessAt": "2026-10-01T16:16:24.692Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -186,7 +186,7 @@
           "firstAcceptedAt": "2026-10-01T14:13:07.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -216,7 +216,7 @@
           "firstAcceptedAt": "2026-10-01T14:55:41.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -246,7 +246,37 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
+      "syncFailed": false,
+      "rank": 3
+    },
+    {
+      "participant_id": "participant-011",
+      "display_name": "RafaelSD",
+      "leetcode_username": "Rafaelsd_17",
+      "problemsCompleted": 1,
+      "daysCompleted": 0,
+      "currentStreak": 1,
+      "bestStreak": 1,
+      "currentStreakLevel": 1,
+      "bestStreakGoldenDays": 0,
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 1
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": "2026-10-01T15:36:37.000Z"
+        }
+      ],
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -276,9 +306,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
       "syncFailed": false,
-      "rank": 4
+      "rank": 5
     },
     {
       "participant_id": "participant-009",
@@ -306,9 +336,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
       "syncFailed": false,
-      "rank": 4
+      "rank": 5
     },
     {
       "participant_id": "participant-006",
@@ -336,9 +366,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
       "syncFailed": false,
-      "rank": 4
+      "rank": 5
     },
     {
       "participant_id": "participant-008",
@@ -366,9 +396,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
       "syncFailed": false,
-      "rank": 4
+      "rank": 5
     },
     {
       "participant_id": "participant-010",
@@ -396,9 +426,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
       "syncFailed": false,
-      "rank": 4
+      "rank": 5
     },
     {
       "participant_id": "participant-005",
@@ -426,9 +456,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
       "syncFailed": false,
-      "rank": 4
+      "rank": 5
     },
     {
       "participant_id": "participant-004",
@@ -456,39 +486,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
+      "lastSyncedAt": "2026-10-01T16:16:24.692Z",
       "syncFailed": false,
-      "rank": 4
-    },
-    {
-      "participant_id": "participant-011",
-      "display_name": "RafaelSD",
-      "leetcode_username": "Rafaelsd_17",
-      "problemsCompleted": 0,
-      "daysCompleted": 0,
-      "currentStreak": 0,
-      "bestStreak": 0,
-      "currentStreakLevel": 0,
-      "bestStreakGoldenDays": 0,
-      "dayProgress": [
-        {
-          "date": "2026-10-01",
-          "onTimeProblems": 0
-        }
-      ],
-      "results": [
-        {
-          "titleSlug": "best-time-to-buy-and-sell-stock",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "maximum-subarray",
-          "firstAcceptedAt": null
-        }
-      ],
-      "lastSyncedAt": "2026-10-01T15:20:12.888Z",
-      "syncFailed": false,
-      "rank": 4
+      "rank": 5
     }
   ]
 }
