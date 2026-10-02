@@ -1,5 +1,5 @@
 import React, { useId, useState } from 'react';
-import { completionSeconds, elapsedLabel, type EventData, type Participant } from '../data';
+import { firstSolveToday, type EventData, type Participant } from '../data';
 import { StreakFlame } from './StreakFlame';
 import { Timestamp } from './Timestamp';
 import { ParticipantDetails } from './ParticipantDetails';
@@ -11,6 +11,7 @@ export function ParticipantRow({ person, data, now, zone, started }: {
   const panel = useId();
   const closed = now >= Date.parse(data.event.closeAt);
   const stale = !closed && (!person.lastSyncedAt || now - Date.parse(person.lastSyncedAt) > 2 * 3600000);
+  const firstToday = firstSolveToday(person, data, now);
   const warning = !closed && (person.syncFailed || stale);
   return (
     <article className="participant compact-participant">
@@ -36,9 +37,8 @@ export function ParticipantRow({ person, data, now, zone, started }: {
           <div><dt>Best streak</dt><dd><StreakFlame value={person.bestStreak}
             goldRatio={person.bestStreak ? (person.bestStreakGoldenDays ?? 0) / person.bestStreak : 0}
             label={`${person.bestStreak}-day best streak · ${person.bestStreakGoldenDays ?? 0} golden days`} /></dd></div>
-          <div><dt>Total solve time</dt><dd className="elapsed-time">{elapsedLabel(completionSeconds(person, data))}</dd></div>
+          <div><dt>{closed ? "First solve on final day" : "First solve today"}</dt><dd className="elapsed-time">{firstToday ? <Timestamp value={firstToday} zone={zone} seconds /> : "No accepted solve recorded"}</dd></div>
         </dl>
-        <p className="muted">Total solve time is the sum of time from each problem’s release to its first valid accepted submission.</p>
         <progress max="62" value={person.problemsCompleted} aria-label={`${person.display_name}: ${person.problemsCompleted} of 62 problems`} />
         <p className={`sync-status ${warning ? 'warning' : ''}`}>
           {closed ? 'Event closed · Last sync: ' : person.syncFailed ? '⚠ Last query failed · ' : stale ? '⚠ Update overdue · ' : '✓ Synced · '}

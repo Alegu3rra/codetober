@@ -37,7 +37,7 @@ test('published problems, ties, search, details, keyboard and accessibility', as
   await page.getByRole('tab', { name: 'Problems' }).focus();
   await page.keyboard.press('ArrowRight');
   await expect(page.getByRole('tab', { name: 'Scoreboard' })).toBeFocused();
-  await expect(page.getByLabel('Rank 1', { exact: true })).toHaveCount(2);
+  await expect(page.getByLabel('Rank 1', { exact: true })).toHaveCount(1);
   await page.getByRole('searchbox').fill('FICTIONAL_AMY');
   await expect(page.getByRole('heading', { name: 'Example Amy' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Example Bea' })).toHaveCount(0);

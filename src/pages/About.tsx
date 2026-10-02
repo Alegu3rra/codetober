@@ -25,8 +25,7 @@ export function About({ now = Date.now() }: { now?: number }) {
           (<code>America/Mexico_City</code>).
         </li>
         <li>
-          One point per unique problem, up to 62. Equal scores share a rank.
-          Ties appear by lowest total solve time, then longest best streak, then name.
+          One point per unique problem, up to 62. Ties are broken by earlier accepted submissions.
         </li>
         <li>
           Accepted submissions count from release until November 1 at 06:00.

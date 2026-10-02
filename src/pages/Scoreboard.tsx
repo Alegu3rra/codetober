@@ -18,7 +18,7 @@ export function Scoreboard({
   return (
     <section>
       <p className="muted">
-        {started ? "One problem, one point. Equal scores share a rank." : "Participants are registered. Rankings will appear when the challenge begins."}
+        {started ? "One problem, one point. Ties are broken by earlier accepted submissions." : "Participants are registered. Rankings will appear when the challenge begins."}
       </p>
       <input
         id="search"

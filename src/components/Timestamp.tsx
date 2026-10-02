@@ -1,6 +1,6 @@
 import React from "react";
 
-function displayTime(value: string | null, zone: string) {
+function displayTime(value: string | null, zone: string, seconds = false) {
   if (!value) return "Not yet synced";
   try {
     return new Intl.DateTimeFormat("en", {
@@ -9,6 +9,7 @@ function displayTime(value: string | null, zone: string) {
       day: "numeric",
       hour: "2-digit",
       minute: "2-digit",
+      ...(seconds ? { second: "2-digit" as const } : {}),
       hour12: false,
     }).format(new Date(value));
   } catch {
@@ -16,9 +17,9 @@ function displayTime(value: string | null, zone: string) {
   }
 }
 
-export function Timestamp({ value, zone }: { value: string | null; zone: string }) {
+export function Timestamp({ value, zone, seconds = false }: { value: string | null; zone: string; seconds?: boolean }) {
   return value ? (
-    <time dateTime={value}>{displayTime(value, zone)}</time>
+    <time dateTime={value}>{displayTime(value, zone, seconds)}</time>
   ) : (
     <>Not yet synced</>
   );

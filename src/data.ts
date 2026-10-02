@@ -65,17 +65,43 @@ export function completionSeconds(person: Participant, data: EventData) {
       ? sum + (accepted - release) / 1000 : sum;
   }, 0);
 }
+export function compareDailyFirst(a: Participant, b: Participant, data: EventData) {
+  for (const day of [...data.days].sort((x, y) => Date.parse(y.releaseAt) - Date.parse(x.releaseAt))) {
+    const first = (person: Participant) => Math.min(...person.results
+      .filter(r => r.firstAcceptedAt && day.problems.some(p => p.titleSlug === r.titleSlug)
+        && Date.parse(r.firstAcceptedAt) >= Date.parse(day.releaseAt)
+        && Date.parse(r.firstAcceptedAt) < Date.parse(data.event.closeAt)
+        && Date.parse(r.firstAcceptedAt) <= Date.parse(data.generatedAt))
+      .map(r => Date.parse(r.firstAcceptedAt!)));
+    const left = first(a), right = first(b);
+    if (left !== right) return left < right ? -1 : 1;
+  }
+  return 0;
+}
 export function orderedParticipants(data: EventData) {
-  const sorted = [...data.participants].sort((a, b) => b.problemsCompleted - a.problemsCompleted
-    || completionSeconds(a, data) - completionSeconds(b, data)
+  return [...data.participants].sort((a, b) => b.problemsCompleted - a.problemsCompleted
+    || compareDailyFirst(a, b, data)
     || b.bestStreak - a.bestStreak || a.display_name.localeCompare(b.display_name, 'en')
-    || a.participant_id.localeCompare(b.participant_id));
-  let rank = 0;
-  return sorted.map((p, i) => {
-    if (i === 0 || sorted[i - 1].problemsCompleted !== p.problemsCompleted) rank = i + 1;
-    return { ...p, rank };
-  });
+    || a.participant_id.localeCompare(b.participant_id))
+    .map((p, i) => ({ ...p, rank: i + 1 }));
 }
 export function elapsedLabel(seconds: number) {
   return `${Math.floor(seconds / 3600)}h ${Math.floor(seconds % 3600 / 60)}m ${Math.floor(seconds % 60)}s`;
+}
+
+export function firstSolveToday(person: Participant, data: EventData, now: number) {
+  // An event day runs from its release until the next release, not midnight.
+  const at = Math.min(now, Date.parse(data.event.closeAt) - 1);
+  const schedule = [...data.event.schedule].sort((a, b) => Date.parse(a.releaseAt) - Date.parse(b.releaseAt));
+  const index = schedule.filter(d => Date.parse(d.releaseAt) <= at).length - 1;
+  if (index < 0) return null;
+  const day = data.days.find(d => d.date === schedule[index].date);
+  if (!day) return null;
+  const end = Date.parse(schedule[index + 1]?.releaseAt ?? data.event.closeAt);
+  const slugs = new Set(day.problems.map(p => p.titleSlug));
+  return person.results.filter(r => slugs.has(r.titleSlug) && r.firstAcceptedAt
+    && Date.parse(r.firstAcceptedAt) >= Date.parse(day.releaseAt)
+    && Date.parse(r.firstAcceptedAt) < end
+    && Date.parse(r.firstAcceptedAt) <= Math.min(now, Date.parse(data.generatedAt)))
+    .map(r => r.firstAcceptedAt!).sort((a, b) => Date.parse(a) - Date.parse(b))[0] ?? null;
 }
