@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-02T05:44:08.807Z",
-  "lastSuccessfulSyncAt": "2026-10-02T05:44:08.807Z",
-  "participantsLastSuccessAt": "2026-10-02T05:44:08.807Z",
+  "generatedAt": "2026-10-02T12:41:58.110Z",
+  "lastSuccessfulSyncAt": "2026-10-02T12:41:58.110Z",
+  "participantsLastSuccessAt": "2026-10-02T12:41:58.110Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -157,6 +157,26 @@
           "url": "https://leetcode.com/problems/maximum-subarray/"
         }
       ]
+    },
+    {
+      "id": "day-02",
+      "date": "2026-10-02",
+      "title": "Randomizer",
+      "releaseAt": "2026-10-02T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "min-stack",
+          "title": "Min Stack",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/min-stack/"
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "title": "Binary Subarrays With Sum",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/binary-subarrays-with-sum/"
+        }
+      ]
     }
   ],
   "participants": [
@@ -174,6 +194,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -184,9 +208,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-02T01:18:12.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -204,6 +236,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -214,9 +250,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-01T14:13:07.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -234,6 +278,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -244,9 +292,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-01T14:55:41.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -264,6 +320,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -274,9 +334,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-02T01:23:01.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -294,6 +362,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -304,9 +376,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-01T20:34:17.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -324,6 +404,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -334,9 +418,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-02T04:38:22.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -354,6 +446,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -364,9 +460,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-01T19:00:15.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -384,6 +488,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -394,9 +502,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-02T04:48:58.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -414,6 +530,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -424,9 +544,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-01T21:47:04.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -444,6 +572,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -454,9 +586,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-01T15:36:37.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -474,6 +614,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -484,9 +628,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": "2026-10-01T19:16:23.000Z"
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -504,6 +656,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -514,9 +670,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -534,6 +698,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -544,9 +712,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -564,6 +740,10 @@
         {
           "date": "2026-10-01",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -574,9 +754,17 @@
         {
           "titleSlug": "maximum-subarray",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T05:44:08.807Z",
+      "lastSyncedAt": "2026-10-02T12:41:58.110Z",
       "syncFailed": false,
       "rank": 12
     }
