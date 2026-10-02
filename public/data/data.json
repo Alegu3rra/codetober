@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-02T17:31:18.014Z",
-  "lastSuccessfulSyncAt": "2026-10-02T17:31:18.014Z",
-  "participantsLastSuccessAt": "2026-10-02T17:31:18.014Z",
+  "generatedAt": "2026-10-02T17:45:48.855Z",
+  "lastSuccessfulSyncAt": "2026-10-02T17:45:48.855Z",
+  "participantsLastSuccessAt": "2026-10-02T17:45:48.855Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -218,7 +218,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -260,7 +260,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -302,7 +302,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -344,7 +344,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -386,7 +386,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -428,7 +428,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -470,7 +470,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -512,7 +512,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -554,7 +554,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -596,7 +596,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -638,7 +638,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -680,7 +680,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -722,7 +722,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -764,7 +764,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -806,7 +806,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -848,7 +848,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -890,7 +890,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -932,7 +932,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-02T17:31:18.014Z",
+      "lastSyncedAt": "2026-10-02T17:45:48.855Z",
       "syncFailed": false,
       "rank": 14
     }
