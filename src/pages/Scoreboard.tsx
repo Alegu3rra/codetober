@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { filterParticipants, type EventData } from "../data";
-import { Timestamp } from "../components/Timestamp";
-import { ParticipantDetails } from "../components/ParticipantDetails";
-import { StreakFlame } from "../components/StreakFlame";
+import { ParticipantRow } from "../components/ParticipantRow";
+import { orderedParticipants } from "../data";
 
 export function Scoreboard({
   data,
@@ -15,7 +14,7 @@ export function Scoreboard({
 }) {
   const [query, setQuery] = useState("");
   const started = now >= Date.parse(data.event.startAt);
-  const participants = filterParticipants(data.participants, query);
+  const participants = filterParticipants(orderedParticipants(data), query);
   return (
     <section>
       <p className="muted">
@@ -34,71 +33,7 @@ export function Scoreboard({
         {participants.length === 1 ? "participant" : "participants"} · Challenge
         statistics only
       </p>
-      {participants.map((person) => {
-        const stale =
-          !person.lastSyncedAt ||
-          now - Date.parse(person.lastSyncedAt) > 2 * 3600000;
-        return (
-          <article className="participant" key={person.participant_id}>
-            <div className="person-heading">
-              {started && <span className="rank" aria-label={`Rank ${person.rank}`}>
-                #{person.rank}
-              </span>}
-              <div>
-                <h2>{person.display_name}</h2>
-                <a
-                  href={`https://leetcode.com/u/${encodeURIComponent(person.leetcode_username)}/`}
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  @{person.leetcode_username} ↗
-                </a>
-              </div>
-            </div>
-            <dl className="stats">
-              <div>
-                <dt>Problems</dt>
-                <dd>
-                  {person.problemsCompleted}
-                  <small> / 62</small>
-                </dd>
-              </div>
-              <div>
-                <dt>Days complete</dt>
-                <dd>{person.daysCompleted}</dd>
-              </div>
-              <div>
-                <dt>Current streak</dt>
-                <dd><StreakFlame value={person.currentStreak}
-                  goldRatio={person.currentStreakLevel === 2 ? 1 : 0}
-                  label={`${person.currentStreak}-day current streak · ${person.currentStreakLevel === 2 ? "Latest qualifying day is golden: both problems on time" : person.currentStreak ? "At least one problem on time per day" : "No active streak"}`} /></dd>
-              </div>
-              <div>
-                <dt>Best streak</dt>
-                <dd><StreakFlame value={person.bestStreak}
-                  goldRatio={person.bestStreak ? (person.bestStreakGoldenDays ?? 0) / person.bestStreak : 0}
-                  label={`${person.bestStreak}-day best streak · ${person.bestStreakGoldenDays ?? 0} golden days`} /></dd>
-              </div>
-            </dl>
-            <progress
-              max="62"
-              value={person.problemsCompleted}
-              aria-label={`${person.display_name}: ${person.problemsCompleted} of 62 problems`}
-            />
-            <p
-              className={`sync-status ${person.syncFailed || stale ? "warning" : ""}`}
-            >
-              {person.syncFailed
-                ? "⚠ Last query failed · "
-                : stale
-                  ? "⚠ Update overdue · "
-                  : "✓ Synced · "}
-              <Timestamp value={person.lastSyncedAt} zone={zone} />
-            </p>
-            <ParticipantDetails person={person} data={data} zone={zone} />
-          </article>
-        );
-      })}
+      {participants.map(person => <ParticipantRow key={person.participant_id} person={person} data={data} now={now} zone={zone} started={started} />)}
       {!participants.length && (
         <p className="empty">
           {data.participants.length

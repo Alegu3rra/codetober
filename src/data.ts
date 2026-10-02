@@ -9,6 +9,7 @@ const currentDataSchema = z.object({
   days: z.array(z.object({ id: z.string(), date: z.string(), title: z.string(), releaseAt: instant, problems: z.array(problem).length(2) })),
   participants: z.array(z.object({ participant_id: z.string(), display_name: z.string(), leetcode_username: z.string().regex(/^[a-zA-Z0-9_-]{1,30}$/), rank: z.number().int().positive(),
     problemsCompleted: z.number().int().min(0).max(62), daysCompleted: z.number().int().min(0).max(31), currentStreak: z.number().int().min(0).max(31), bestStreak: z.number().int().min(0).max(31),
+    completionTimeSeconds: z.number().nonnegative().optional(),
     currentStreakLevel: z.number().int().min(0).max(2).optional(),
     bestStreakGoldenDays: z.number().int().min(0).max(31).optional(),
     dayProgress: z.array(z.object({ date: z.string(), onTimeProblems: z.number().int().min(0).max(2) })).optional(),
@@ -51,4 +52,30 @@ export function formURL(value: string | undefined, embed = false) {
     if (!embed && url.hostname === 'forms.gle') return url.href;
   } catch { /* Invalid form configuration is presented as unavailable. */ }
   return null;
+}
+
+// Older snapshots can still be displayed using their published acceptance dates.
+export function completionSeconds(person: Participant, data: EventData) {
+  if (person.completionTimeSeconds !== undefined) return person.completionTimeSeconds;
+  const releases = new Map(data.days.flatMap(d => d.problems.map(p => [p.titleSlug, Date.parse(d.releaseAt)] as const)));
+  return person.results.reduce((sum, r) => {
+    const release = releases.get(r.titleSlug);
+    const accepted = r.firstAcceptedAt ? Date.parse(r.firstAcceptedAt) : NaN;
+    return release !== undefined && accepted >= release && accepted < Date.parse(data.event.closeAt) && accepted <= Date.parse(data.generatedAt)
+      ? sum + (accepted - release) / 1000 : sum;
+  }, 0);
+}
+export function orderedParticipants(data: EventData) {
+  const sorted = [...data.participants].sort((a, b) => b.problemsCompleted - a.problemsCompleted
+    || completionSeconds(a, data) - completionSeconds(b, data)
+    || b.bestStreak - a.bestStreak || a.display_name.localeCompare(b.display_name, 'en')
+    || a.participant_id.localeCompare(b.participant_id));
+  let rank = 0;
+  return sorted.map((p, i) => {
+    if (i === 0 || sorted[i - 1].problemsCompleted !== p.problemsCompleted) rank = i + 1;
+    return { ...p, rank };
+  });
+}
+export function elapsedLabel(seconds: number) {
+  return `${Math.floor(seconds / 3600)}h ${Math.floor(seconds % 3600 / 60)}m ${Math.floor(seconds % 60)}s`;
 }

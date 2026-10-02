@@ -12,14 +12,16 @@ const snapshot = {
     lastSyncedAt: '2026-10-02T14:00:00Z', syncFailed: i === 2,
     results: [1,2].flatMap(day => [1,2].map(j => ({ titleSlug: `example-${day}-${j}`, firstAcceptedAt: i < 2 && day === 1 ? '2026-10-01T13:00:00Z' : null }))) })),
 };
-test('actual initial snapshot loads under the project path without future content', async ({ page }) => {
+test('actual published snapshot loads under the project path without future content', async ({ page }) => {
   const errors: string[] = []; page.on('pageerror', e => errors.push(e.message));
   await page.goto('/codetober/2026/');
-  await expect(page.getByRole('heading', { name: 'Problems' })).toBeVisible();
-  await expect(page.getByText('No problems published yet. The first pair is on its way.')).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Problems', exact: true })).toBeVisible();
   expect(errors).toEqual([]);
   const response = await page.request.get('/codetober/2026/data/data.json');
-  expect(response.ok()).toBe(true); expect((await response.json()).days).toEqual([]);
+  expect(response.ok()).toBe(true);
+  const published = await response.json();
+  expect(published.days.every((day: { releaseAt: string }) => Date.parse(day.releaseAt) <= Date.parse(published.generatedAt))).toBe(true);
+  if (!published.days.length) await expect(page.getByText('No problems published yet. The first pair is on its way.')).toBeVisible();
 });
 test('published problems, ties, search, details, keyboard and accessibility', async ({ page }, testInfo) => {
   await page.clock.install({ time: new Date('2026-10-02T14:00:00Z') });
@@ -39,7 +41,7 @@ test('published problems, ties, search, details, keyboard and accessibility', as
   await page.getByRole('searchbox').fill('FICTIONAL_AMY');
   await expect(page.getByRole('heading', { name: 'Example Amy' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Example Bea' })).toHaveCount(0);
-  await page.getByText('View recorded progress').click();
+  await page.getByRole('button', { name: 'Expand progress for Example Amy' }).click();
   await expect(page.getByText(/✓ Accepted/)).toHaveCount(2);
   await expect(page.getByText('— No accepted submission recorded', { exact: true })).toHaveCount(2);
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
@@ -62,8 +64,8 @@ test('closed event retains archive and refresh failure retains loaded results', 
   let fail = false;
   await page.route('**/data/data.json', route => fail ? route.abort() : route.fulfill({ json: snapshot }));
   await page.goto('/codetober/2026/');
-  await expect(page.getByText('EVENT CLOSED')).toBeVisible();
-  await expect(page.getByRole('heading', { name: 'Problems' })).toBeVisible();
+  await expect(page.getByText('EVENT CLOSED', { exact: true })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Problems', exact: true })).toBeVisible();
   fail = true; await page.clock.fastForward('01:01');
   await expect(page.getByRole('alert')).toContainText('Showing the last loaded snapshot.');
   await expect(page.getByText('Example day 1', { exact: true })).toBeVisible();
@@ -81,5 +83,5 @@ test('future editions redirect to this calendar year', async ({ page }) => {
   await page.clock.install({ time: new Date('2026-09-29T12:00:00Z') });
   await page.goto('/codetober/2099/?source=test#main');
   await expect(page).toHaveURL(/\/codetober\/2026\/\?source=test#main$/);
-  await expect(page.getByRole('heading', { name: 'Problems' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Problems', exact: true })).toBeVisible();
 });

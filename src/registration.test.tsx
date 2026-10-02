@@ -37,7 +37,7 @@ test('development preview loads synthetic data without querying the public feed'
   const { result } = renderHook(() => useEventData());
   await waitFor(() => expect(result.current.loading).toBe(false));
   expect(result.current.data?.days[0].title).toBe('Local interface preview');
-  expect(result.current.now).toBe(Date.parse('2026-10-01T18:00:00Z'));
+  expect(result.current.now).toBe(Date.parse('2026-10-03T18:00:00Z'));
   expect(fetcher).not.toHaveBeenCalled();
 });
 test('production ignores the preview parameter and fetches only public data', async () => {

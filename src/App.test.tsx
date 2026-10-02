@@ -33,8 +33,9 @@ test('keyboard tabs, search, participant details and error labels', async () => 
   fireEvent.keyDown(screen.getByRole('tab', { name: 'Problems' }), { key: 'ArrowRight' });
   const tab = screen.getByRole('tab', { name: 'Scoreboard' }); expect(tab).toHaveFocus(); expect(tab).toHaveAttribute('aria-selected','true');
   expect(screen.getByText('Example Coder')).toBeVisible();
+  expect(screen.getByText(/⚠ Query failed/)).toBeVisible();
+  fireEvent.click(screen.getByRole('button', { name: 'Expand progress for Example Coder' }));
   expect(screen.getByText(/Last query failed/)).toBeVisible();
-  fireEvent.click(screen.getByText('View recorded progress'));
   expect(screen.getAllByText(/No accepted submission recorded/).length).toBeGreaterThan(0);
   fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'not-a-user' } });
   expect(screen.getByText('No participants match your search.')).toBeVisible();

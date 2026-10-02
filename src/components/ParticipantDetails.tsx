@@ -13,8 +13,7 @@ export function ParticipantDetails({
   zone: string;
 }) {
   return (
-    <details className="participant-details">
-      <summary>View recorded progress</summary>
+    <div className="participant-details">
       <div className="result-list">
         {data.days.length === 0 && <p>No problems published yet.</p>}
         {data.days.map((day) => (
@@ -48,6 +47,6 @@ export function ParticipantDetails({
           </section>
         ))}
       </div>
-    </details>
+    </div>
   );
 }

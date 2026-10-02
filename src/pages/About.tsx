@@ -25,12 +25,13 @@ export function About({ now = Date.now() }: { now?: number }) {
           (<code>America/Mexico_City</code>).
         </li>
         <li>
-          One point per unique problem, up to 62. Solve both to complete a day.
-          Equal scores share a rank.
+          One point per unique problem, up to 62. Equal scores share a rank.
+          Ties appear by lowest total solve time, then longest best streak, then name.
         </li>
         <li>
           Accepted submissions count from release until November 1 at 06:00.
           Previously solved problems need a new accepted submission.
+          After the event closes, results remain available as an archive; missed valid submissions can be corrected by the organizer.
         </li>
         <li>
           Keep your streak by solving at least one of that day’s problems before

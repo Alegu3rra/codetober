@@ -3,7 +3,7 @@ import { dataSchema, dataURL, type EventData } from "../data";
 
 export function useEventData() {
   const preview = import.meta.env.DEV && new URLSearchParams(window.location.search).get("preview") === "1";
-  const previewTime = Date.parse("2026-10-01T18:00:00Z");
+  const previewTime = Date.parse("2026-10-03T18:00:00Z");
   const [data, setData] = useState<EventData | null>(null);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
