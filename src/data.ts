@@ -11,6 +11,7 @@ const currentDataSchema = z.object({
   participants: z.array(z.object({ participant_id: z.string(), display_name: z.string(), leetcode_username: z.string().regex(/^[a-zA-Z0-9_-]{1,30}$/), rank: z.number().int().positive(),
     problemsCompleted: z.number().int().min(0).max(62), daysCompleted: z.number().int().min(0).max(31), currentStreak: z.number().int().min(0).max(31), bestStreak: z.number().int().min(0).max(31),
     completionTimeSeconds: z.number().nonnegative().optional(),
+    onTimeProblemsCompleted: z.number().int().min(0).max(62).optional(),
     currentStreakLevel: z.number().int().min(0).max(2).optional(),
     bestStreakGoldenDays: z.number().int().min(0).max(31).optional(),
     dayProgress: z.array(z.object({ date: z.string(), onTimeProblems: z.number().int().min(0).max(2) })).optional(),
@@ -79,8 +80,20 @@ export function compareDailyFirst(a: Participant, b: Participant, data: EventDat
   }
   return 0;
 }
+// Derive from acceptance dates so old snapshots use the same tie-break immediately.
+export function onTimeProblemsCompleted(person: Participant, data: EventData) {
+  const schedule = [...data.event.schedule].sort((a,b) => Date.parse(a.releaseAt)-Date.parse(b.releaseAt));
+  return data.days.reduce((total, day) => {
+    const start = Date.parse(day.releaseAt);
+    const end = Math.min(Date.parse(schedule.find(d => Date.parse(d.releaseAt) > start)?.releaseAt ?? data.event.closeAt), Date.parse(data.event.closeAt));
+    return total + day.problems.filter(problem => person.results.some(r => r.titleSlug === problem.titleSlug
+      && r.firstAcceptedAt !== null && Date.parse(r.firstAcceptedAt) >= start
+      && Date.parse(r.firstAcceptedAt) < end && Date.parse(r.firstAcceptedAt) <= Date.parse(data.generatedAt))).length;
+  },0);
+}
 export function orderedParticipants(data: EventData) {
   return [...data.participants].sort((a, b) => b.problemsCompleted - a.problemsCompleted
+    || onTimeProblemsCompleted(b, data) - onTimeProblemsCompleted(a, data)
     || compareDailyFirst(a, b, data)
     || b.bestStreak - a.bestStreak || a.display_name.localeCompare(b.display_name, 'en')
     || a.participant_id.localeCompare(b.participant_id))
