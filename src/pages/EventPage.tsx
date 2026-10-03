@@ -1,3 +1,4 @@
+import { selectedEdition, latestYear, editionURL, previousEdition } from "../editions";
 import React, { useEffect, useRef, useState } from "react";
 import { Home } from "./Home";
 import { About } from "./About";
@@ -14,6 +15,7 @@ export function EventPage() {
   const { data, error, loading, now, retry } = useEventData();
   const nav = useRef<HTMLDivElement>(null);
   useEffect(() => { document.title = eventName; }, []);
+  const previous = previousEdition(now);
   const zone = data?.event.timezone || configuredZone;
   function keyboard(event: React.KeyboardEvent) {
     const destination =
@@ -62,6 +64,7 @@ export function EventPage() {
         </div>
       </nav>
       <main id="main" tabIndex={-1}>
+        {selectedEdition.year !== latestYear && <p className="notice">Viewing the {selectedEdition.year} archive. <a href={editionURL(latestYear)}>Go to latest edition →</a></p>}
         <h1 className="sr-only">{eventName}</h1>
         {data?.demo && (
           <p className="notice">
@@ -102,7 +105,7 @@ export function EventPage() {
               </p>
             ) : data ? (
               i === 0 ? (
-                <Home data={data} now={now} zone={zone} />
+                <Home data={data} now={now} zone={zone} editionNavigation={selectedEdition.year === latestYear && previous ? <a href={editionURL(previous.year)}>View previous edition →</a> : undefined} />
               ) : (
                 <Scoreboard data={data} now={now} zone={zone} />
               )

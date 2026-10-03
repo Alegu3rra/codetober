@@ -12,10 +12,12 @@ export function Home({
   data,
   now,
   zone,
+  editionNavigation,
 }: {
   data: EventData;
   now: number;
   zone: string;
+  editionNavigation?: React.ReactNode;
 }) {
   const days = [...data.days].sort((a, b) => b.date.localeCompare(a.date));
   const publishedDates = new Set(days.map((d) => d.date));
@@ -49,6 +51,7 @@ export function Home({
             )}
           </p>
         </div>
+        <div className={editionNavigation ? "edition-release-actions" : undefined}>
         {!closed &&
           next &&
           (Date.parse(next.releaseAt) > now ? (
@@ -56,6 +59,8 @@ export function Home({
           ) : (
             <span className="muted">Awaiting publication</span>
           ))}
+        {editionNavigation}
+        </div>
       </section>
       {!beforeStart && !closed && (
         <section>

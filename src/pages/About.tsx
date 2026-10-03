@@ -1,11 +1,12 @@
+import { selectedEdition } from "../editions";
 import React from "react";
 import { formURL } from "../data";
 import { organizer } from "../content";
 
 export function About({ now = Date.now() }: { now?: number }) {
-  const form = formURL(import.meta.env.VITE_JOIN_FORM_URL) || "https://forms.gle/F4ugB4s2nxjvi1Av8";
+  const form = formURL((selectedEdition.year === 2026 && import.meta.env.VITE_JOIN_FORM_URL) || selectedEdition.registrationUrl || undefined);
   // October 30 is included in full, in Guadalajara (UTC-6).
-  const registrationOpen = now < Date.parse("2026-10-31T00:00:00-06:00");
+  const registrationOpen = !!form && !!selectedEdition.registrationCloseAt && now < Date.parse(selectedEdition.registrationCloseAt);
   return (
     <section className="about">
       <h2>Hello, I’m {organizer.name}.</h2>
@@ -34,7 +35,8 @@ export function About({ now = Date.now() }: { now?: number }) {
         </li>
         <li>
           Keep your streak by solving at least one of that day’s problems before
-          06:00 the next morning. One lights a teal flame; both turn it gold.
+          06:00 the next morning. One lights a <span className="rule-teal">teal</span> flame;
+          both turn it <span className="rule-gold">gold</span>.
         </li>
         <li>
           Your streak stays active until the daily window closes. Late solves
@@ -60,15 +62,15 @@ export function About({ now = Date.now() }: { now?: number }) {
         By joining, you understand that your public name, LeetCode username, and
         challenge progress will be visible to everyone.
       </p>
-      <p className="muted">Registration closes October 30, 2026 at 23:59, Guadalajara time.</p>
+      {selectedEdition.registrationCloseAt && <p className="muted">Registration closes October 30, {selectedEdition.year} at 23:59, Guadalajara time.</p>}
       {registrationOpen ? (
         <p>
-          <a className="form-link" href={form} target="_blank" rel="noreferrer">
+          <a className="form-link" href={form!} target="_blank" rel="noreferrer">
             Open registration form in a new tab ↗
           </a>
         </p>
       ) : (
-        <p className="empty">Registration is closed. Thank you for your interest!</p>
+        <p className="empty">{!form ? "Registration is not open yet." : "Registration is closed. Thank you for your interest!"}</p>
       )}
     </section>
   );

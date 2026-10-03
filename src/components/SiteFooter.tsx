@@ -9,7 +9,7 @@ export function SiteFooter({ data, zone }: { data?: EventData | null; zone: stri
         {data !== undefined && <p>
           Last successful sync:{" "}
           <Timestamp value={data?.lastSuccessfulSyncAt ?? null} zone={zone} />
-          {data && (
+          {data && (data.lastSuccessfulSyncAt || data.days.length > 0) && (
             <>
               {" "}
               · Snapshot: <Timestamp value={data.generatedAt} zone={zone} />

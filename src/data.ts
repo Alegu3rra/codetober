@@ -1,3 +1,4 @@
+import { selectedEdition, editionURL } from "./editions";
 import { z } from 'zod';
 
 const instant = z.string().datetime({ offset: true });
@@ -38,7 +39,7 @@ export function filterParticipants(participants: Participant[], query: string) {
   const value = query.trim().toLocaleLowerCase('en');
   return participants.filter(p => `${p.display_name}\n${p.leetcode_username}`.toLocaleLowerCase('en').includes(value));
 }
-export function dataURL(base = import.meta.env.VITE_PUBLIC_DATA_BASE_URL || `${import.meta.env.BASE_URL}data/`) {
+export function dataURL(base = (selectedEdition.year === 2026 && import.meta.env.VITE_PUBLIC_DATA_BASE_URL) || `${editionURL(selectedEdition.year)}${selectedEdition.snapshot?.replace(/data.json$/, "") || "data/"}`) {
   const url = new URL(base.endsWith('/') ? base : `${base}/`, window.location.href);
   if (!['https:', 'http:'].includes(url.protocol)) throw new Error('Invalid data URL');
   return new URL('data.json', url).href;

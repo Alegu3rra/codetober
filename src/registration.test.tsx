@@ -52,3 +52,16 @@ test('production ignores the preview parameter and fetches only public data', as
   expect(result.current.data?.demo).toBe(false);
   expect(fetcher).toHaveBeenCalledOnce();
 });
+
+test('closed development preview loads a complete fictional archive without network requests', async () => {
+  vi.stubEnv('DEV', true);
+  window.history.replaceState(null, '', '/codetober/2026/?preview=closed');
+  const fetcher = vi.fn(); vi.stubGlobal('fetch', fetcher);
+  const { result } = renderHook(() => useEventData());
+  await waitFor(() => expect(result.current.loading).toBe(false));
+  expect(result.current.error).toBe(false);
+  expect(result.current.data?.days).toHaveLength(31);
+  expect(result.current.data?.participants.map(p=>p.problemsCompleted)).toEqual([62,47,20]);
+  expect(result.current.now).toBeGreaterThan(Date.parse(result.current.data!.event.closeAt));
+  expect(fetcher).not.toHaveBeenCalled();
+});

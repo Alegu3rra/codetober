@@ -1,9 +1,11 @@
+import { selectedEdition, emptyEditionData } from "../editions";
 import { useEffect, useState } from "react";
 import { dataSchema, dataURL, type EventData } from "../data";
 
 export function useEventData() {
-  const preview = import.meta.env.DEV && new URLSearchParams(window.location.search).get("preview") === "1";
-  const previewTime = Date.parse("2026-10-03T18:00:00Z");
+  const mode = import.meta.env.DEV ? new URLSearchParams(window.location.search).get("preview") : null;
+  const preview = mode === "1" || mode === "closed";
+  const previewTime = Date.parse(mode === "closed" ? "2026-11-02T12:00:00Z" : "2026-10-03T18:00:00Z");
   const [data, setData] = useState<EventData | null>(null);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -20,9 +22,15 @@ export function useEventData() {
     async function refresh() {
       try {
         if (import.meta.env.DEV && preview) {
-          const { previewData } = await import("../dev/preview");
-          const next = dataSchema.parse(previewData);
+          const fixture = mode === "closed"
+            ? (await import("../dev/closed-preview")).closedPreviewData
+            : (await import("../dev/preview")).previewData;
+          const next = dataSchema.parse(fixture);
           if (!disposed) { setData(next); setError(false); }
+          return;
+        }
+        if (!selectedEdition.snapshot) {
+          if (!disposed) { setData(emptyEditionData()); setError(false); }
           return;
         }
         const response = await fetch(dataURL(), {
@@ -34,6 +42,8 @@ export function useEventData() {
         });
         if (!response.ok) throw new Error("Data unavailable");
         const next = dataSchema.parse(await response.json());
+        if (Date.parse(next.event.startAt) !== Date.parse(selectedEdition.startAt)
+          || Date.parse(next.event.closeAt) !== Date.parse(selectedEdition.closeAt)) throw new Error("Wrong edition snapshot");
         if (!disposed) {
           setData(next);
           setError(false);
@@ -51,6 +61,6 @@ export function useEventData() {
       controller.abort();
       clearInterval(timer);
     };
-  }, [attempt, preview]);
+  }, [attempt, preview, mode]);
   return { data, error, loading, now, retry: () => setAttempt((a) => a + 1) };
 }

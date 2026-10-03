@@ -79,7 +79,7 @@ test('closed event retains archive and refresh failure retains loaded results', 
   await expect(page.getByText('The 2025 edition is not available.')).toBeVisible();
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
 });
-test('future editions redirect to this calendar year', async ({ page }) => {
+test('unannounced editions redirect to the latest announced year', async ({ page }) => {
   await page.clock.install({ time: new Date('2026-09-29T12:00:00Z') });
   await page.goto('/codetober/2099/?source=test#main');
   await expect(page).toHaveURL(/\/codetober\/2026\/\?source=test#main$/);

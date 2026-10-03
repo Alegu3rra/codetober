@@ -1,10 +1,11 @@
+import { latestYear, editions } from "./editions";
 import { configuredZone } from "./config";
 
 export function currentYear(now = new Date()) {
   return Number(new Intl.DateTimeFormat("en", { year: "numeric", timeZone: configuredZone }).format(now));
 }
 
-export function resolveRoute(pathname: string, base = import.meta.env.BASE_URL, year = currentYear()) {
+export function resolveRoute(pathname: string, base = import.meta.env.BASE_URL, year = latestYear, availableYears = editions.map(e => e.year)) {
   const editionPath = base.replace(/\/$/, "");
   const root = editionPath.replace(/\/\d{4}$/, "");
   const currentPath = `${root}/${year}/`;
@@ -14,7 +15,7 @@ export function resolveRoute(pathname: string, base = import.meta.env.BASE_URL, 
   if (path === '' || path === root || path === `${root}/index.html` || (requestedYear !== null && requestedYear > year)) {
     return { kind: "redirect" as const, currentPath };
   }
-  if (path === editionPath || path === `${editionPath}/index.html`) {
+  if (availableYears.some(y => path === `${root}/${y}` || path === `${root}/${y}/index.html`)) {
     return { kind: "edition" as const, currentPath };
   }
   return { kind: "not-found" as const, currentPath, requestedYear };

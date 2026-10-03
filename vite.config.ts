@@ -1,3 +1,4 @@
+import { buildTime } from './scripts/build-clock.mjs';
 import { defineConfig } from 'vitest/config';
 import type { Plugin, Connect } from 'vite';
 
@@ -25,6 +26,7 @@ function editionFallback(): Plugin {
 
 export default defineConfig({
   base: '/codetober/2026/',
+  define: { 'import.meta.env.VITE_EDITION_BUILD_TIME': JSON.stringify(buildTime) },
   plugins: [editionFallback()],
   test: { environment: 'jsdom', setupFiles: './src/test-setup.ts', include: ['src/**/*.test.{ts,tsx}'] },
 });

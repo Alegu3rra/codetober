@@ -105,3 +105,52 @@ PLAYWRIGHT_CHANNEL=chrome node scripts/generate-share-image.mjs
 ```
 
 Si cambia el dominio o la edición, actualizar las URLs y textos de los metadatos y la portada. Las aplicaciones de mensajería pueden conservar una vista previa anterior en caché.
+
+Para revisar el cierre del concurso en local, usa `npm run dev:closed` o añade `?preview=closed` a la URL de desarrollo. Simula el 2 de noviembre: 31 días y 62 problemas ficticios, resultados finales variados, archivo disponible e inscripción cerrada. No carga el calendario privado y no funciona en producción.
+
+Para probar navegación entre ediciones: `npm run dev:editions` o `?preview=editions`. El selector del título alterna el archivo ficticio 2026 y una edición de ejemplo 2027. El control “Simulate” permite comprobar que “View previous edition” desaparece durante el concurso activo. Los participantes y la inscripción son independientes en cada vista. No anuncia una edición real ni cambia rutas, formularios o datos de producción.
+
+## Ciclo anual automático (desde 2026)
+
+Cada edición empieza el **1 de octubre a las 06:00 de Guadalajara** y cierra el
+**1 de noviembre a las 06:00**. Al cerrar se anuncia la siguiente edición con su
+contador. Las anteriores permanecen en el selector animado del título. El enlace
+“View previous edition →” aparece entre concursos, no durante uno activo.
+
+`automaticAnnualCycle: true` en `src/editions.json` activa el ciclo. El build calcula
+las ediciones desde 2026 hasta la que corresponde; no hace falta añadir un año
+vacío ni ejecutar `edition:announce`. `latestYear` y `announced` quedan como
+configuración de compatibilidad cuando el modo automático está desactivado.
+El reloj del visitante no cambia qué ediciones existen ni publica problemas.
+
+El workflow de Pages se ejecuta diariamente a las 12:07 UTC (06:07 Guadalajara con
+las reglas actuales), además de pushes y ejecuciones manuales. El primer build
+posterior al cierre anuncia la siguiente edición; si falla o GitHub lo retrasa,
+una ejecución posterior recupera el cambio. Requiere Actions habilitado y
+`ENABLE_DEPLOYMENT=true`. Los workflows programados pueden deshabilitarse por
+inactividad en repositorios públicos: revisar Actions si dejan de ejecutarse y
+reactivarlos o lanzar el workflow manualmente. No es un cambio instantáneo a las
+06:00; una página ya abierta debe recargarse después del despliegue.
+
+Cada año nuevo empieza sin participantes, resultados, formulario ni problemas.
+Cuando estén listos, añadir/configurar su entrada en `src/editions.json`:
+
+- `year`: año de la edición.
+- `registrationUrl`: su propio enlace público de Google Forms.
+- `registrationCloseAt`: cierre de inscripción como instante ISO con zona.
+- `snapshot`: `data/AAAA/data.json`, únicamente datos sanitizados de ese año.
+
+Se puede usar la entrada 2027 existente como plantilla. `startAt` y `closeAt` se
+calculan con la zona IANA `America/Mexico_City` en el modo automático. Las entradas
+futuras configuradas no se anuncian antes del cierre anterior. Dejar formulario y
+snapshot en `null` mientras no estén preparados. Nunca copiar el registro ni los
+participantes de otra edición; los overrides `VITE_JOIN_FORM_URL` y
+`VITE_PUBLIC_DATA_BASE_URL` existentes solo aplican a 2026.
+
+`npm run build:pages` crea `_site/` con un directorio por edición y solo su snapshot.
+Reconstruye también los históricos, manteniendo sus datos. Tanto el loader como
+el build rechazan snapshots con fechas de otra edición. Los nuevos años omiten
+la imagen social 2026 hasta que se prepare una portada correspondiente.
+
+Esto sustituye el anuncio manual y el antiguo montaje de `archives/`. El login
+genérico aún no está implementado; por ahora el registro sigue siendo por enlace.

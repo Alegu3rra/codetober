@@ -9,10 +9,14 @@
   "scripts": {
     "dev": "vite",
     "dev:demo": "vite --open /codetober/2026/?preview=1",
+    "dev:closed": "vite --open /codetober/2026/?preview=closed",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:e2e": "npm run build && playwright test"
+    "test:e2e": "npm run build && playwright test",
+    "dev:editions": "vite --open /codetober/2026/?preview=editions",
+    "build:pages": "node scripts/build-pages.mjs",
+    "edition:announce": "node scripts/announce-edition.mjs"
   },
   "dependencies": {
     "@fontsource/roboto-mono": "^5.2.0",
