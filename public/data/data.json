@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-04T07:00:13.506Z",
-  "lastSuccessfulSyncAt": "2026-10-04T07:00:13.506Z",
-  "participantsLastSuccessAt": "2026-10-04T07:00:13.506Z",
+  "generatedAt": "2026-10-04T13:05:20.860Z",
+  "lastSuccessfulSyncAt": "2026-10-04T13:05:20.860Z",
+  "participantsLastSuccessAt": "2026-10-04T13:05:20.860Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -197,6 +197,26 @@
           "url": "https://leetcode.com/problems/sliding-window-maximum/"
         }
       ]
+    },
+    {
+      "id": "day-04",
+      "date": "2026-10-04",
+      "title": "Brute Force First",
+      "releaseAt": "2026-10-04T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "3sum",
+          "title": "3Sum",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/3sum/"
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "title": "Largest Rectangle in Histogram",
+          "difficulty": "Hard",
+          "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+        }
+      ]
     }
   ],
   "participants": [
@@ -224,6 +244,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -250,9 +274,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-03T16:30:46.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -280,6 +312,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -306,9 +342,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-03T17:22:31.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -336,6 +380,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -362,9 +410,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-04T01:10:08.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -392,6 +448,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -418,9 +478,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-04T01:34:29.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -448,6 +516,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -474,9 +546,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-04T01:45:10.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -504,6 +584,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -530,9 +614,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-04T03:01:36.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -560,6 +652,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -586,9 +682,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-03T14:19:59.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -616,6 +720,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -642,9 +750,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-03T18:52:24.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -672,6 +788,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -698,9 +818,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -728,6 +856,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -754,9 +886,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-03T18:23:35.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -784,6 +924,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -810,9 +954,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-04T05:48:35.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -840,6 +992,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -866,9 +1022,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -880,9 +1044,9 @@
       "completionTimeSeconds": 168162,
       "problemsCompleted": 4,
       "daysCompleted": 2,
-      "currentStreak": 2,
+      "currentStreak": 0,
       "bestStreak": 2,
-      "currentStreakLevel": 2,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 2,
       "dayProgress": [
         {
@@ -895,6 +1059,10 @@
         },
         {
           "date": "2026-10-03",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
           "onTimeProblems": 0
         }
       ],
@@ -922,9 +1090,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -952,6 +1128,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -978,9 +1158,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": "2026-10-04T06:38:28.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -992,9 +1180,9 @@
       "completionTimeSeconds": 30902,
       "problemsCompleted": 1,
       "daysCompleted": 0,
-      "currentStreak": 1,
+      "currentStreak": 0,
       "bestStreak": 1,
-      "currentStreakLevel": 1,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
       "dayProgress": [
         {
@@ -1007,6 +1195,10 @@
         },
         {
           "date": "2026-10-03",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
           "onTimeProblems": 0
         }
       ],
@@ -1034,9 +1226,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -1064,6 +1264,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1090,9 +1294,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -1120,6 +1332,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1146,9 +1362,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -1176,6 +1400,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1202,9 +1430,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -1232,6 +1468,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1258,9 +1498,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -1288,6 +1536,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1314,9 +1566,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -1344,6 +1604,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1370,9 +1634,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -1400,6 +1672,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1426,9 +1702,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -1456,6 +1740,10 @@
         {
           "date": "2026-10-03",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1482,9 +1770,17 @@
         {
           "titleSlug": "sliding-window-maximum",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-04T07:00:13.506Z",
+      "lastSyncedAt": "2026-10-04T13:05:20.860Z",
       "syncFailed": false,
       "rank": 23
     }
