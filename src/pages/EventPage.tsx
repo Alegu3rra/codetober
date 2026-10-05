@@ -1,5 +1,7 @@
+import { ViewedContentContext, useViewedContent, editorialViewId } from "../hooks/useViewedContent";
 import { selectedEdition, latestYear, editionURL, previousEdition } from "../editions";
 import React, { useEffect, useRef, useState } from "react";
+import { Editorials } from "./Editorials";
 import { Home } from "./Home";
 import { About } from "./About";
 import { Scoreboard } from "./Scoreboard";
@@ -8,34 +10,50 @@ import { SiteFooter } from "../components/SiteFooter";
 import { useEventData } from "../hooks/useEventData";
 import { eventName, configuredZone } from "../config";
 
-const tabs = ["Problems", "Scoreboard", "About / Join"] as const;
+const tabs = ["Problems", "Scoreboard", "Editorials", "About / Join"] as const;
 
 export function EventPage() {
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(window.location.hash.startsWith('#editorial') ? 2 : 0);
+  const [editorialHash, setEditorialHash] = useState(window.location.hash);
+  useEffect(() => {
+    const navigate = () => { if (window.location.hash.startsWith('#editorial')) { setActive(2); setEditorialHash(window.location.hash); } };
+    window.addEventListener('hashchange', navigate);
+    return () => window.removeEventListener('hashchange', navigate);
+  }, []);
   const { data, error, loading, now, retry } = useEventData();
+  const preview = import.meta.env.DEV ? new URLSearchParams(window.location.search).get('preview') : null;
+  const viewed = useViewedContent(`codetober:viewed:v1:${selectedEdition.year}:${preview ? `preview-${preview}` : 'live'}`);
+  const newEditorials = data?.editorials?.some(e => viewed.isUnseen(editorialViewId(e.id))) ?? false;
   const nav = useRef<HTMLDivElement>(null);
   useEffect(() => { document.title = eventName; }, []);
   const previous = previousEdition(now);
   const zone = data?.event.timezone || configuredZone;
+  function activateTab(index: number) {
+    if (index !== 2 && window.location.hash.startsWith('#editorial')) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+      setEditorialHash('');
+    }
+    setActive(index);
+  }
   function keyboard(event: React.KeyboardEvent) {
     const destination =
       event.key === "ArrowRight"
-        ? (active + 1) % 3
+        ? (active + 1) % tabs.length
         : event.key === "ArrowLeft"
-          ? (active + 2) % 3
+          ? (active + tabs.length - 1) % tabs.length
           : event.key === "Home"
             ? 0
             : event.key === "End"
-              ? 2
+              ? tabs.length - 1
               : null;
     if (destination !== null) {
       event.preventDefault();
-      setActive(destination);
+      activateTab(destination);
       nav.current?.querySelectorAll("button")[destination].focus();
     }
   }
   return (
-    <div className="shell">
+    <ViewedContentContext.Provider value={viewed}><div className="shell">
       <a className="skip-link" href="#main">
         Skip to content
       </a>
@@ -53,12 +71,15 @@ export function EventPage() {
               key={tab}
               id={`tab-${i}`}
               role="tab"
+              className={(i === 2 && newEditorials) ? 'has-unseen-content' : undefined}
+              aria-label={tab}
+              aria-description={(i === 2 && newEditorials) ? "Unread content" : undefined}
               aria-selected={active === i}
               aria-controls={`panel-${i}`}
               tabIndex={active === i ? 0 : -1}
-              onClick={() => setActive(i)}
+              onClick={() => activateTab(i)}
             >
-              {tab}
+              {tab} {(i === 2 && newEditorials) ? <span className="unread-label" aria-hidden="true">· New</span> : null}
             </button>
           ))}
         </div>
@@ -97,8 +118,10 @@ export function EventPage() {
             hidden={active !== i}
             tabIndex={0}
           >
-            {i === 2 ? (
+            {i === 3 ? (
               <About now={now} />
+            ) : i === 2 ? (
+              <Editorials data={data} loading={loading} error={error} hash={editorialHash} />
             ) : loading && !data ? (
               <p className="empty" role="status">
                 Loading challenge data…
@@ -116,6 +139,6 @@ export function EventPage() {
         ))}
       </main>
       <SiteFooter data={data} zone={zone} />
-    </div>
+    </div></ViewedContentContext.Provider>
   );
 }

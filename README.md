@@ -154,3 +154,35 @@ la imagen social 2026 hasta que se prepare una portada correspondiente.
 
 Esto sustituye el anuncio manual y el antiguo montaje de `archives/`. El login
 genérico aún no está implementado; por ahora el registro sigue siendo por enlace.
+
+## Editorials / maqueta local
+
+`npm run dev:editorials` abre la pestaña Editorials con un aporte ficticio de
+Two Sum y un distintivo en el detalle de su autor. Es una maqueta: no representa
+el calendario real ni una contribución de una persona real. También puede abrirse
+`/codetober/2026/?preview=editorials#editorials` en el servidor de desarrollo.
+No se incluye en el build de producción.
+
+La vista usa Markdown sin HTML ni imágenes remotas, un bloque desplazable de
+código (no ejecutable), complejidad y enlaces opcionales a videos. En producción,
+los datos vienen de `data.json.editorials`, publicados por el proceso privado
+tras el cierre diario. Los snapshots antiguos sin ese campo muestran un estado
+vacío. Los enlaces `#editorial-ID` abren la pestaña y el aporte correspondiente.
+
+El formulario suministrado se enlaza solo en 2026 y anuncia cierre de solicitudes
+el 2 de noviembre; Google Forms controla la aceptación de respuestas. No se reutiliza
+para otras ediciones. El cierre del concurso sigue siendo el 1 de noviembre a las
+06:00 de Guadalajara. Las editoriales y los distintivos no alteran puntuación ni rachas.
+
+## Indicadores de editoriales sin abrir
+
+Solo las editoriales sin abrir muestran borde dorado y etiqueta `New`; su pestaña
+señala cuando hay aportes pendientes. Abrir una editorial, también mediante un
+enlace directo, quita su indicador. Cambiar de pestaña no marca todas como vistas.
+Los problemas y el histórico no llevan indicadores ni registran clics.
+
+Se guarda en localStorage, por edición y navegador. Cada nueva editorial tiene
+su propio indicador; actualizar un aporte existente no lo reinicia. Los previews
+usan almacenamiento separado. Si el almacenamiento está bloqueado funciona durante
+la visita. Al borrarlo o cambiar de dispositivo las marcas reaparecen. Se respeta
+movimiento reducido. Esto no afecta puntos ni rachas.

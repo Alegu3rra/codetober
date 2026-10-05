@@ -71,7 +71,7 @@ export function Home({
           {today ? (
             <>
               <p className="muted">{today.title}</p>
-              <ProblemCards day={today} />
+              <ProblemCards day={today} editorials={data.editorials} />
             </>
           ) : (
             <p className="empty">
@@ -106,7 +106,7 @@ export function Home({
                   {day.date.slice(5)} · 2 problems
                 </span>
               </summary>
-              <ProblemCards day={day} />
+              <ProblemCards day={day} editorials={data.editorials} />
             </details>
           ))
         )}

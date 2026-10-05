@@ -4,7 +4,7 @@ import { dataSchema, dataURL, type EventData } from "../data";
 
 export function useEventData() {
   const mode = import.meta.env.DEV ? new URLSearchParams(window.location.search).get("preview") : null;
-  const preview = mode === "1" || mode === "closed";
+  const preview = mode === "1" || mode === "closed" || mode === "editorials";
   const previewTime = Date.parse(mode === "closed" ? "2026-11-02T12:00:00Z" : "2026-10-03T18:00:00Z");
   const [data, setData] = useState<EventData | null>(null);
   const [error, setError] = useState(false);
@@ -22,7 +22,9 @@ export function useEventData() {
     async function refresh() {
       try {
         if (import.meta.env.DEV && preview) {
-          const fixture = mode === "closed"
+          const fixture = mode === "editorials"
+            ? (await import("../dev/editorials-preview")).editorialsPreviewData
+            : mode === "closed"
             ? (await import("../dev/closed-preview")).closedPreviewData
             : (await import("../dev/preview")).previewData;
           const next = dataSchema.parse(fixture);

@@ -16,12 +16,15 @@
     "test:e2e": "npm run build && playwright test",
     "dev:editions": "vite --open /codetober/2026/?preview=editions",
     "build:pages": "node scripts/build-pages.mjs",
-    "edition:announce": "node scripts/announce-edition.mjs"
+    "edition:announce": "node scripts/announce-edition.mjs",
+    "dev:editorials": "vite --open /codetober/2026/?preview=editorials#editorials"
   },
   "dependencies": {
     "@fontsource/roboto-mono": "^5.2.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
     "zod": "^4.1.0"
   },
   "devDependencies": {

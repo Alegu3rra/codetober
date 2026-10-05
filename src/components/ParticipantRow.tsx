@@ -7,6 +7,7 @@ import { ParticipantDetails } from './ParticipantDetails';
 export function ParticipantRow({ person, data, now, zone, started }: {
   person: Participant; data: EventData; now: number; zone: string; started: boolean;
 }) {
+  const contributions = (data.editorials ?? []).filter(e => e.participant_id === person.participant_id);
   const [open, setOpen] = useState(false);
   const panel = useId();
   const closed = now >= Date.parse(data.event.closeAt);
@@ -44,6 +45,11 @@ export function ParticipantRow({ person, data, now, zone, started }: {
           {closed ? 'Event closed · Last sync: ' : person.syncFailed ? '⚠ Last query failed · ' : stale ? '⚠ Update overdue · ' : '✓ Synced · '}
           <Timestamp value={person.lastSyncedAt} zone={zone} />
         </p>
+        {contributions.length > 0 && <section className="editorial-credit" aria-label="Editorial contributions">
+          <p className="contributor-badge">✎ Editorial contributor · {contributions.length} {contributions.length === 1 ? 'contribution' : 'contributions'}</p>
+          <ul>{contributions.map(e => <li key={e.id}><a href={`#editorial-${e.id}`}>{data.days.flatMap(d => d.problems).find(p => p.titleSlug === e.titleSlug)?.title ?? e.titleSlug} →</a></li>)}</ul>
+          <p className="muted">Community contribution · No extra ranking points.</p>
+        </section>}
         <ParticipantDetails person={person} data={data} zone={zone} />
       </div>
     </article>

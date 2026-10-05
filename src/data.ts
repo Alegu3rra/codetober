@@ -4,7 +4,15 @@ import { z } from 'zod';
 const instant = z.string().datetime({ offset: true });
 const problem = z.object({ titleSlug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/), title: z.string(), difficulty: z.enum(['Easy','Medium','Hard']), url: z.string().url() })
   .refine(p => p.url === `https://leetcode.com/problems/${p.titleSlug}/`);
+export const editorialSchema = z.object({
+  id: z.string().regex(/^[a-zA-Z0-9_-]{1,80}$/), titleSlug: z.string(), participant_id: z.string(),
+  authorName: z.string(), username: z.string(), publishedAt: instant,
+  idea: z.string(), solution: z.string(), filename: z.string(), language: z.string(), complexity: z.string(),
+  videoUrl: z.string().url().refine(v => v.startsWith('https://')).optional(),
+});
+export type Editorial = z.infer<typeof editorialSchema>;
 const currentDataSchema = z.object({
+  editorials: z.array(editorialSchema).optional(), editorialsFailed: z.boolean().optional(),
   version: z.literal(1), demo: z.boolean(), generatedAt: instant, lastSuccessfulSyncAt: instant.nullable(), participantsLastSuccessAt: instant.nullable(), participantsFailed: z.boolean(),
   event: z.object({ timezone: z.string(), startAt: instant, closeAt: instant, totalProblems: z.literal(62), schedule: z.array(z.object({ date: z.string(), releaseAt: instant })) }),
   days: z.array(z.object({ id: z.string(), date: z.string(), title: z.string(), releaseAt: instant, problems: z.array(problem).length(2) })),

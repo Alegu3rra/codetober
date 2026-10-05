@@ -625,3 +625,35 @@ footer p:first-child {
 @keyframes edition-underline { from {border-bottom-color: transparent;} to {border-bottom-color: var(--teal);} }
 @media (prefers-reduced-motion: reduce) { .edition-typing, .edition-select { animation: none; } }
 @media (max-width: 600px) { .edition-release-actions { align-items: flex-start; } .edition-heading {font-size: 1rem;} }
+
+.editorial-day { margin-top: 2rem; }
+.editorial-entry { border: 1px solid var(--line); margin: 1rem 0; }
+.editorial-entry summary { cursor: pointer; padding: 1.2rem; font-family: var(--mono); }
+.editorial-entry summary small { display: block; color: var(--muted); margin-top: .5rem; }
+.editorial-entry summary > .muted { display: inline-block; margin-top: .6rem; font-size: .8rem; }
+.editorial-body { padding: 0 1.2rem 1.2rem; overflow-wrap: anywhere; }
+.editorial-body h4 { font: 1rem var(--mono); color: var(--teal); margin-top: 2rem; }
+.editorial-body pre { background: #0b1112; border: 1px solid var(--line); padding: 1rem; max-width: 100%; overflow-x: auto; font: .85rem/1.65 var(--mono); }
+.editorial-markdown { line-height: 1.8; }
+.editorial-complexity { white-space: pre-wrap; }
+.contributor-badge { color: var(--teal); font: .85rem var(--mono); }
+.editorial-credit { margin: 1.5rem 0; padding: 1rem; border: 1px solid var(--line); }
+@media(max-width:600px) { .tabs {flex-wrap:wrap;} .editorial-day .section-heading {flex-wrap:wrap;} }
+
+/* “New” means unopened on this browser, never unsolved. */
+.editorial-entry.has-unseen-content {
+  border-color: #e4bd64;
+  animation: unread-glow 3s ease-in-out infinite;
+}
+.tabs button.has-unseen-content { color: #ffd978; text-shadow: 0 0 12px #f4b94265; }
+.unread-label { color: #ffd978; font-size: .75rem; white-space: nowrap; }
+@keyframes unread-glow {
+  0%, 100% { box-shadow: 0 0 4px #f4b94220; }
+  50% { box-shadow: 0 0 13px #f4b94245; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .editorial-entry.has-unseen-content { animation: none; box-shadow: 0 0 5px #f4b94230; }
+}
+.editorial-markdown { overflow-x: auto; }
+.editorial-markdown table { border-collapse: collapse; margin: 1rem 0; width: 100%; }
+.editorial-markdown th, .editorial-markdown td { border: 1px solid var(--line); padding: .6rem; text-align: left; }
