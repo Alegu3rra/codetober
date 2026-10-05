@@ -19,7 +19,10 @@ export function ParticipantRow({ person, data, now, zone, started }: {
       <div className="participant-row">
         <span className="rank" aria-label={started ? `Rank ${person.rank}` : 'Not ranked yet'}>{started ? `#${person.rank}` : '—'}</span>
         <div className="participant-name">
-          <h2><a href={`https://leetcode.com/u/${encodeURIComponent(person.leetcode_username)}/`} target="_blank" rel="noreferrer"><span>{person.display_name}</span> <span aria-hidden="true">↗</span></a></h2>
+          <h2>
+            <a href={`https://leetcode.com/u/${encodeURIComponent(person.leetcode_username)}/`} target="_blank" rel="noreferrer"><span>{person.display_name}</span> <span aria-hidden="true">↗</span></a>
+            {contributions.length > 0 && <a className="contributor-indicator" href={`#editorial-${[...contributions].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt))[0].id}`} aria-label={`View ${contributions.length} editorial ${contributions.length === 1 ? 'contribution' : 'contributions'} by ${person.display_name}`} title="Community editorial contributor">✎</a>}
+          </h2>
           <small>@{person.leetcode_username}</small>
           {warning && <small className="warning">{person.syncFailed ? '⚠ Query failed' : '⚠ Update overdue'}</small>}
         </div>
@@ -45,12 +48,7 @@ export function ParticipantRow({ person, data, now, zone, started }: {
           {closed ? 'Event closed · Last sync: ' : person.syncFailed ? '⚠ Last query failed · ' : stale ? '⚠ Update overdue · ' : '✓ Synced · '}
           <Timestamp value={person.lastSyncedAt} zone={zone} />
         </p>
-        {contributions.length > 0 && <section className="editorial-credit" aria-label="Editorial contributions">
-          <p className="contributor-badge">✎ Editorial contributor · {contributions.length} {contributions.length === 1 ? 'contribution' : 'contributions'}</p>
-          <ul>{contributions.map(e => <li key={e.id}><a href={`#editorial-${e.id}`}>{data.days.flatMap(d => d.problems).find(p => p.titleSlug === e.titleSlug)?.title ?? e.titleSlug} →</a></li>)}</ul>
-          <p className="muted">Community contribution · No extra ranking points.</p>
-        </section>}
-        <ParticipantDetails person={person} data={data} zone={zone} />
+        <ParticipantDetails person={person} data={data} zone={zone} contributions={contributions} />
       </div>
     </article>
   );

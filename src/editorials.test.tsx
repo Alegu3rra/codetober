@@ -19,12 +19,15 @@ test('raw HTML and unsafe markdown links cannot execute',()=>{
  expect(container.querySelector('script')).toBeNull();
  expect(container.querySelector('a[href^="javascript:"]')).toBeNull();
 });
-test('contributor credit links to editorial without changing scoreboard points',()=>{
+test('contributor indicator links to the latest entry and histories stay collapsed',()=>{
  const data=editorialsPreviewData;const author=data.participants[0];
  render(<Scoreboard data={data} now={Date.parse(data.generatedAt)} zone={data.event.timezone}/>);
+ expect(screen.getByRole('link',{name:`View 1 editorial contribution by ${author.display_name}`})).toHaveAttribute('href','#editorial-demo-two-sum');
  fireEvent.click(screen.getByRole('button',{name:`Expand progress for ${author.display_name}`}));
- expect(screen.getByText(/Editorial contributor · 1 contribution/)).toBeVisible();
+ expect(screen.getByText('View problem history · 6 problems')).toBeVisible();
+ expect(screen.getByText('View editorial history · 1 contribution')).toBeVisible();
  expect(screen.getByRole('link',{name:'Two Sum →'})).toHaveAttribute('href','#editorial-demo-two-sum');
+ expect(screen.queryByText('Community contribution · No extra ranking points.')).toBeNull();
 });
 test('empty and loading editorial states are explicit',()=>{
  const {rerender}=render(<Editorials data={null} loading/>);
