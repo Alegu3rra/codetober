@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-05T19:23:13.819Z",
-  "lastSuccessfulSyncAt": "2026-10-05T19:23:13.819Z",
-  "participantsLastSuccessAt": "2026-10-05T19:23:13.819Z",
+  "generatedAt": "2026-10-05T19:28:49.143Z",
+  "lastSuccessfulSyncAt": "2026-10-05T19:28:49.143Z",
+  "participantsLastSuccessAt": "2026-10-05T19:28:49.143Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -316,7 +316,7 @@
           "firstAcceptedAt": "2026-10-05T14:27:26.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -396,7 +396,7 @@
           "firstAcceptedAt": "2026-10-05T14:32:11.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -476,7 +476,7 @@
           "firstAcceptedAt": "2026-10-05T15:02:09.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -556,7 +556,7 @@
           "firstAcceptedAt": "2026-10-05T17:32:15.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -636,7 +636,7 @@
           "firstAcceptedAt": "2026-10-05T19:10:34.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -716,7 +716,7 @@
           "firstAcceptedAt": "2026-10-05T14:30:21.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -796,7 +796,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -876,7 +876,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -956,7 +956,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -1036,7 +1036,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -1116,7 +1116,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -1196,7 +1196,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -1276,7 +1276,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -1356,7 +1356,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -1436,7 +1436,7 @@
           "firstAcceptedAt": "2026-10-05T14:19:03.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -1516,7 +1516,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -1596,7 +1596,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -1676,7 +1676,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -1756,7 +1756,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -1836,7 +1836,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -1916,7 +1916,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -1996,7 +1996,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -2076,7 +2076,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 23
     },
@@ -2156,9 +2156,25 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-05T19:23:13.819Z",
+      "lastSyncedAt": "2026-10-05T19:28:49.143Z",
       "syncFailed": false,
       "rank": 24
     }
-  ]
+  ],
+  "editorials": [
+    {
+      "id": "2026-121-alegu3rra",
+      "titleSlug": "best-time-to-buy-and-sell-stock",
+      "participant_id": "participant-001",
+      "authorName": "Alejandra Guerra Castañeda",
+      "username": "alegu3rra",
+      "publishedAt": "2026-10-05T19:28:49.143Z",
+      "idea": "### 121. Best Time to Buy and Sell Stock\n\nTenemos un arreglo `prices`, donde cada elemento representa el precio de una acción ese día. El problema pide buscar la mayor ganancia posible al comprar y vender **una sola vez**, **comprando antes de vender**.\n\nLa idea es recorrer los precios y guardar dos cosas:\n\n- `buy`: el precio más bajo que hemos encontrado.\n- `sell`: la mayor ganancia que podríamos obtener hasta ese momento.\n\nEmpezamos con `buy = INT_MAX` para que el primer precio lo reemplace, y con `sell = 0`, porque podemos decidir no hacer ninguna operación **si no obtenemos una ganancia**.\n\nComo en ejemplo 1:\n\n```text\nprices = [7, 1, 5, 3, 6, 4]\n```\n\n| Precio del día | Menor precio (`buy`) | Mejor ganancia (`sell`) |\n|---|---:|---:|\n| 7 | 7 | 0 |\n| 1 | 1 | 0 |\n| 5 | 1 | 4 |\n| 3 | 1 | 4 |\n| 6 | 1 | 5 |\n| 4 | 1 | 5 |\n\nEn cada día revisamos el elemento, buscamos el mínimo para comprar y guardamos solo la máxima ganancia si vendiéramos al precio del día contra ese mínimo de compra:\n\n```cpp\nbuy = min(buy, prices[i]);\nsell = max(sell, prices[i] - buy);\n```\n\nLo importante es que **no estamos comprando y vendiendo en cada paso**: solo comparamos las opciones como si ya hubiésen ocurrido. Como recorremos los días **en orden**, nunca usamos un precio de compra de un día futuro.\n\nEn este ejemplo, la mejor opción es comprar en **1** y vender en **6**, con una ganancia de **5**.\n\n**Complejidad:** tiempo `O(n)` y espacio adicional `O(1)`.\n\n\n>> ** INT_MAX: en c++ INT_MAX vale mucho, 2147483647, este representa el valor máximo que puede almacenar un entero de tipo **int** según la plataforma y el compilador. Se obtiene porque un entero de 32 bits tiene 2^32 = 4,294,967,296 combinaciones de 0 y 1; la mitad son negativos y la otra mitad incluye el 0 y los positivos, por lo que el INT_MAX máximo positivo es 2^31-1. Vive en la librería <climits>, al igual que INT_MIN, que es el valor mínimo que puede almacenar un entero.\n\nBy: [alegu3rra](https://alegu3rra.github.io/)",
+      "solution": "class Solution {\npublic:\n    int maxProfit(vector<int>& prices) {\n        int buy = INT_MAX;\n        int sell = 0;\n\n        for(int i = 0; i < prices.size(); i++){\n            buy = min(buy, prices[i]);\n            sell= max(sell, prices[i]-buy);\n        }\n        return sell;\n    }\n    \n};",
+      "filename": "Solution.cpp",
+      "language": "C++",
+      "complexity": "Tiempo: O(n).\nEspacio adicional: O(1)."
+    }
+  ],
+  "editorialsFailed": false
 }
