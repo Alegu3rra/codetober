@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-06T11:21:17.479Z",
-  "lastSuccessfulSyncAt": "2026-10-06T11:21:17.479Z",
-  "participantsLastSuccessAt": "2026-10-06T11:21:17.479Z",
+  "generatedAt": "2026-10-06T12:22:17.951Z",
+  "lastSuccessfulSyncAt": "2026-10-06T12:22:17.951Z",
+  "participantsLastSuccessAt": "2026-10-06T12:22:17.951Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -237,6 +237,26 @@
           "url": "https://leetcode.com/problems/number-of-islands/"
         }
       ]
+    },
+    {
+      "id": "day-06",
+      "date": "2026-10-06",
+      "title": "No Sorting",
+      "releaseAt": "2026-10-06T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "contains-duplicate",
+          "title": "Contains Duplicate",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/contains-duplicate/"
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "title": "Longest Consecutive Sequence",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/longest-consecutive-sequence/"
+        }
+      ]
     }
   ],
   "participants": [
@@ -272,6 +292,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -314,9 +338,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": "2026-10-05T14:27:26.000Z"
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -352,6 +384,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -394,9 +430,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": "2026-10-05T14:32:11.000Z"
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -432,6 +476,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -474,9 +522,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": "2026-10-05T15:02:09.000Z"
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -512,6 +568,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -554,9 +614,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": "2026-10-05T17:32:15.000Z"
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -592,6 +660,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -634,9 +706,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": "2026-10-05T19:10:34.000Z"
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -672,6 +752,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -714,9 +798,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": "2026-10-06T05:05:53.000Z"
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -752,6 +844,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -794,9 +890,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": "2026-10-05T14:30:21.000Z"
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -832,6 +936,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -874,9 +982,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": "2026-10-06T03:38:21.000Z"
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -912,6 +1028,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -954,9 +1074,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": "2026-10-06T04:43:07.000Z"
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -991,6 +1119,10 @@
         },
         {
           "date": "2026-10-05",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
           "onTimeProblems": 0
         }
       ],
@@ -1034,9 +1166,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -1072,6 +1212,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1114,9 +1258,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -1152,6 +1304,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1194,9 +1350,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -1231,6 +1395,10 @@
         },
         {
           "date": "2026-10-05",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
           "onTimeProblems": 0
         }
       ],
@@ -1274,9 +1442,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -1311,6 +1487,10 @@
         },
         {
           "date": "2026-10-05",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
           "onTimeProblems": 0
         }
       ],
@@ -1354,9 +1534,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -1392,6 +1580,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1434,9 +1626,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -1472,6 +1672,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1514,9 +1718,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": "2026-10-05T14:19:03.000Z"
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -1552,6 +1764,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1594,9 +1810,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -1631,6 +1855,10 @@
         },
         {
           "date": "2026-10-05",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
           "onTimeProblems": 0
         }
       ],
@@ -1674,9 +1902,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -1711,6 +1947,10 @@
         },
         {
           "date": "2026-10-05",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
           "onTimeProblems": 0
         }
       ],
@@ -1754,9 +1994,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -1792,6 +2040,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1834,9 +2086,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -1872,6 +2132,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1914,9 +2178,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -1952,6 +2224,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1994,9 +2270,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -2032,6 +2316,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2074,9 +2362,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 23
     },
@@ -2112,6 +2408,10 @@
         {
           "date": "2026-10-05",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2154,9 +2454,17 @@
         {
           "titleSlug": "number-of-islands",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-06T11:21:17.479Z",
+      "lastSyncedAt": "2026-10-06T12:22:17.951Z",
       "syncFailed": false,
       "rank": 24
     }
