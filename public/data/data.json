@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-07T01:00:20.861Z",
-  "lastSuccessfulSyncAt": "2026-10-07T01:00:20.861Z",
-  "participantsLastSuccessAt": "2026-10-07T01:00:20.861Z",
+  "generatedAt": "2026-10-07T01:28:32.737Z",
+  "lastSuccessfulSyncAt": "2026-10-07T01:28:32.737Z",
+  "participantsLastSuccessAt": "2026-10-07T01:28:32.737Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -348,7 +348,7 @@
           "firstAcceptedAt": "2026-10-06T13:35:37.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -440,7 +440,7 @@
           "firstAcceptedAt": "2026-10-06T16:08:00.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -532,7 +532,7 @@
           "firstAcceptedAt": "2026-10-06T17:16:28.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -624,7 +624,7 @@
           "firstAcceptedAt": "2026-10-06T17:28:58.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -716,7 +716,7 @@
           "firstAcceptedAt": "2026-10-07T00:04:45.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -808,7 +808,7 @@
           "firstAcceptedAt": "2026-10-07T00:38:41.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -900,7 +900,7 @@
           "firstAcceptedAt": "2026-10-06T14:29:30.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -992,7 +992,7 @@
           "firstAcceptedAt": "2026-10-06T16:48:37.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -1084,7 +1084,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -1176,7 +1176,7 @@
           "firstAcceptedAt": "2026-10-06T21:50:12.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -1268,7 +1268,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -1360,7 +1360,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -1452,7 +1452,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -1544,7 +1544,7 @@
           "firstAcceptedAt": "2026-10-06T19:32:23.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -1636,7 +1636,7 @@
           "firstAcceptedAt": "2026-10-06T19:25:44.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -1728,9 +1728,101 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
       "rank": 16
+    },
+    {
+      "participant_id": "participant-025",
+      "display_name": "Yael Macías",
+      "leetcode_username": "chiyinpin",
+      "onTimeProblemsCompleted": 3,
+      "completionTimeSeconds": 149262,
+      "problemsCompleted": 3,
+      "daysCompleted": 1,
+      "currentStreak": 1,
+      "bestStreak": 1,
+      "currentStreakLevel": 2,
+      "bestStreakGoldenDays": 1,
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-03",
+          "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-05",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 2
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "minimum-window-substring",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "sliding-window-maximum",
+          "firstAcceptedAt": "2026-10-04T06:56:54.000Z"
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-search",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "number-of-islands",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": "2026-10-06T23:00:26.000Z"
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": "2026-10-06T23:30:22.000Z"
+        }
+      ],
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
+      "syncFailed": false,
+      "rank": 17
     },
     {
       "participant_id": "participant-024",
@@ -1820,9 +1912,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
-      "rank": 17
+      "rank": 18
     },
     {
       "participant_id": "participant-015",
@@ -1912,9 +2004,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
-      "rank": 18
+      "rank": 19
     },
     {
       "participant_id": "participant-016",
@@ -2004,9 +2096,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
-      "rank": 19
+      "rank": 20
     },
     {
       "participant_id": "participant-018",
@@ -2096,9 +2188,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
-      "rank": 20
+      "rank": 21
     },
     {
       "participant_id": "participant-023",
@@ -2188,9 +2280,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
-      "rank": 21
+      "rank": 22
     },
     {
       "participant_id": "participant-021",
@@ -2280,9 +2372,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
-      "rank": 22
+      "rank": 23
     },
     {
       "participant_id": "participant-006",
@@ -2372,9 +2464,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
-      "rank": 23
+      "rank": 24
     },
     {
       "participant_id": "participant-019",
@@ -2464,9 +2556,9 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-07T01:00:20.861Z",
+      "lastSyncedAt": "2026-10-07T01:28:32.737Z",
       "syncFailed": false,
-      "rank": 24
+      "rank": 25
     }
   ],
   "editorials": [
