@@ -87,6 +87,28 @@ export function EventPage() {
       <main id="main" tabIndex={-1}>
         {selectedEdition.year !== latestYear && <p className="notice">Viewing the {selectedEdition.year} archive. <a href={editionURL(latestYear)}>Go to latest edition →</a></p>}
         <h1 className="sr-only">{eventName}</h1>
+        {selectedEdition.year === 2026 && (
+          <aside className="notice release-note" aria-labelledby="release-note-title">
+            <h2 id="release-note-title">What’s new · October 8, 2026</h2>
+            <p>
+              Each solved problem still earns one point. At equal points, lower ranking time wins:
+              time from each problem’s release to your first accepted submission, plus a
+              one-time <strong>24-hour penalty per late problem</strong>. A problem is late
+              if accepted at or after the next day’s 06:00 release, Guadalajara time.
+              This ranking rule also applies to your existing results.
+            </p>
+            <details>
+              <summary>See all changes</summary>
+              <ul>
+                <li>Recover your position: faster solves on future problems can overcome a past delay, even if your rival keeps solving on time.</li>
+                <li>Open your participant card to see what you need to reach the next rank. Recovery examples assume both participants solve the same new problems without adding late penalties.</li>
+                <li>Your problem history now shows how much time each solve contributes to your ranking, including any late penalty.</li>
+                <li>Daily themes and instructions are more visible. Check them before solving: challenges such as No Sorting apply to both problems.</li>
+                <li>Problem publication can now run independently of score updates. Your score may update after the day’s problems appear.</li>
+              </ul>
+            </details>
+          </aside>
+        )}
         {data?.demo && (
           <p className="notice">
             Local demo · Fictional participants and simulated dates. These are

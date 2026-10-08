@@ -279,6 +279,10 @@ section + section {
   border: 1px solid var(--line);
   padding: 3px 10px;
 }
+.release-note h2 { font-size: 1rem; margin: 0 0 10px; }
+.release-note p { margin: 0 0 12px; }
+.release-note summary { cursor: pointer; color: var(--teal); }
+.release-note li + li { margin-top: 8px; }
 .warning {
   color: #f0d299;
 }
