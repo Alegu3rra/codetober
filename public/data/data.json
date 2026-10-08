@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-08T12:01:39.519Z",
-  "lastSuccessfulSyncAt": "2026-10-08T12:01:39.519Z",
-  "participantsLastSuccessAt": "2026-10-08T12:01:39.519Z",
+  "generatedAt": "2026-10-08T13:03:19.028Z",
+  "lastSuccessfulSyncAt": "2026-10-08T13:03:19.028Z",
+  "participantsLastSuccessAt": "2026-10-08T13:03:19.028Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -412,7 +412,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -528,7 +528,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -644,7 +644,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -760,7 +760,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -876,7 +876,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -992,7 +992,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -1108,7 +1108,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -1224,7 +1224,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -1340,7 +1340,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -1456,7 +1456,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -1572,7 +1572,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -1688,7 +1688,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -1804,7 +1804,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -1920,7 +1920,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -2036,7 +2036,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -2152,7 +2152,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -2268,7 +2268,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -2384,7 +2384,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -2500,7 +2500,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -2616,7 +2616,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -2732,7 +2732,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -2848,7 +2848,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -2964,7 +2964,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 23
     },
@@ -3080,7 +3080,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 24
     },
@@ -3196,7 +3196,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T12:01:39.519Z",
+      "lastSyncedAt": "2026-10-08T13:03:19.028Z",
       "syncFailed": false,
       "rank": 25
     }
