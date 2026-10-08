@@ -58,14 +58,14 @@ test('release tab glows until the first release is opened and stays read after r
   const tab = screen.getByRole('tab', { name: 'Releases' });
   expect(tab).toHaveClass('has-unseen-content');
   fireEvent.click(tab);
-  expect(screen.getByText('Coming next · Editorial rewards')).not.toBeVisible();
+  expect(screen.getByText('Community editorials added')).not.toBeVisible();
   const summary = screen.getByText('Release 1 · Earlier solves, better ranks');
   const entry = summary.closest('details')!;
   entry.open = true;
   fireEvent(entry, new Event('toggle'));
   expect(tab).not.toHaveClass('has-unseen-content');
-  expect(screen.getByText('Coming next · Editorial rewards')).toBeVisible();
-  expect(screen.getByText(/This reward is not active yet/)).toBeVisible();
+  expect(screen.getByText('Community editorials added')).toBeVisible();
+  expect(screen.queryByText(/Coming next/)).not.toBeInTheDocument();
   unmount();
   render(<App />);
   expect(screen.getByRole('tab', { name: 'Releases' })).not.toHaveClass('has-unseen-content');

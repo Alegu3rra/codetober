@@ -29,9 +29,9 @@ export function Releases() {
           <li>Problem publication can run independently of score updates. Your score may update after the day’s problems appear.</li>
         </ul>
         <aside className="notice">
-          <h3>Coming next · Editorial rewards</h3>
-          <p>We plan to subtract one hour from your total ranking time for each published, reviewed editorial that contributes an implementation different from those already published for that problem.</p>
-          <p className="muted">This reward is not active yet. Release 1 does not subtract hours for editorials.</p>
+          <h3>Community editorials added</h3>
+          <p>The Editorials tab now brings together approaches shared by participants, with explanations, implementations, and time / space complexity. Reviewed contributions appear after the problem’s daily window closes.</p>
+          <p>Unread editorials are highlighted in gold so you can find new contributions. Open an editorial to mark it as read.</p>
         </aside>
       </div>
     </details>)}
