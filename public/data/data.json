@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-08T13:58:48.232Z",
-  "lastSuccessfulSyncAt": "2026-10-08T13:58:48.232Z",
-  "participantsLastSuccessAt": "2026-10-08T13:58:48.232Z",
+  "generatedAt": "2026-10-08T14:19:23.410Z",
+  "lastSuccessfulSyncAt": "2026-10-08T14:19:23.410Z",
+  "participantsLastSuccessAt": "2026-10-08T14:19:23.410Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -412,7 +412,7 @@
           "firstAcceptedAt": "2026-10-08T13:58:12.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -420,14 +420,14 @@
       "participant_id": "participant-002",
       "display_name": "alex_rangi",
       "leetcode_username": "thorinzme",
-      "onTimeProblemsCompleted": 14,
-      "completionTimeSeconds": 243971,
-      "problemsCompleted": 15,
-      "daysCompleted": 7,
+      "onTimeProblemsCompleted": 15,
+      "completionTimeSeconds": 252141,
+      "problemsCompleted": 16,
+      "daysCompleted": 8,
       "currentStreak": 8,
       "bestStreak": 8,
-      "currentStreakLevel": 1,
-      "bestStreakGoldenDays": 6,
+      "currentStreakLevel": 2,
+      "bestStreakGoldenDays": 7,
       "dayProgress": [
         {
           "date": "2026-10-01",
@@ -459,7 +459,7 @@
         },
         {
           "date": "2026-10-08",
-          "onTimeProblems": 1
+          "onTimeProblems": 2
         }
       ],
       "results": [
@@ -525,10 +525,10 @@
         },
         {
           "titleSlug": "rotate-array",
-          "firstAcceptedAt": null
+          "firstAcceptedAt": "2026-10-08T14:16:10.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -536,13 +536,13 @@
       "participant_id": "participant-004",
       "display_name": "Rafael López",
       "leetcode_username": "Jirafa745",
-      "onTimeProblemsCompleted": 14,
-      "completionTimeSeconds": 344125,
-      "problemsCompleted": 14,
+      "onTimeProblemsCompleted": 15,
+      "completionTimeSeconds": 352439,
+      "problemsCompleted": 15,
       "daysCompleted": 7,
-      "currentStreak": 7,
-      "bestStreak": 7,
-      "currentStreakLevel": 2,
+      "currentStreak": 8,
+      "bestStreak": 8,
+      "currentStreakLevel": 1,
       "bestStreakGoldenDays": 7,
       "dayProgress": [
         {
@@ -575,7 +575,7 @@
         },
         {
           "date": "2026-10-08",
-          "onTimeProblems": 0
+          "onTimeProblems": 1
         }
       ],
       "results": [
@@ -641,10 +641,10 @@
         },
         {
           "titleSlug": "rotate-array",
-          "firstAcceptedAt": null
+          "firstAcceptedAt": "2026-10-08T14:18:34.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -760,7 +760,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -876,7 +876,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -992,7 +992,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -1108,7 +1108,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -1224,7 +1224,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -1340,7 +1340,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -1456,7 +1456,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -1572,7 +1572,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -1688,7 +1688,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -1804,7 +1804,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -1920,7 +1920,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -2036,7 +2036,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -2152,7 +2152,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -2268,7 +2268,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -2384,7 +2384,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -2500,7 +2500,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -2616,7 +2616,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -2732,7 +2732,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -2848,7 +2848,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -2964,7 +2964,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 23
     },
@@ -3080,7 +3080,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 24
     },
@@ -3196,7 +3196,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T13:58:48.232Z",
+      "lastSyncedAt": "2026-10-08T14:19:23.410Z",
       "syncFailed": false,
       "rank": 25
     }
