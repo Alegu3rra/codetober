@@ -52,6 +52,25 @@ test('request failures have retry, and About remains available', async () => {
   fireEvent.click(screen.getByRole('button', { name: 'Retry' }));
   await screen.findByText(/Local demo/);
 });
+test('release tab glows until the first release is opened and stays read after reload', async () => {
+  localStorage.clear();
+  const { unmount } = render(<App />);
+  const tab = screen.getByRole('tab', { name: 'Releases' });
+  expect(tab).toHaveClass('has-unseen-content');
+  fireEvent.click(tab);
+  expect(screen.getByText('Coming next · Editorial rewards')).not.toBeVisible();
+  const summary = screen.getByText('Release 1 · Earlier solves, better ranks');
+  const entry = summary.closest('details')!;
+  entry.open = true;
+  fireEvent(entry, new Event('toggle'));
+  expect(tab).not.toHaveClass('has-unseen-content');
+  expect(screen.getByText('Coming next · Editorial rewards')).toBeVisible();
+  expect(screen.getByText(/This reward is not active yet/)).toBeVisible();
+  unmount();
+  render(<App />);
+  expect(screen.getByRole('tab', { name: 'Releases' })).not.toHaveClass('has-unseen-content');
+  localStorage.clear();
+});
 test('empty snapshot before event discloses no problems', async () => {
   const data = { ...fixture, days: [], participants: [] };
   vi.mocked(fetch).mockResolvedValue({ ok: true, json: async () => data } as Response);

@@ -1,6 +1,7 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react';
 
 export const editorialViewId = (id: string) => `editorial:${id}`;
+export const releaseViewId = (id: string) => `release:${id}`;
 function readSeen(key: string): Set<string> {
   try {
     const value: unknown = JSON.parse(localStorage.getItem(key) ?? '[]');

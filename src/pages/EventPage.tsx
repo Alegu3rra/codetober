@@ -1,7 +1,8 @@
-import { ViewedContentContext, useViewedContent, editorialViewId } from "../hooks/useViewedContent";
+import { ViewedContentContext, useViewedContent, editorialViewId, releaseViewId } from "../hooks/useViewedContent";
 import { selectedEdition, latestYear, editionURL, previousEdition } from "../editions";
 import React, { useEffect, useRef, useState } from "react";
 import { Editorials } from "./Editorials";
+import { Releases, releaseNotes } from "./Releases";
 import { Home } from "./Home";
 import { About } from "./About";
 import { Scoreboard } from "./Scoreboard";
@@ -10,7 +11,7 @@ import { SiteFooter } from "../components/SiteFooter";
 import { useEventData } from "../hooks/useEventData";
 import { eventName, configuredZone } from "../config";
 
-const tabs = ["Problems", "Scoreboard", "Editorials", "About / Join"] as const;
+const tabs = ["Problems", "Scoreboard", "Editorials", "Releases", "About / Join"] as const;
 
 export function EventPage() {
   const [active, setActive] = useState(window.location.hash.startsWith('#editorial') ? 2 : 0);
@@ -24,6 +25,8 @@ export function EventPage() {
   const preview = import.meta.env.DEV ? new URLSearchParams(window.location.search).get('preview') : null;
   const viewed = useViewedContent(`codetober:viewed:v1:${selectedEdition.year}:${preview ? `preview-${preview}` : 'live'}`);
   const newEditorials = data?.editorials?.some(e => viewed.isUnseen(editorialViewId(e.id))) ?? false;
+  const newReleases = releaseNotes.some(release => release.year === selectedEdition.year && viewed.isUnseen(releaseViewId(release.id)));
+  const unreadTab = (index: number) => (index === 2 && newEditorials) || (index === 3 && newReleases);
   const nav = useRef<HTMLDivElement>(null);
   useEffect(() => { document.title = eventName; }, []);
   const previous = previousEdition(now);
@@ -71,15 +74,15 @@ export function EventPage() {
               key={tab}
               id={`tab-${i}`}
               role="tab"
-              className={(i === 2 && newEditorials) ? 'has-unseen-content' : undefined}
+              className={unreadTab(i) ? 'has-unseen-content' : undefined}
               aria-label={tab}
-              aria-description={(i === 2 && newEditorials) ? "Unread content" : undefined}
+              aria-description={unreadTab(i) ? "Unread content" : undefined}
               aria-selected={active === i}
               aria-controls={`panel-${i}`}
               tabIndex={active === i ? 0 : -1}
               onClick={() => activateTab(i)}
             >
-              {tab} {(i === 2 && newEditorials) ? <span className="unread-label" aria-hidden="true">· New</span> : null}
+              {tab} {unreadTab(i) ? <span className="unread-label" aria-hidden="true">· New</span> : null}
             </button>
           ))}
         </div>
@@ -87,28 +90,6 @@ export function EventPage() {
       <main id="main" tabIndex={-1}>
         {selectedEdition.year !== latestYear && <p className="notice">Viewing the {selectedEdition.year} archive. <a href={editionURL(latestYear)}>Go to latest edition →</a></p>}
         <h1 className="sr-only">{eventName}</h1>
-        {selectedEdition.year === 2026 && (
-          <aside className="notice release-note" aria-labelledby="release-note-title">
-            <h2 id="release-note-title">What’s new · October 8, 2026</h2>
-            <p>
-              Each solved problem still earns one point. At equal points, lower ranking time wins:
-              time from each problem’s release to your first accepted submission, plus a
-              one-time <strong>24-hour penalty per late problem</strong>. A problem is late
-              if accepted at or after the next day’s 06:00 release, Guadalajara time.
-              This ranking rule also applies to your existing results.
-            </p>
-            <details>
-              <summary>See all changes</summary>
-              <ul>
-                <li>Recover your position: faster solves on future problems can overcome a past delay, even if your rival keeps solving on time.</li>
-                <li>Open your participant card to see what you need to reach the next rank. Recovery examples assume both participants solve the same new problems without adding late penalties.</li>
-                <li>Your problem history now shows how much time each solve contributes to your ranking, including any late penalty.</li>
-                <li>Daily themes and instructions are more visible. Check them before solving: challenges such as No Sorting apply to both problems.</li>
-                <li>Problem publication can now run independently of score updates. Your score may update after the day’s problems appear.</li>
-              </ul>
-            </details>
-          </aside>
-        )}
         {data?.demo && (
           <p className="notice">
             Local demo · Fictional participants and simulated dates. These are
@@ -140,8 +121,10 @@ export function EventPage() {
             hidden={active !== i}
             tabIndex={0}
           >
-            {i === 3 ? (
+            {i === 4 ? (
               <About now={now} />
+            ) : i === 3 ? (
+              <Releases />
             ) : i === 2 ? (
               <Editorials data={data} loading={loading} error={error} hash={editorialHash} />
             ) : loading && !data ? (
