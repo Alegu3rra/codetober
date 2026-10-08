@@ -209,6 +209,14 @@ section + section {
   color: var(--muted);
   font-size: 0.85rem;
 }
+.daily-focus { display: flex; align-items: center; gap: 18px; padding: 20px 24px; margin: 0 0 20px; border: 1px solid #ffd97855; border-left: 4px solid #ffd978; background: linear-gradient(110deg, #ffd97814, #ffd97803); border-radius: 6px; }
+.daily-focus-mark { color: #ffd978; font-size: 1.5rem; }
+.daily-focus-description { color: #e5d5af; font-size: .85rem; line-height: 1.6; margin: 8px 0 0; }
+.daily-focus h3 { color: #ffe7a6; font-size: clamp(1.1rem, 2.5vw, 1.4rem); margin: 0; overflow-wrap: anywhere; }
+.problem-focus { width: fit-content; max-width: 100%; padding: 7px 10px; border: 1px solid #ffd97844; border-radius: 4px; background: #ffd9780a; color: #ffd978; font-size: .75rem; margin-bottom: 20px; overflow-wrap: anywhere; }
+.problem-focus strong { font-weight: 600; }
+.problem-focus > span { display: block; color: #e5d5af; margin-top: 5px; }
+@media (max-width: 600px) { .daily-focus { padding: 16px; gap: 12px; } }
 .problems {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -392,8 +400,9 @@ progress::-moz-progress-bar {
 .participant-history > summary:focus-visible, .contributor-indicator:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 .participant-history[open] > summary { padding-bottom: 4px; }
 .result {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, auto) auto;
+  align-items: start;
   gap: 20px;
   border-bottom: 1px solid var(--line);
   padding: 12px 0;
@@ -405,6 +414,9 @@ progress::-moz-progress-bar {
 }
 .result-problem { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; }
 .result-editorial-link { font-size: .7rem; }
+.result .result-time { color: var(--teal); text-align: right; font-family: var(--mono); white-space: nowrap; }
+.result-time small { display: block; color: var(--muted); font: .65rem/1.6 Arial, Helvetica, sans-serif; }
+.result .result-time-late { color: #ffd978; }
 .result-list {
   margin-top: 14px;
 }
@@ -511,9 +523,10 @@ footer p:first-child {
     grid-template-columns: repeat(2, 1fr);
   }
   .result {
-    flex-direction: column;
-    gap: 4px;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 6px 12px;
   }
+  .result-problem { grid-column: 1 / -1; }
   .result span {
     text-align: left;
   }
@@ -598,6 +611,19 @@ footer p:first-child {
 .participant-name h2 .contributor-indicator:hover { border-color: var(--teal); box-shadow: 0 0 10px #70d9c533; }
 .participant-name > small { display: block; color: var(--muted); overflow-wrap: anywhere; font-size: .72rem; }
 .participant-name > small.warning { color: #ffd978; }
+.participant-name > small.rank-target-summary { color: var(--teal); margin-top: 5px; }
+.rank-target { margin: 16px 0; padding: 16px; border: 1px solid var(--line); border-left: 3px solid var(--teal); border-radius: 6px; background: #78dfca06; overflow-wrap: anywhere; }
+.rank-target h3 { font-size: .9rem; color: var(--teal); margin-bottom: 10px; }
+.rank-target h4 { font-size: .85rem; margin: 16px 0 8px; }
+.rank-target p { font-size: .8rem; margin-bottom: 10px; }
+.rank-target p:last-child { margin-bottom: 0; }
+.rank-target-problems { padding-left: 20px; font-size: .8rem; }
+.rank-target-problems li { margin: 8px 0; }
+.rank-target-problems small { display: block; color: var(--muted); }
+.info-tooltip { display: inline-block; position: relative; }
+.info-tooltip-trigger { color: var(--teal); background: transparent; border: 0; padding: 4px 6px; font: inherit; cursor: help; }
+.info-tooltip-content { position: absolute; z-index: 5; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); width: 220px; max-width: calc(100vw - 48px); padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: #101718; color: #dce5e5; font: .75rem/1.6 Arial, Helvetica, sans-serif; box-shadow: 0 6px 20px #0006; }
+@media (max-width: 600px) { .info-tooltip-content { position: fixed; width: auto; left: 24px; right: 24px; bottom: 24px; transform: none; } }
 .compact-stat { display: flex; flex-direction: column; gap: 5px; font-family: var(--mono); }
 .compact-stat > .muted { font-size: .65rem; }
 .compact-stat strong { font-weight: 500; }

@@ -70,7 +70,13 @@ export function Home({
           </div>
           {today ? (
             <>
-              <p className="muted">{today.title}</p>
+              <div className="daily-focus" aria-label="Today's focus">
+                <span className="daily-focus-mark" aria-hidden="true">◆</span>
+                <div>
+                  <h3>{today.title}</h3>
+                  {today.description && <p className="daily-focus-description">{today.description}</p>}
+                </div>
+              </div>
               <ProblemCards day={today} editorials={data.editorials} />
             </>
           ) : (
@@ -106,7 +112,7 @@ export function Home({
                   {day.date.slice(5)} · 2 problems
                 </span>
               </summary>
-              <ProblemCards day={day} editorials={data.editorials} />
+              <ProblemCards day={day} editorials={data.editorials} showFocus />
             </details>
           ))
         )}

@@ -14,11 +14,12 @@ export function Scoreboard({
 }) {
   const [query, setQuery] = useState("");
   const started = now >= Date.parse(data.event.startAt);
-  const participants = filterParticipants(orderedParticipants(data), query);
+  const ranking = orderedParticipants(data);
+  const participants = filterParticipants(ranking, query);
   return (
     <section>
       <p className="muted">
-        {started ? "One problem, one point. Ties favor more problems solved on time, then earlier accepted submissions." : "Participants are registered. Rankings will appear when the challenge begins."}
+        {started ? "One problem, one point. Ties favor less cumulative time from each problem’s release to acceptance, plus 24 hours per late problem." : "Participants are registered. Rankings will appear when the challenge begins."}
       </p>
       <input
         id="search"
@@ -33,7 +34,7 @@ export function Scoreboard({
         {participants.length === 1 ? "participant" : "participants"} · Challenge
         statistics only
       </p>
-      {participants.map(person => <ParticipantRow key={person.participant_id} person={person} data={data} now={now} zone={zone} started={started} />)}
+      {participants.map(person => <ParticipantRow key={person.participant_id} person={person} rival={ranking[person.rank - 2]} data={data} now={now} zone={zone} started={started} />)}
       {!participants.length && (
         <p className="empty">
           {data.participants.length

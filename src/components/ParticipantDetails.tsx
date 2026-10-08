@@ -1,5 +1,5 @@
 import React from "react";
-import { type Editorial, type Participant, type EventData } from "../data";
+import { elapsedLabel, problemRankingTime, type Editorial, type Participant, type EventData } from "../data";
 import { Timestamp } from "./Timestamp";
 import { StreakFlame } from "./StreakFlame";
 
@@ -30,7 +30,8 @@ export function ParticipantDetails({
                   label={`${day.date} · ${count} of 2 problems on time${count === 2 ? " · Golden day" : ""}`} />;
               })()}</h3>
               {day.problems.map((problem) => {
-                const accepted = person.results.find((r) => r.titleSlug === problem.titleSlug)?.firstAcceptedAt ?? null;
+                const time = problemRankingTime(person, day, problem.titleSlug, data);
+                const accepted = time?.acceptedAt ?? null;
                 const editorial = latestFirst.find(entry => entry.titleSlug === problem.titleSlug);
                 return (
                   <div className="result" key={problem.titleSlug}>
@@ -40,6 +41,12 @@ export function ParticipantDetails({
                     </div>
                     <span>
                       {accepted ? <>✓ Accepted · <Timestamp value={accepted} zone={zone} /></> : "— No accepted submission recorded"}
+                    </span>
+                    <span className={`result-time${time?.penaltySeconds ? ' result-time-late' : ''}`}
+                      aria-label={`${problem.title}: ${time ? `${elapsedLabel(time.totalSeconds)} counted toward ranking time` : 'no ranking time recorded'}`}
+                      title={time ? `${elapsedLabel(time.elapsedSeconds)} since publication${time.penaltySeconds ? ' + 24h late penalty' : ''}` : 'No accepted submission recorded; no time added'}>
+                      {time ? elapsedLabel(time.totalSeconds) : '—'}
+                      {time?.penaltySeconds ? <small>Includes +24h late</small> : null}
                     </span>
                   </div>
                 );

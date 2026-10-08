@@ -26,7 +26,7 @@ export function About({ now = Date.now() }: { now?: number }) {
           (<code>America/Mexico_City</code>).
         </li>
         <li>
-          One point per unique problem, up to 62. Ties favor more problems solved on time, then earlier accepted submissions.
+          One point per unique problem, up to 62. Ties favor less cumulative time from each problem’s release to acceptance, plus 24 hours per late problem.
         </li>
         <li>
           Accepted submissions count from release until November 1 at 06:00.
@@ -40,7 +40,10 @@ export function About({ now = Date.now() }: { now?: number }) {
         </li>
         <li>
           Your streak stays active until the daily window closes. Late solves
-          still earn points, but do not restore streaks or golden days.
+          still earn points, but add a one-time 24-hour ranking penalty per problem and do not restore streaks or golden days.
+          Time runs from each problem’s publication, not from when you start working.
+          Acceptance exactly at the next 06:00 is late.
+          If points and ranking time both tie, best streak, name and participant ID decide the order.
         </li>
         <li>
           Best streak is your longest run; ties favor more golden days.

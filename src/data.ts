@@ -15,10 +15,12 @@ const currentDataSchema = z.object({
   editorials: z.array(editorialSchema).optional(), editorialsFailed: z.boolean().optional(),
   version: z.literal(1), demo: z.boolean(), generatedAt: instant, lastSuccessfulSyncAt: instant.nullable(), participantsLastSuccessAt: instant.nullable(), participantsFailed: z.boolean(),
   event: z.object({ timezone: z.string(), startAt: instant, closeAt: instant, totalProblems: z.literal(62), schedule: z.array(z.object({ date: z.string(), releaseAt: instant })) }),
-  days: z.array(z.object({ id: z.string(), date: z.string(), title: z.string(), releaseAt: instant, problems: z.array(problem).length(2) })),
+  days: z.array(z.object({ id: z.string(), date: z.string(), title: z.string(), description: z.string().optional(), releaseAt: instant, problems: z.array(problem).length(2) })),
   participants: z.array(z.object({ participant_id: z.string(), display_name: z.string(), leetcode_username: z.string().regex(/^[a-zA-Z0-9_-]{1,30}$/), rank: z.number().int().positive(),
     problemsCompleted: z.number().int().min(0).max(62), daysCompleted: z.number().int().min(0).max(31), currentStreak: z.number().int().min(0).max(31), bestStreak: z.number().int().min(0).max(31),
     completionTimeSeconds: z.number().nonnegative().optional(),
+    latePenaltySeconds: z.number().nonnegative().optional(),
+    rankingTimeSeconds: z.number().nonnegative().optional(),
     onTimeProblemsCompleted: z.number().int().min(0).max(62).optional(),
     currentStreakLevel: z.number().int().min(0).max(2).optional(),
     bestStreakGoldenDays: z.number().int().min(0).max(31).optional(),
@@ -75,20 +77,15 @@ export function completionSeconds(person: Participant, data: EventData) {
       ? sum + (accepted - release) / 1000 : sum;
   }, 0);
 }
-export function compareDailyFirst(a: Participant, b: Participant, data: EventData) {
-  for (const day of [...data.days].sort((x, y) => Date.parse(y.releaseAt) - Date.parse(x.releaseAt))) {
-    const first = (person: Participant) => Math.min(...person.results
-      .filter(r => r.firstAcceptedAt && day.problems.some(p => p.titleSlug === r.titleSlug)
-        && Date.parse(r.firstAcceptedAt) >= Date.parse(day.releaseAt)
-        && Date.parse(r.firstAcceptedAt) < Date.parse(data.event.closeAt)
-        && Date.parse(r.firstAcceptedAt) <= Date.parse(data.generatedAt))
-      .map(r => Date.parse(r.firstAcceptedAt!)));
-    const left = first(a), right = first(b);
-    if (left !== right) return left < right ? -1 : 1;
-  }
-  return 0;
+export function dailyFirstAcceptance(person: Participant, day: Day, data: EventData) {
+  return Math.min(...person.results
+    .filter(r => r.firstAcceptedAt && day.problems.some(p => p.titleSlug === r.titleSlug)
+      && Date.parse(r.firstAcceptedAt) >= Date.parse(day.releaseAt)
+      && Date.parse(r.firstAcceptedAt) < Date.parse(data.event.closeAt)
+      && Date.parse(r.firstAcceptedAt) <= Date.parse(data.generatedAt))
+    .map(r => Date.parse(r.firstAcceptedAt!)));
 }
-// Derive from acceptance dates so old snapshots use the same tie-break immediately.
+// Derive on-time credit from acceptance dates for streaks and progress.
 export function onTimeProblemsCompleted(person: Participant, data: EventData) {
   const schedule = [...data.event.schedule].sort((a,b) => Date.parse(a.releaseAt)-Date.parse(b.releaseAt));
   return data.days.reduce((total, day) => {
@@ -99,10 +96,36 @@ export function onTimeProblemsCompleted(person: Participant, data: EventData) {
       && Date.parse(r.firstAcceptedAt) < end && Date.parse(r.firstAcceptedAt) <= Date.parse(data.generatedAt))).length;
   },0);
 }
+export const LATE_PENALTY_SECONDS = 24 * 3600;
+export function problemRankingTime(person: Participant, day: Day, titleSlug: string, data: EventData) {
+  const accepted = dailyFirstAcceptance({ ...person, results: person.results.filter(r => r.titleSlug === titleSlug) }, day, data);
+  if (!Number.isFinite(accepted)) return null;
+  const release = Date.parse(day.releaseAt);
+  const deadline = data.event.schedule.reduce((end, item) => {
+    const next = Date.parse(item.releaseAt);
+    return next > release ? Math.min(end, next) : end;
+  }, Date.parse(data.event.closeAt));
+  const elapsedSeconds = (accepted - release) / 1000;
+  const penaltySeconds = accepted >= deadline ? LATE_PENALTY_SECONDS : 0;
+  return { acceptedAt: new Date(accepted).toISOString(), elapsedSeconds, penaltySeconds, totalSeconds: elapsedSeconds + penaltySeconds };
+}
+// Use the same per-problem contributions for the ranking and its visible breakdown.
+export function rankingTime(person: Participant, data: EventData) {
+  let elapsedSeconds = 0, lateProblems = 0;
+  for (const day of data.days) {
+    for (const problem of day.problems) {
+      const time = problemRankingTime(person, day, problem.titleSlug, data);
+      if (!time) continue;
+      elapsedSeconds += time.elapsedSeconds;
+      if (time.penaltySeconds) lateProblems++;
+    }
+  }
+  const penaltySeconds = lateProblems * LATE_PENALTY_SECONDS;
+  return { elapsedSeconds, lateProblems, penaltySeconds, totalSeconds: elapsedSeconds + penaltySeconds };
+}
 export function orderedParticipants(data: EventData) {
   return [...data.participants].sort((a, b) => b.problemsCompleted - a.problemsCompleted
-    || onTimeProblemsCompleted(b, data) - onTimeProblemsCompleted(a, data)
-    || compareDailyFirst(a, b, data)
+    || rankingTime(a, data).totalSeconds - rankingTime(b, data).totalSeconds
     || b.bestStreak - a.bestStreak || a.display_name.localeCompare(b.display_name, 'en')
     || a.participant_id.localeCompare(b.participant_id))
     .map((p, i) => ({ ...p, rank: i + 1 }));

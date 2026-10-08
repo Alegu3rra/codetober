@@ -1,7 +1,7 @@
 import React from "react";
 import { type Day, type Editorial } from "../data";
 
-export function ProblemCards({ day, editorials = [] }: { day: Day; editorials?: Editorial[] }) {
+export function ProblemCards({ day, editorials = [], showFocus = false }: { day: Day; editorials?: Editorial[]; showFocus?: boolean }) {
   return (
     <div className="problems">
       {day.problems.map((problem, i) => (
@@ -13,6 +13,9 @@ export function ProblemCards({ day, editorials = [] }: { day: Day; editorials?: 
             </span>
           </div>
           <h3>{problem.title}</h3>
+          {showFocus && <p className="problem-focus">Daily focus: <strong>{day.title}</strong>
+            {day.description && <span>{day.description}</span>}
+          </p>}
           <a
             className="solve-link"
             href={problem.url}
