@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-08T09:03:06.455Z",
-  "lastSuccessfulSyncAt": "2026-10-08T09:03:06.455Z",
-  "participantsLastSuccessAt": "2026-10-08T09:03:06.455Z",
+  "generatedAt": "2026-10-08T12:01:00.116Z",
+  "lastSuccessfulSyncAt": "2026-10-08T12:01:00.116Z",
+  "participantsLastSuccessAt": "2026-10-08T12:01:00.116Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -277,6 +277,26 @@
           "url": "https://leetcode.com/problems/course-schedule/"
         }
       ]
+    },
+    {
+      "id": "day-08",
+      "date": "2026-10-08",
+      "title": "O(1) Space",
+      "releaseAt": "2026-10-08T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "reverse-string",
+          "title": "Reverse String",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/reverse-string/"
+        },
+        {
+          "titleSlug": "rotate-array",
+          "title": "Rotate Array",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/rotate-array/"
+        }
+      ]
     }
   ],
   "participants": [
@@ -320,6 +340,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -378,9 +402,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": "2026-10-07T14:28:01.000Z"
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -424,6 +456,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -482,9 +518,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": "2026-10-07T22:15:41.000Z"
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -528,6 +572,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -586,9 +634,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": "2026-10-07T15:06:51.000Z"
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -632,6 +688,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -690,9 +750,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": "2026-10-07T19:48:07.000Z"
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -736,6 +804,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -794,9 +866,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": "2026-10-08T02:55:26.000Z"
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -840,6 +920,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -898,9 +982,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": "2026-10-08T03:11:57.000Z"
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -944,6 +1036,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1002,9 +1098,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": "2026-10-07T14:48:11.000Z"
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -1048,6 +1152,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1106,9 +1214,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": "2026-10-08T05:39:14.000Z"
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -1152,6 +1268,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1210,9 +1330,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": "2026-10-08T04:05:17.000Z"
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -1255,6 +1383,10 @@
         },
         {
           "date": "2026-10-07",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
           "onTimeProblems": 0
         }
       ],
@@ -1314,9 +1446,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -1360,6 +1500,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1418,9 +1562,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -1464,6 +1616,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1522,9 +1678,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -1568,6 +1732,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1626,9 +1794,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": "2026-10-07T16:15:26.000Z"
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -1672,6 +1848,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1730,9 +1910,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -1776,6 +1964,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1834,9 +2026,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -1880,6 +2080,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1938,9 +2142,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -1952,9 +2164,9 @@
       "completionTimeSeconds": 101963,
       "problemsCompleted": 4,
       "daysCompleted": 1,
-      "currentStreak": 2,
+      "currentStreak": 0,
       "bestStreak": 2,
-      "currentStreakLevel": 2,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 1,
       "dayProgress": [
         {
@@ -1983,6 +2195,10 @@
         },
         {
           "date": "2026-10-07",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
           "onTimeProblems": 0
         }
       ],
@@ -2042,9 +2258,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -2087,6 +2311,10 @@
         },
         {
           "date": "2026-10-07",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
           "onTimeProblems": 0
         }
       ],
@@ -2146,9 +2374,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -2191,6 +2427,10 @@
         },
         {
           "date": "2026-10-07",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
           "onTimeProblems": 0
         }
       ],
@@ -2250,9 +2490,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -2295,6 +2543,10 @@
         },
         {
           "date": "2026-10-07",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
           "onTimeProblems": 0
         }
       ],
@@ -2354,9 +2606,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -2400,6 +2660,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2458,9 +2722,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -2504,6 +2776,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2562,9 +2838,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -2608,6 +2892,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2666,9 +2954,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 23
     },
@@ -2712,6 +3008,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2770,9 +3070,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 24
     },
@@ -2816,6 +3124,10 @@
         {
           "date": "2026-10-07",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2874,9 +3186,17 @@
         {
           "titleSlug": "course-schedule",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-08T09:03:06.455Z",
+      "lastSyncedAt": "2026-10-08T12:01:00.116Z",
       "syncFailed": false,
       "rank": 25
     }
