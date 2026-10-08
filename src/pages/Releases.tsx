@@ -2,7 +2,10 @@ import React from 'react';
 import { selectedEdition } from '../editions';
 import { releaseViewId, useContentIndicators } from '../hooks/useViewedContent';
 
-export const releaseNotes = [{ id: '2026-release-1', year: 2026, title: 'Release 1 · Earlier solves, better ranks', date: 'October 8, 2026' }];
+export const releaseNotes = [
+  { id: '2026-release-2', year: 2026, title: 'Release 2 · Earlier solves, better ranks', date: 'October 8, 2026', kind: 'ranking' },
+  { id: '2026-editorials-release-1', year: 2026, title: 'Release 1 · Community editorials', date: 'October 5, 2026', kind: 'editorials' },
+];
 
 export function Releases() {
   const { isUnseen, markViewed } = useContentIndicators();
@@ -19,6 +22,11 @@ export function Releases() {
         <span className="muted">Read release</span>
       </summary>
       <div className="editorial-body">
+        {release.kind === 'editorials' ? <>
+          <h3>Community editorials added</h3>
+          <p>The Editorials tab brings together approaches shared by participants, with explanations, implementations, and time / space complexity.</p>
+          <p>Submit your approach for review and share another way to solve the challenge. Published contributions are credited to their authors and appear after the problem’s daily window closes.</p>
+        </> : <>
         <p>At equal problem totals, your rank now depends on how early you solve the problems: less total time from publication to acceptance means a better rank.</p>
         <p>Each solved problem still earns one point. Each problem accepted at or after the next day’s 06:00 release, Guadalajara time, adds a one-time <strong>24-hour penalty</strong>. This rule also applies to your existing results.</p>
         <ul>
@@ -28,11 +36,7 @@ export function Releases() {
           <li>Daily themes and instructions are more visible. Check them before solving: challenges such as No Sorting apply to both problems.</li>
           <li>Problem publication can run independently of score updates. Your score may update after the day’s problems appear.</li>
         </ul>
-        <aside className="notice">
-          <h3>Community editorials added</h3>
-          <p>The Editorials tab now brings together approaches shared by participants, with explanations, implementations, and time / space complexity. Reviewed contributions appear after the problem’s daily window closes.</p>
-          <p>Unread editorials are highlighted in gold so you can find new contributions. Open an editorial to mark it as read.</p>
-        </aside>
+        </>}
       </div>
     </details>)}
   </section>;

@@ -52,17 +52,24 @@ test('request failures have retry, and About remains available', async () => {
   fireEvent.click(screen.getByRole('button', { name: 'Retry' }));
   await screen.findByText(/Local demo/);
 });
-test('release tab glows until the first release is opened and stays read after reload', async () => {
+test('release tab tracks each release independently and stays read after reload', async () => {
   localStorage.clear();
   const { unmount } = render(<App />);
   const tab = screen.getByRole('tab', { name: 'Releases' });
   expect(tab).toHaveClass('has-unseen-content');
   fireEvent.click(tab);
   expect(screen.getByText('Community editorials added')).not.toBeVisible();
-  const summary = screen.getByText('Release 1 · Earlier solves, better ranks');
+  const summary = screen.getByText('Release 2 · Earlier solves, better ranks');
   const entry = summary.closest('details')!;
   entry.open = true;
   fireEvent(entry, new Event('toggle'));
+  expect(tab).toHaveClass('has-unseen-content');
+  expect(screen.getByText('Community editorials added')).not.toBeVisible();
+  const editorialRelease = screen.getByText('Release 1 · Community editorials').closest('details')!;
+  expect(editorialRelease).toHaveTextContent('October 5, 2026');
+  expect(entry).toHaveTextContent('October 8, 2026');
+  editorialRelease.open = true;
+  fireEvent(editorialRelease, new Event('toggle'));
   expect(tab).not.toHaveClass('has-unseen-content');
   expect(screen.getByText('Community editorials added')).toBeVisible();
   expect(screen.queryByText(/Coming next/)).not.toBeInTheDocument();
