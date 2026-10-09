@@ -19,15 +19,20 @@ export function RankTarget({ person, rival, data, now, zone }: {
         : <>Solve <strong>{target.pointsToTie} more {target.pointsToTie === 1 ? 'problem' : 'problems'}</strong> to match {rival.display_name}’s total.
           {target.possiblePointsLead && <> Solve {target.pointsToLead} more to move ahead if their total stays unchanged.</>}</>}
       </p>
-    </> : <p>{target.timeGapSeconds > 0
+    </> : <p>{target.timeGapSeconds > 0 && target.rivalTime.totalSeconds === 0
+      ? 'Your rival has zero ranking time. You can match their time, then best streak, name and participant ID decide the order.'
+      : target.timeGapSeconds > 0
       ? closed ? <>{elapsedLabel(target.timeGapSeconds)} behind on time.</>
         : <>Recover more than <strong>{elapsedLabel(target.timeGapSeconds)}</strong> against {rival.display_name}, while keeping the same problem total.</>
       : 'Time is tied. Best streak, then name and participant ID decide the order.'}</p>}
-    {!closed && target.pointsToTie === 0 && target.timeGapSeconds > 0 && target.recoveryProblems > 0 && <p>
+    {!closed && target.pointsToTie === 0 && target.timeGapSeconds > 0 && target.rivalTime.totalSeconds > 0 && target.recoveryProblems > 0 && <p>
       Over the next {target.recoveryProblems} problems, average at least <strong>{elapsedLabel(target.savingsPerProblemSeconds!)}</strong> less time per problem than {rival.display_name}.
-      {' '}Assumes you both solve those problems without new late penalties.
+      {' '}Assumes you both solve those problems without new late penalties and editorial credits stay unchanged.
     </p>}
     {!closed && target.pointsToTie === 0 && target.timeGapSeconds > 0 && target.recoveryProblems === 0 && <p>Both totals are complete. No new problems remain to recover time through future solves.</p>}
+    {!closed && target.pointsToTie === 0 && target.timeGapSeconds > 0 && target.rivalTime.totalSeconds > 0 && <p>
+      You could also move ahead with <strong>{Math.floor(target.timeGapSeconds / 3600) + 1} new validated editorial {Math.floor(target.timeGapSeconds / 3600) + 1 === 1 ? 'contribution' : 'contributions'}</strong>, each with a different implementation, if your rival’s points and ranking time stay unchanged.
+    </p>}
     {!closed && <>
       {target.pointsToTie > 0 && suggestions.length > 0 && <>
         <h4>Pending problems to start with</h4>

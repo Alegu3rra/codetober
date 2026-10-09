@@ -3,6 +3,7 @@ import { selectedEdition } from '../editions';
 import { releaseViewId, useContentIndicators } from '../hooks/useViewedContent';
 
 export const releaseNotes = [
+  { id: '2026-release-3', year: 2026, title: 'Release 3 · Share an approach, earn an hour', date: 'October 8, 2026', kind: 'editorial-credit' },
   { id: '2026-release-2', year: 2026, title: 'Release 2 · Earlier solves, better ranks', date: 'October 8, 2026', kind: 'ranking' },
   { id: '2026-editorials-release-1', year: 2026, title: 'Release 1 · Community editorials', date: 'October 5, 2026', kind: 'editorials' },
 ];
@@ -22,7 +23,18 @@ export function Releases() {
         <span className="muted">Read release</span>
       </summary>
       <div className="editorial-body">
-        {release.kind === 'editorials' ? <>
+        {release.kind === 'editorial-credit' ? <>
+          <h3>Validated editorials now reduce ranking time</h3>
+          <p>Share an implementation different from those already published for the same problem. Once your editorial is reviewed, validated, and published, you earn <strong>one hour off your total ranking time</strong>.</p>
+          <ul>
+            <li>The organizer must confirm that the implementation is different. Publication alone does not grant the credit.</li>
+            <li>Each validated contribution earns one hour once. Editing an editorial or refreshing results does not grant another hour.</li>
+            <li>Previously published editorials can also earn credit after review. Credits appear in the next score update after validation.</li>
+            <li>Your participant card shows your editorial credit separately. Ranking time includes the deduction and has a minimum of zero.</li>
+            <li>Problem totals and streaks stay the same. At equal problem totals, editorial credits can help you move up.</li>
+          </ul>
+          <p>Visit the Editorials tab to submit your approach. Reviewed contributions become public after the problem’s daily window closes.</p>
+        </> : release.kind === 'editorials' ? <>
           <h3>Community editorials added</h3>
           <p>The Editorials tab brings together approaches shared by participants, with explanations, implementations, and time / space complexity.</p>
           <p>Submit your approach for review and share another way to solve the challenge. Published contributions are credited to their authors and appear after the problem’s daily window closes.</p>

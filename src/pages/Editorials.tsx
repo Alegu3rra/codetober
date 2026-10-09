@@ -12,7 +12,7 @@ export function Editorials({data, loading = false, error = false, hash = ''}: {d
   return <section className="editorials">
     <h2>Community editorials</h2>
     <p>Different approaches, shared by the people solving the challenge.</p>
-    <p className="muted">Reviewed contributions appear after the problem’s daily window closes at 06:00 Guadalajara time. Reading is open to everyone; contributor badges do not add points.</p>
+    <p className="muted">Reviewed contributions appear after the problem’s daily window closes at 06:00 Guadalajara time. A published editorial validated as a different implementation earns its author one hour off their ranking time. Contributions do not add problem points.</p>
     {selectedEdition.year === 2026 && <aside className="notice">
       <strong>Share your approach</strong>
       <p>Send your LeetCode username, problem name or number, idea.md, solution file, and time / space complexity. You can also propose a video or another format for review.</p>
@@ -27,6 +27,7 @@ export function Editorials({data, loading = false, error = false, hash = ''}: {d
         onToggle={event => { if (event.currentTarget.open) markViewed(editorialViewId(entry.id)); }} id={`editorial-${entry.id}`} key={`${entry.id}-${hash}`} open={hash===`#editorial-${entry.id}` || undefined}>
         <summary><span>{problem.title} {isUnseen(editorialViewId(entry.id)) && <span className="unread-label">· New</span>}<small>By {entry.authorName} · {entry.language}</small></span><span className="muted">Read approach</span></summary>
         <div className="editorial-body">
+          {entry.rankingCreditSeconds === 3600 && <p className="notice">Validated different implementation · −1 hour of ranking time for the author.</p>}
           <p><a href={`https://leetcode.com/u/${encodeURIComponent(entry.username)}/`} target="_blank" rel="noreferrer">@{entry.username} ↗</a> · <a href={problem.url} target="_blank" rel="noreferrer">Problem on LeetCode ↗</a></p>
           <h4>Idea</h4>
           <div className="editorial-markdown"><Markdown remarkPlugins={[remarkGfm]} skipHtml components={{img:()=>null, a:({href,children})=><a href={href} target="_blank" rel="noreferrer">{children}</a>}}>{entry.idea}</Markdown></div>

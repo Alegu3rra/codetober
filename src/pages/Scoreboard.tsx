@@ -19,7 +19,7 @@ export function Scoreboard({
   return (
     <section>
       <p className="muted">
-        {started ? "One problem, one point. Ties favor less cumulative time from each problem’s release to acceptance, plus 24 hours per late problem." : "Participants are registered. Rankings will appear when the challenge begins."}
+        {started ? "One problem, one point. Ties favor less cumulative time from release to acceptance, plus 24 hours per late problem, minus one hour per validated editorial with a different implementation." : "Participants are registered. Rankings will appear when the challenge begins."}
       </p>
       <input
         id="search"

@@ -93,7 +93,7 @@ test('legacy snapshots add exactly 24h once per late problem and ignore invalid 
   p.results=[{titleSlug:data.days[0].problems[0].titleSlug,firstAcceptedAt:'2026-10-02T12:00:00Z'},
     {titleSlug:data.days[0].problems[0].titleSlug,firstAcceptedAt:'2026-10-03T12:00:00Z'},
     {titleSlug:data.days[0].problems[1].titleSlug,firstAcceptedAt:'2026-10-01T11:59:59Z'}];
-  expect(rankingTime(p,data)).toEqual({elapsedSeconds:86400,lateProblems:1,penaltySeconds:86400,totalSeconds:172800});
+  expect(rankingTime(p,data)).toEqual({elapsedSeconds:86400,lateProblems:1,penaltySeconds:86400,editorialCreditSeconds:0,creditedEditorials:0,totalSeconds:172800});
   p.results[0].firstAcceptedAt='2026-10-02T11:59:59Z';
   expect(rankingTime(p,data).penaltySeconds).toBe(0);
   p.results=[{titleSlug:data.days[0].problems[0].titleSlug,firstAcceptedAt:data.event.closeAt}];
@@ -134,7 +134,8 @@ test('ranking time and late penalty explain their meaning on focus and dismiss o
   expect(tooltip).not.toBeVisible();
   fireEvent.focus(trigger);
   expect(tooltip).toBeVisible();
-  expect(tooltip).toHaveTextContent('including late penalties');
+  expect(tooltip).toHaveTextContent('plus late penalties');
+  expect(tooltip).toHaveTextContent('minus one hour per editorial');
   fireEvent.keyDown(trigger,{key:'Escape'});
   expect(tooltip).not.toBeVisible();
   fireEvent.click(screen.getByRole('button',{name:'About late penalty'}));

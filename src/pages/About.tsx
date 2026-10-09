@@ -49,6 +49,7 @@ export function About({ now = Date.now() }: { now?: number }) {
           Best streak is your longest run; ties favor more golden days.
           Its flame reflects the share of golden days in that run.
         </li>
+        <li>A published editorial reviewed as an implementation different from those already published for that problem subtracts one hour from its author’s ranking time. Each validated contribution counts once. Ranking time cannot fall below zero; problem points and streaks stay the same.</li>
         <li>
           Updates run about hourly and may be delayed. Submission times determine
           results. LeetCode’s recent history is limited; contact the organizer

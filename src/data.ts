@@ -8,6 +8,7 @@ export const editorialSchema = z.object({
   id: z.string().regex(/^[a-zA-Z0-9_-]{1,80}$/), titleSlug: z.string(), participant_id: z.string(),
   authorName: z.string(), username: z.string(), publishedAt: instant,
   idea: z.string(), solution: z.string(), filename: z.string(), language: z.string(), complexity: z.string(),
+  rankingCreditSeconds: z.literal(3600).optional(),
   videoUrl: z.string().url().refine(v => v.startsWith('https://')).optional(),
 });
 export type Editorial = z.infer<typeof editorialSchema>;
@@ -21,6 +22,8 @@ const currentDataSchema = z.object({
     completionTimeSeconds: z.number().nonnegative().optional(),
     latePenaltySeconds: z.number().nonnegative().optional(),
     rankingTimeSeconds: z.number().nonnegative().optional(),
+    editorialCreditSeconds: z.number().nonnegative().optional(),
+    creditedEditorials: z.number().int().nonnegative().optional(),
     onTimeProblemsCompleted: z.number().int().min(0).max(62).optional(),
     currentStreakLevel: z.number().int().min(0).max(2).optional(),
     bestStreakGoldenDays: z.number().int().min(0).max(31).optional(),
@@ -110,6 +113,20 @@ export function problemRankingTime(person: Participant, day: Day, titleSlug: str
   return { acceptedAt: new Date(accepted).toISOString(), elapsedSeconds, penaltySeconds, totalSeconds: elapsedSeconds + penaltySeconds };
 }
 // Use the same per-problem contributions for the ranking and its visible breakdown.
+export function editorialCredit(person: Participant, data: EventData) {
+  const eligible = new Set<string>();
+  for (const editorial of data.editorials ?? []) {
+    const day = data.days.find(d => d.problems.some(p => p.titleSlug === editorial.titleSlug));
+    if (!day || editorial.participant_id !== person.participant_id || editorial.rankingCreditSeconds !== 3600) continue;
+    const deadline = data.event.schedule.reduce((end, item) => {
+      const release = Date.parse(item.releaseAt);
+      return release > Date.parse(day.releaseAt) ? Math.min(end, release) : end;
+    }, Date.parse(data.event.closeAt));
+    const published = Date.parse(editorial.publishedAt);
+    if (published >= deadline && published <= Date.parse(data.generatedAt)) eligible.add(editorial.id);
+  }
+  return { count: eligible.size, seconds: eligible.size * 3600 };
+}
 export function rankingTime(person: Participant, data: EventData) {
   let elapsedSeconds = 0, lateProblems = 0;
   for (const day of data.days) {
@@ -121,7 +138,9 @@ export function rankingTime(person: Participant, data: EventData) {
     }
   }
   const penaltySeconds = lateProblems * LATE_PENALTY_SECONDS;
-  return { elapsedSeconds, lateProblems, penaltySeconds, totalSeconds: elapsedSeconds + penaltySeconds };
+  const credit = editorialCredit(person, data);
+  return { elapsedSeconds, lateProblems, penaltySeconds, editorialCreditSeconds: credit.seconds, creditedEditorials: credit.count,
+    totalSeconds: Math.max(0, elapsedSeconds + penaltySeconds - credit.seconds) };
 }
 export function orderedParticipants(data: EventData) {
   return [...data.participants].sort((a, b) => b.problemsCompleted - a.problemsCompleted

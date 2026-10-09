@@ -59,7 +59,8 @@ test('published problems, ties, search, details, keyboard and accessibility', as
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
   await page.getByRole('button', { name: 'About ranking time' }).focus();
-  await expect(page.getByRole('tooltip')).toContainText('including late penalties');
+  await expect(page.getByRole('tooltip')).toContainText('plus late penalties');
+  await expect(page.getByRole('tooltip')).toContainText('minus one hour per editorial');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await page.keyboard.press('Escape');
   await expect(page.getByRole('tooltip')).toHaveCount(0);
@@ -67,6 +68,33 @@ test('published problems, ties, search, details, keyboard and accessibility', as
   await page.getByRole('tab', { name: 'About / Join' }).click();
   await expect(page.getByText(/Hello, I’m Alejandra/)).toBeVisible();
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+});
+test('validated editorial credit changes rank and the latest release tracks reading independently', async ({ page }, testInfo) => {
+  await page.clock.install({ time: new Date('2026-10-02T14:00:00Z') });
+  const credited = { ...snapshot, editorials: [{ id: 'validated-example', titleSlug: 'example-1-1', participant_id: 'fictional-1', authorName: 'Example Bea', username: 'fictional_bea', publishedAt: '2026-10-02T12:00:00Z', rankingCreditSeconds: 3600,
+    idea: 'A different reviewed implementation', solution: 'example code', filename: 'solution.cpp', language: 'C++', complexity: 'O(n)' }] };
+  await page.route('**/data/data.json', route => route.fulfill({ json: credited }));
+  await page.goto('/codetober/2026/');
+  await page.getByRole('tab', { name: 'Scoreboard' }).click();
+  const author = page.locator('.participant').filter({ has: page.getByRole('heading', { name: 'Example Bea' }) });
+  await expect(author.getByLabel('Rank 1', { exact: true })).toBeVisible();
+  await author.getByRole('button', { name: 'Expand progress for Example Bea' }).click();
+  await expect(author.getByText('−1h 0m 0s')).toBeVisible();
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  const tab = page.getByRole('tab', { name: 'Releases' });
+  await expect(tab).toHaveClass(/has-unseen-content/);
+  await tab.click();
+  const note = page.locator('details.release-note').first();
+  await expect(note).toContainText('Release 3');
+  await note.locator('summary').click();
+  await expect(note).not.toHaveClass(/has-unseen-content/);
+  await expect(tab).toHaveClass(/has-unseen-content/);
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: testInfo.outputPath('release-3.png'), fullPage: true });
+  await page.reload();
+  await page.getByRole('tab', { name: 'Releases' }).click();
+  await expect(page.locator('details.release-note').first()).not.toHaveClass(/has-unseen-content/);
 });
 test('05:59 countdown never reveals content and 06:00 waits for server publication', async ({ page }) => {
   await page.clock.install({ time: new Date('2026-10-01T11:59:00Z') });

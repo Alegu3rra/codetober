@@ -46,8 +46,9 @@ export function ParticipantRow({ person, rival, data, now, zone, started }: {
       <div id={panel} hidden={!open} className="participant-expanded">
         {started && <RankTarget person={person} rival={rival} data={data} now={now} zone={zone} />}
         <dl className="stats participant-extra-stats">
-          <div><dt>Ranking time <InfoTooltip label="ranking time">Total time from each problem’s publication to its first accepted submission, including late penalties. With equal problem totals, less time ranks higher.</InfoTooltip></dt><dd className="elapsed-time">{elapsedLabel(time.totalSeconds)}</dd></div>
+          <div><dt>Ranking time <InfoTooltip label="ranking time">Total time from each problem’s publication to its first accepted submission, plus late penalties, minus one hour per editorial validated as a different implementation. Minimum zero. With equal problem totals, less time ranks higher.</InfoTooltip></dt><dd className="elapsed-time">{elapsedLabel(time.totalSeconds)}</dd></div>
           <div><dt>Late penalty · {time.lateProblems} problems <InfoTooltip label="late penalty">24 hours added once for each problem accepted at or after 06:00 the next day. This penalty is already included in ranking time.</InfoTooltip></dt><dd className="elapsed-time">{elapsedLabel(time.penaltySeconds)}</dd></div>
+          <div><dt>Editorial credit · {time.creditedEditorials} {time.creditedEditorials === 1 ? 'contribution' : 'contributions'} <InfoTooltip label="editorial credit">One hour of credit per published editorial reviewed as a different implementation for that problem. Each contribution counts once. The credit is already deducted from ranking time, which cannot fall below zero.</InfoTooltip></dt><dd className="elapsed-time">−{elapsedLabel(time.editorialCreditSeconds)}</dd></div>
           <div><dt>Best streak</dt><dd><StreakFlame value={person.bestStreak}
             goldRatio={person.bestStreak ? (person.bestStreakGoldenDays ?? 0) / person.bestStreak : 0}
             label={`${person.bestStreak}-day best streak · ${person.bestStreakGoldenDays ?? 0} golden days`} /></dd></div>
