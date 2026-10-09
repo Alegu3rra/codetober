@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-09T03:09:03.312Z",
-  "lastSuccessfulSyncAt": "2026-10-09T03:09:03.312Z",
-  "participantsLastSuccessAt": "2026-10-09T03:09:03.312Z",
+  "generatedAt": "2026-10-09T04:02:33.657Z",
+  "lastSuccessfulSyncAt": "2026-10-09T04:02:33.657Z",
+  "participantsLastSuccessAt": "2026-10-09T04:02:33.657Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -313,6 +313,8 @@
       "display_name": "Alejandra Guerra Castañeda",
       "leetcode_username": "alegu3rra",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 328217,
       "onTimeProblemsCompleted": 16,
       "completionTimeSeconds": 328217,
@@ -422,7 +424,7 @@
           "firstAcceptedAt": "2026-10-08T13:58:12.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -431,6 +433,8 @@
       "display_name": "alex_rangi",
       "leetcode_username": "thorinzme",
       "latePenaltySeconds": 86400,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 338541,
       "onTimeProblemsCompleted": 15,
       "completionTimeSeconds": 252141,
@@ -540,7 +544,7 @@
           "firstAcceptedAt": "2026-10-08T14:16:10.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -549,6 +553,8 @@
       "display_name": "Rafael López",
       "leetcode_username": "Jirafa745",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 360854,
       "onTimeProblemsCompleted": 16,
       "completionTimeSeconds": 360854,
@@ -658,7 +664,7 @@
           "firstAcceptedAt": "2026-10-08T14:18:34.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -667,6 +673,8 @@
       "display_name": "Ruben",
       "leetcode_username": "RubenRETM",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 415041,
       "onTimeProblemsCompleted": 16,
       "completionTimeSeconds": 415041,
@@ -776,7 +784,7 @@
           "firstAcceptedAt": "2026-10-08T17:50:03.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -785,6 +793,8 @@
       "display_name": "Saúl Villeda",
       "leetcode_username": "sav1209",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 431807,
       "onTimeProblemsCompleted": 16,
       "completionTimeSeconds": 431807,
@@ -894,7 +904,7 @@
           "firstAcceptedAt": "2026-10-08T17:17:21.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -903,6 +913,8 @@
       "display_name": "Moroni Silverio Flores",
       "leetcode_username": "ElectroLet",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 725250,
       "onTimeProblemsCompleted": 16,
       "completionTimeSeconds": 725250,
@@ -1012,7 +1024,7 @@
           "firstAcceptedAt": "2026-10-09T01:33:37.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -1021,6 +1033,8 @@
       "display_name": "Angel Adrian Hernández Peña",
       "leetcode_username": "Sin_R0str0",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 800339,
       "onTimeProblemsCompleted": 16,
       "completionTimeSeconds": 800339,
@@ -1130,7 +1144,7 @@
           "firstAcceptedAt": "2026-10-09T01:49:49.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -1139,6 +1153,8 @@
       "display_name": "RafaelSD",
       "leetcode_username": "Rafaelsd_17",
       "latePenaltySeconds": 86400,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 982567,
       "onTimeProblemsCompleted": 15,
       "completionTimeSeconds": 896167,
@@ -1248,7 +1264,7 @@
           "firstAcceptedAt": "2026-10-08T22:15:12.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -1257,14 +1273,16 @@
       "display_name": "Adrian M",
       "leetcode_username": "adrian_miranda137",
       "latePenaltySeconds": 0,
-      "rankingTimeSeconds": 646504,
-      "onTimeProblemsCompleted": 13,
-      "completionTimeSeconds": 646504,
-      "problemsCompleted": 13,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
+      "rankingTimeSeconds": 704198,
+      "onTimeProblemsCompleted": 14,
+      "completionTimeSeconds": 704198,
+      "problemsCompleted": 14,
       "daysCompleted": 6,
-      "currentStreak": 7,
-      "bestStreak": 7,
-      "currentStreakLevel": 2,
+      "currentStreak": 8,
+      "bestStreak": 8,
+      "currentStreakLevel": 1,
       "bestStreakGoldenDays": 6,
       "dayProgress": [
         {
@@ -1297,7 +1315,7 @@
         },
         {
           "date": "2026-10-08",
-          "onTimeProblems": 0
+          "onTimeProblems": 1
         }
       ],
       "results": [
@@ -1359,14 +1377,14 @@
         },
         {
           "titleSlug": "reverse-string",
-          "firstAcceptedAt": null
+          "firstAcceptedAt": "2026-10-09T04:01:34.000Z"
         },
         {
           "titleSlug": "rotate-array",
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -1375,6 +1393,8 @@
       "display_name": "Fher_Buk",
       "leetcode_username": "Malware_buk",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 510648,
       "onTimeProblemsCompleted": 10,
       "completionTimeSeconds": 510648,
@@ -1484,7 +1504,7 @@
           "firstAcceptedAt": "2026-10-09T01:21:15.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -1493,6 +1513,8 @@
       "display_name": "Gatouski",
       "leetcode_username": "gatouski",
       "latePenaltySeconds": 172800,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 1336444,
       "onTimeProblemsCompleted": 8,
       "completionTimeSeconds": 1163644,
@@ -1602,7 +1624,7 @@
           "firstAcceptedAt": "2026-10-09T02:58:37.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -1611,6 +1633,8 @@
       "display_name": "Alexis Tercero",
       "leetcode_username": "alexistercero55",
       "latePenaltySeconds": 518400,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 1867273,
       "onTimeProblemsCompleted": 4,
       "completionTimeSeconds": 1348873,
@@ -1720,7 +1744,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -1729,6 +1753,8 @@
       "display_name": "Ivan",
       "leetcode_username": "felicianothegoat",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 425463,
       "onTimeProblemsCompleted": 9,
       "completionTimeSeconds": 425463,
@@ -1838,7 +1864,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -1847,6 +1873,8 @@
       "display_name": "Lalo Castro",
       "leetcode_username": "eduardo_castro_24",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 156338,
       "onTimeProblemsCompleted": 6,
       "completionTimeSeconds": 156338,
@@ -1956,7 +1984,7 @@
           "firstAcceptedAt": "2026-10-08T20:03:18.000Z"
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -1965,6 +1993,8 @@
       "display_name": "Queso7",
       "leetcode_username": "fAdogZckLF",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 190393,
       "onTimeProblemsCompleted": 6,
       "completionTimeSeconds": 190393,
@@ -2074,7 +2104,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -2083,6 +2113,8 @@
       "display_name": "Yael Macías",
       "leetcode_username": "chiyinpin",
       "latePenaltySeconds": 86400,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 748300,
       "onTimeProblemsCompleted": 5,
       "completionTimeSeconds": 661900,
@@ -2192,7 +2224,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -2201,13 +2233,15 @@
       "display_name": "Diego García",
       "leetcode_username": "DiegoGa03",
       "latePenaltySeconds": 172800,
-      "rankingTimeSeconds": 888564,
-      "onTimeProblemsCompleted": 3,
-      "completionTimeSeconds": 715764,
-      "problemsCompleted": 5,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
+      "rankingTimeSeconds": 946276,
+      "onTimeProblemsCompleted": 4,
+      "completionTimeSeconds": 773476,
+      "problemsCompleted": 6,
       "daysCompleted": 1,
-      "currentStreak": 3,
-      "bestStreak": 3,
+      "currentStreak": 4,
+      "bestStreak": 4,
       "currentStreakLevel": 1,
       "bestStreakGoldenDays": 0,
       "dayProgress": [
@@ -2241,7 +2275,7 @@
         },
         {
           "date": "2026-10-08",
-          "onTimeProblems": 0
+          "onTimeProblems": 1
         }
       ],
       "results": [
@@ -2303,14 +2337,14 @@
         },
         {
           "titleSlug": "reverse-string",
-          "firstAcceptedAt": null
+          "firstAcceptedAt": "2026-10-09T04:01:52.000Z"
         },
         {
           "titleSlug": "rotate-array",
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -2319,6 +2353,8 @@
       "display_name": "Hosky",
       "leetcode_username": "Iam_Hosky",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 168162,
       "onTimeProblemsCompleted": 4,
       "completionTimeSeconds": 168162,
@@ -2428,7 +2464,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -2437,6 +2473,8 @@
       "display_name": "Leonardo",
       "leetcode_username": "I0smean",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 56631,
       "onTimeProblemsCompleted": 1,
       "completionTimeSeconds": 56631,
@@ -2546,7 +2584,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -2555,6 +2593,8 @@
       "display_name": "Armando Parra",
       "leetcode_username": "YL8vpBshHH",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 65349,
       "onTimeProblemsCompleted": 1,
       "completionTimeSeconds": 65349,
@@ -2664,7 +2704,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -2673,6 +2713,8 @@
       "display_name": "Alondra",
       "leetcode_username": "DEmmaRL",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 0,
       "onTimeProblemsCompleted": 0,
       "completionTimeSeconds": 0,
@@ -2782,7 +2824,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -2791,6 +2833,8 @@
       "display_name": "CarlosJoako",
       "leetcode_username": "MbovicX5nT",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 0,
       "onTimeProblemsCompleted": 0,
       "completionTimeSeconds": 0,
@@ -2900,7 +2944,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -2909,6 +2953,8 @@
       "display_name": "Daniel Espinosa",
       "leetcode_username": "Dea10",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 0,
       "onTimeProblemsCompleted": 0,
       "completionTimeSeconds": 0,
@@ -3018,7 +3064,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 23
     },
@@ -3027,6 +3073,8 @@
       "display_name": "firulais36",
       "leetcode_username": "firulais36",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 0,
       "onTimeProblemsCompleted": 0,
       "completionTimeSeconds": 0,
@@ -3136,7 +3184,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 24
     },
@@ -3145,6 +3193,8 @@
       "display_name": "Jessica Apolinar Crisóstomo",
       "leetcode_username": "user3759bx",
       "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
       "rankingTimeSeconds": 0,
       "onTimeProblemsCompleted": 0,
       "completionTimeSeconds": 0,
@@ -3254,7 +3304,7 @@
           "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-09T03:09:03.312Z",
+      "lastSyncedAt": "2026-10-09T04:02:33.657Z",
       "syncFailed": false,
       "rank": 25
     }
