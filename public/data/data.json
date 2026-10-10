@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-10T11:13:55.096Z",
+  "generatedAt": "2026-10-10T12:00:16.643Z",
   "lastSuccessfulSyncAt": "2026-10-10T11:13:55.096Z",
   "participantsLastSuccessAt": "2026-10-10T11:13:55.096Z",
   "participantsFailed": false,
@@ -324,6 +324,27 @@
           "title": "Median of Two Sorted Arrays",
           "difficulty": "Hard",
           "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/"
+        }
+      ]
+    },
+    {
+      "id": "day-10",
+      "date": "2026-10-10",
+      "title": "Graph Weekend",
+      "description": "Explore connections, paths and relationships with graphs.",
+      "releaseAt": "2026-10-10T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "rotting-oranges",
+          "title": "Rotting Oranges",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/rotting-oranges/"
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "title": "Shortest Path Visiting All Nodes",
+          "difficulty": "Hard",
+          "url": "https://leetcode.com/problems/shortest-path-visiting-all-nodes/"
         }
       ]
     }
