@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-10T12:00:16.643Z",
-  "lastSuccessfulSyncAt": "2026-10-10T11:13:55.096Z",
-  "participantsLastSuccessAt": "2026-10-10T11:13:55.096Z",
+  "generatedAt": "2026-10-10T12:16:30.735Z",
+  "lastSuccessfulSyncAt": "2026-10-10T12:16:30.735Z",
+  "participantsLastSuccessAt": "2026-10-10T12:16:30.735Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -402,6 +402,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -476,9 +480,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": "2026-10-09T15:34:31.000Z"
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -534,6 +546,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -608,9 +624,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": "2026-10-09T14:50:07.000Z"
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -666,6 +690,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -740,9 +768,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": "2026-10-10T03:32:13.000Z"
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -798,6 +834,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -872,9 +912,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": "2026-10-09T20:08:29.000Z"
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -930,6 +978,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1004,9 +1056,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": "2026-10-10T03:09:43.000Z"
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -1062,6 +1122,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1136,9 +1200,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": "2026-10-10T05:32:07.000Z"
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -1194,6 +1266,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1268,9 +1344,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -1326,6 +1410,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1400,9 +1488,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -1458,6 +1554,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1532,9 +1632,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": "2026-10-10T04:54:15.000Z"
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -1590,6 +1698,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1664,9 +1776,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -1722,6 +1842,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1796,9 +1920,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -1814,9 +1946,9 @@
       "completionTimeSeconds": 1163644,
       "problemsCompleted": 10,
       "daysCompleted": 5,
-      "currentStreak": 4,
+      "currentStreak": 0,
       "bestStreak": 4,
-      "currentStreakLevel": 2,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 4,
       "dayProgress": [
         {
@@ -1853,6 +1985,10 @@
         },
         {
           "date": "2026-10-09",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
           "onTimeProblems": 0
         }
       ],
@@ -1928,9 +2064,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -1985,6 +2129,10 @@
         },
         {
           "date": "2026-10-09",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
           "onTimeProblems": 0
         }
       ],
@@ -2060,9 +2208,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -2118,6 +2274,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2192,9 +2352,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": "2026-10-10T00:19:13.000Z"
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -2250,6 +2418,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2324,9 +2496,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -2381,6 +2561,10 @@
         },
         {
           "date": "2026-10-09",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
           "onTimeProblems": 0
         }
       ],
@@ -2456,9 +2640,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -2474,9 +2666,9 @@
       "completionTimeSeconds": 773476,
       "problemsCompleted": 6,
       "daysCompleted": 1,
-      "currentStreak": 4,
+      "currentStreak": 0,
       "bestStreak": 4,
-      "currentStreakLevel": 1,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 0,
       "dayProgress": [
         {
@@ -2513,6 +2705,10 @@
         },
         {
           "date": "2026-10-09",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
           "onTimeProblems": 0
         }
       ],
@@ -2588,9 +2784,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -2645,6 +2849,10 @@
         },
         {
           "date": "2026-10-09",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
           "onTimeProblems": 0
         }
       ],
@@ -2720,9 +2928,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -2777,6 +2993,10 @@
         },
         {
           "date": "2026-10-09",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
           "onTimeProblems": 0
         }
       ],
@@ -2852,9 +3072,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -2909,6 +3137,10 @@
         },
         {
           "date": "2026-10-09",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
           "onTimeProblems": 0
         }
       ],
@@ -2984,9 +3216,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -3042,6 +3282,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3116,9 +3360,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -3174,6 +3426,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3248,9 +3504,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -3306,6 +3570,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3380,9 +3648,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 23
     },
@@ -3438,6 +3714,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3512,9 +3792,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 24
     },
@@ -3570,6 +3858,10 @@
         {
           "date": "2026-10-09",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3644,9 +3936,17 @@
         {
           "titleSlug": "median-of-two-sorted-arrays",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-10T11:13:55.096Z",
+      "lastSyncedAt": "2026-10-10T12:16:30.735Z",
       "syncFailed": false,
       "rank": 25
     }
