@@ -21,14 +21,15 @@ test('compact cards select one topic, constancy label and achievement; details r
 });
 test('tooltips expose measured evidence on focus and touch and dismiss with Escape or blur', () => {
   render(<ParticipantBadges badges={[badge('accepted-burst', 'activity', { qualifyingDays: 3, windowDays: 5, maxGapSeconds: 120 })]} />);
-  const trigger = screen.getByRole('button', { name: /Aceptados en ráfaga/ });
+  const trigger = screen.getByRole('button', { name: /Accepted in Bursts/ });
+  trigger.getBoundingClientRect = () => new DOMRect(50, 300, 100, 30);
   expect(screen.queryByRole('tooltip')).not.toBeInTheDocument();
   fireEvent.focus(trigger);
-  expect(trigger).toHaveAccessibleDescription(/no mide el tiempo de resolución ni demuestra uso de IA/);
+  expect(trigger).toHaveAccessibleDescription(/does not measure solving time or prove AI use/);
   fireEvent.keyDown(trigger, { key: 'Escape' });
   expect(screen.queryByRole('tooltip')).not.toBeInTheDocument();
   fireEvent.click(trigger);
-  expect(screen.getByRole('tooltip')).toHaveTextContent('3 de las últimas 5');
+  expect(screen.getByRole('tooltip')).toHaveTextContent('3 of the last 5');
   fireEvent.blur(trigger);
   expect(screen.queryByRole('tooltip')).not.toBeInTheDocument();
 });

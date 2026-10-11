@@ -1,4 +1,5 @@
-import { useId, useState } from 'react';
+import { useId, useRef, useState } from 'react';
+import { AnchoredTooltip } from '../../components/AnchoredTooltip';
 import { badgePresentation, featuredBadges } from './catalog';
 import type { ParticipantBadge } from './schema';
 
@@ -6,24 +7,16 @@ function Badge({ badge }: { badge: ParticipantBadge }) {
   const presentation = badgePresentation(badge);
   const id = useId();
   const [open, setOpen] = useState(false);
-  const [position, setPosition] = useState({ left: 24, bottom: 24 });
-  const show = (target: HTMLElement) => {
-    const bounds = target.getBoundingClientRect();
-    setPosition(window.innerWidth <= 600 ? { left: 24, bottom: 24 } : {
-      left: Math.max(24, Math.min(bounds.left, window.innerWidth - 324)),
-      bottom: bounds.top >= 280 ? Math.max(24, window.innerHeight - bounds.top + 8) : 24,
-    });
-    setOpen(true);
-  };
+  const anchor = useRef<HTMLButtonElement>(null);
   if (!presentation) return null;
-  return <span className="participant-badge" onMouseEnter={event => show(event.currentTarget)} onMouseLeave={() => setOpen(false)}>
-    <button type="button" className={`badge-pill badge-${badge.category}`} aria-describedby={open ? id : undefined}
-      onFocus={event => show(event.currentTarget)} onBlur={() => setOpen(false)} onClick={event => show(event.currentTarget)}
+  return <span className="participant-badge" onMouseEnter={() => setOpen(true)} onMouseLeave={() => { if (document.activeElement !== anchor.current) setOpen(false); }}>
+    <button ref={anchor} type="button" className={`badge-pill badge-${badge.category}`} aria-describedby={open ? id : undefined}
+      onFocus={() => setOpen(true)} onBlur={() => setOpen(false)} onClick={() => setOpen(true)}
       onKeyDown={event => { if (event.key === 'Escape') setOpen(false); }}>
       <span aria-hidden="true">{presentation.icon}</span> {presentation.name}
       {badge.category === 'topic' && <span className="badge-count">{badge.evidence.solved}</span>}
     </button>
-    <span role="tooltip" id={id} className="badge-tooltip" style={{ ...position, maxHeight: `calc(100vh - ${position.bottom + 24}px)` }} hidden={!open}>{presentation.tooltip}</span>
+    <AnchoredTooltip id={id} open={open} anchor={anchor} className="badge-tooltip">{presentation.tooltip}</AnchoredTooltip>
   </span>;
 }
 

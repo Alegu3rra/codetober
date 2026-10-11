@@ -1,5 +1,17 @@
-import { expect, test } from '@playwright/test';
+import { expect, test, type Locator } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+
+async function expectAnchored(trigger: Locator, tooltip: Locator, below = false) {
+  await expect(tooltip).toBeVisible();
+  await expect.poll(async () => {
+    const anchor = await trigger.boundingBox();
+    const box = await tooltip.boundingBox();
+    if (!anchor || !box) return Infinity;
+    const belowGap = Math.abs(box.y - anchor.y - anchor.height - 8);
+    const aboveGap = Math.abs(anchor.y - box.y - box.height - 8);
+    return below ? belowGap : Math.min(aboveGap, belowGap);
+  }).toBeLessThan(2);
+}
 
 const snapshot = {
   version: 1, demo: true, generatedAt: '2026-10-02T14:00:00Z', lastSuccessfulSyncAt: '2026-10-02T14:00:00Z', participantsLastSuccessAt: '2026-10-02T14:00:00Z', participantsFailed: false,
@@ -58,9 +70,11 @@ test('published problems, ties, search, details, keyboard and accessibility', as
   await expect(target.getByRole('link')).toHaveCount(3);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
-  await page.getByRole('button', { name: 'About ranking time' }).focus();
+  const rankingInfo = page.getByRole('button', { name: 'About ranking time' });
+  await rankingInfo.focus();
   await expect(page.getByRole('tooltip')).toContainText('plus late penalties');
   await expect(page.getByRole('tooltip')).toContainText('minus one hour per editorial');
+  await expectAnchored(rankingInfo, page.getByRole('tooltip'));
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await page.keyboard.press('Escape');
   await expect(page.getByRole('tooltip')).toHaveCount(0);
@@ -144,20 +158,30 @@ test('participant tags expose evidence on focus and touch without overflow', asy
     participants: snapshot.participants.map((person, i) => i === 0 ? { ...person, badges: tags } : person),
   } }));
   await page.goto('/codetober/2026/');
-  await expect(page.getByRole('tabpanel', { name: 'Problems' }).getByText('Inténtalo primero.')).toBeVisible();
+  await expect(page.getByRole('tabpanel', { name: 'Problems' }).getByText('Try it first.')).toBeVisible();
   await page.getByRole('tab', { name: 'Scoreboard' }).click();
   const person = page.locator('.participant').filter({ has: page.getByRole('heading', { name: 'Example Amy' }) });
   await expect(person.locator('.compact-badges .badge-pill')).toHaveCount(3);
-  const featured = person.locator('.compact-badges').getByRole('button', { name: /Una más y me voy/ });
+  const featured = person.locator('.compact-badges').getByRole('button', { name: /One More Problem/ });
   await featured.click();
-  await expect(page.getByRole('tooltip')).toContainText('3 de las últimas 7');
+  await expect(page.getByRole('tooltip')).toContainText('3 of the last 7');
+  await expectAnchored(featured, page.getByRole('tooltip'));
+  // Give the short fixture enough scroll room to place the tag near the top.
+  await page.getByRole('main').evaluate(element => { element.style.minHeight = '2200px'; });
+  // The fallback must sit just below the tag.
+  await featured.evaluate(element => {
+    window.scrollTo(0, window.scrollY + element.getBoundingClientRect().top - 40);
+  });
+  await expectAnchored(featured, page.getByRole('tooltip'), true);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await page.keyboard.press('Escape');
   await expect(page.getByRole('tooltip')).toHaveCount(0);
   await person.getByRole('button', { name: 'Expand progress for Example Amy' }).click();
   await expect(person.locator('.participant-expanded .badge-pill')).toHaveCount(4);
-  await person.locator('.participant-expanded').getByRole('button', { name: /Aceptados en ráfaga/ }).focus();
-  await expect(page.getByRole('tooltip')).toContainText('no mide el tiempo de resolución');
+  const burst = person.locator('.participant-expanded').getByRole('button', { name: /Accepted in Bursts/ });
+  await burst.focus();
+  await expect(page.getByRole('tooltip')).toContainText('does not measure solving time');
+  await expectAnchored(burst, page.getByRole('tooltip'));
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
   await page.screenshot({ path: testInfo.outputPath('participant-tags.png'), fullPage: true });

@@ -626,8 +626,8 @@ footer p:first-child {
 .rank-target-problems small { display: block; color: var(--muted); }
 .info-tooltip { display: inline-block; position: relative; }
 .info-tooltip-trigger { color: var(--teal); background: transparent; border: 0; padding: 4px 6px; font: inherit; cursor: help; }
-.info-tooltip-content { position: absolute; z-index: 5; bottom: calc(100% + 6px); left: 50%; transform: translateX(-50%); width: 220px; max-width: calc(100vw - 48px); padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: #101718; color: #dce5e5; font: .75rem/1.6 Arial, Helvetica, sans-serif; box-shadow: 0 6px 20px #0006; }
-@media (max-width: 600px) { .info-tooltip-content { position: fixed; width: auto; left: 24px; right: 24px; bottom: 24px; transform: none; } }
+.anchored-tooltip { position: fixed; z-index: 20; box-sizing: border-box; overflow-y: auto; overflow-wrap: anywhere; }
+.info-tooltip-content { width: min(220px, calc(100vw - 24px)); padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: #101718; color: #dce5e5; font: .75rem/1.6 Arial, Helvetica, sans-serif; box-shadow: 0 6px 20px #0006; }
 .compact-stat { display: flex; flex-direction: column; gap: 5px; font-family: var(--mono); }
 .compact-stat > .muted { font-size: .65rem; }
 .compact-stat strong { font-weight: 500; }
@@ -705,7 +705,6 @@ footer p:first-child {
 .badge-activity { color: #a5d8ff; background: #a5d8ff10; border-color: #a5d8ff44; }
 .badge-pill:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
 .badge-count { border-left: 1px solid currentColor; padding-left: 6px; }
-.badge-tooltip { position: fixed; z-index: 20; width: min(300px, calc(100vw - 48px)); overflow-y: auto; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #101718; color: #dce5e5; font: .8rem/1.6 Arial, Helvetica, sans-serif; box-shadow: 0 6px 20px #0006; }
+.badge-tooltip { width: min(300px, calc(100vw - 24px)); padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #101718; color: #dce5e5; font: .8rem/1.6 Arial, Helvetica, sans-serif; box-shadow: 0 6px 20px #0006; }
 .learning-notice { margin: 16px 0; padding: 14px 16px; border-left: 3px solid var(--teal); background: #70d9c509; color: var(--muted); font-size: .85rem; line-height: 1.7; }
 .learning-notice strong { color: var(--teal); }
-@media (max-width: 600px) { .badge-tooltip { position: fixed; width: auto; left: 24px; right: 24px; bottom: 24px; } }

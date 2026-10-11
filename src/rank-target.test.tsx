@@ -130,6 +130,7 @@ test('ranking time and late penalty explain their meaning on focus and dismiss o
   render(<Scoreboard data={previewData} now={now} zone={zone} />);
   fireEvent.click(screen.getByRole('button',{name:'Expand progress for Example Participant'}));
   const trigger=screen.getByRole('button',{name:'About ranking time'});
+  trigger.getBoundingClientRect = () => new DOMRect(50, 300, 100, 30);
   const tooltip=document.getElementById(trigger.getAttribute('aria-describedby')!)!;
   expect(tooltip).not.toBeVisible();
   fireEvent.focus(trigger);
@@ -138,7 +139,9 @@ test('ranking time and late penalty explain their meaning on focus and dismiss o
   expect(tooltip).toHaveTextContent('minus one hour per editorial');
   fireEvent.keyDown(trigger,{key:'Escape'});
   expect(tooltip).not.toBeVisible();
-  fireEvent.click(screen.getByRole('button',{name:'About late penalty'}));
+  const penalty = screen.getByRole('button',{name:'About late penalty'});
+  penalty.getBoundingClientRect = () => new DOMRect(50, 300, 100, 30);
+  fireEvent.click(penalty);
   expect(screen.getByRole('tooltip')).toHaveTextContent('24 hours added once');
 });
 
