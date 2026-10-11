@@ -696,3 +696,16 @@ footer p:first-child {
 .editorial-markdown { overflow-x: auto; }
 .editorial-markdown table { border-collapse: collapse; margin: 1rem 0; width: 100%; }
 .editorial-markdown th, .editorial-markdown td { border: 1px solid var(--line); padding: .6rem; text-align: left; }
+.participant-badges { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 7px; margin: 12px 0; }
+.compact-badges { margin: 8px 0; }
+.participant-badge { position: relative; display: inline-flex; max-width: 100%; }
+.badge-pill { display: inline-flex; align-items: center; gap: 6px; max-width: 100%; border: 1px solid #70d9c544; border-radius: 20px; padding: 5px 9px; background: #70d9c512; color: var(--teal); font: .7rem/1.4 var(--mono); cursor: help; text-align: left; overflow-wrap: anywhere; }
+.badge-achievement { color: #ffd978; background: #ffd97810; border-color: #ffd97844; }
+.badge-contribution { color: #c4b5fd; background: #c4b5fd10; border-color: #c4b5fd44; }
+.badge-activity { color: #a5d8ff; background: #a5d8ff10; border-color: #a5d8ff44; }
+.badge-pill:focus-visible { outline: 2px solid var(--teal); outline-offset: 3px; }
+.badge-count { border-left: 1px solid currentColor; padding-left: 6px; }
+.badge-tooltip { position: fixed; z-index: 20; width: min(300px, calc(100vw - 48px)); overflow-y: auto; padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #101718; color: #dce5e5; font: .8rem/1.6 Arial, Helvetica, sans-serif; box-shadow: 0 6px 20px #0006; }
+.learning-notice { margin: 16px 0; padding: 14px 16px; border-left: 3px solid var(--teal); background: #70d9c509; color: var(--muted); font-size: .85rem; line-height: 1.7; }
+.learning-notice strong { color: var(--teal); }
+@media (max-width: 600px) { .badge-tooltip { position: fixed; width: auto; left: 24px; right: 24px; bottom: 24px; } }

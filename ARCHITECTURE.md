@@ -1,7 +1,7 @@
 # Arquitectura del sitio público
 
 El sitio consume el snapshot sanitizado del sincronizador. La reorganización conserva
-la interfaz y los cálculos existentes; no incorpora etiquetas ni cambia el contrato JSON.
+la interfaz y los cálculos existentes. Las etiquetas agregan campos opcionales al JSON.
 
 | Ubicación | Responsabilidad |
 | --- | --- |
@@ -13,6 +13,7 @@ la interfaz y los cálculos existentes; no incorpora etiquetas ni cambia el cont
 | `src/features/ranking/time.ts` | Tiempos, penalizaciones y orden de clasificación |
 | `src/features/editorials/credit.ts` | Créditos editoriales publicados |
 | `src/format/time.ts` | Presentación de duraciones |
+| `src/features/badges/` | Contrato de etiquetas, catálogo de textos, selección de destacadas y tooltips accesibles |
 | `src/pages/`, `src/components/` | Composición de páginas y componentes visuales |
 
 `src/data.ts` es una entrada de compatibilidad que reexporta la API anterior. Los módulos
@@ -29,9 +30,9 @@ Una funcionalidad nueva debe reunir sus cálculos y componentes específicos en
 `src/features/<funcionalidad>/`. Mantener en `components/` los elementos reutilizables
 y en `pages/` la composición y navegación.
 
-Para las etiquetas propuestas, agregar `features/badges/` con catálogo de textos y
-componentes. El sincronizador evaluará las reglas y publicará la evidencia necesaria;
-el navegador presentará esos resultados. No incluir el calendario privado ni asociaciones
+Las etiquetas están en `features/badges/` con catálogo de textos y componentes.
+El sincronizador evalúa las reglas y publica la evidencia necesaria;
+el navegador presenta esos resultados. No incluir el calendario privado ni asociaciones
 de problemas futuros en el bundle.
 
 Los cálculos de ranking actuales siguen en el sitio para conservar comportamiento.

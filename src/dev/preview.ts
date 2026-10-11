@@ -35,6 +35,11 @@ const results = (times: (string | null)[]) => previewData.days.flatMap(d => d.pr
 const progress = (counts: number[]) => previewData.days.map((d, i) => ({date: d.date, onTimeProblems: counts[i]}));
 previewData.participants = [
   { ...base, participant_id: 'local-preview-golden', display_name: 'Golden Example', leetcode_username: 'fictional_golden', rank: 1,
+    badges: [
+      { id: 'topic-dp', category: 'topic', level: 2, ruleVersion: 1, evaluatedAt: previewData.generatedAt, evidence: { solved: 3, mediumHard: 1 } },
+      { id: 'on-fire', category: 'consistency', ruleVersion: 1, evaluatedAt: previewData.generatedAt, evidence: { days: 3 } },
+      { id: 'extra-time', category: 'achievement', ruleVersion: 1, evaluatedAt: previewData.generatedAt, evidence: { extraProblems: 2 } },
+    ],
     problemsCompleted: 6, daysCompleted: 3, currentStreak: 3, bestStreak: 3, currentStreakLevel: 2, bestStreakGoldenDays: 3,
     dayProgress: progress([2, 2, 2]),
     results: results(previewData.days.flatMap(d => [1, 2].map(() => `${d.date}T15:00:00Z`))),

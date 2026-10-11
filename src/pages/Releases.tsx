@@ -3,6 +3,7 @@ import { selectedEdition } from '../editions';
 import { releaseViewId, useContentIndicators } from '../hooks/useViewedContent';
 
 export const releaseNotes = [
+  { id: '2026-release-4', year: 2026, title: 'Release 4 · Your practice, your tags', date: 'October 11, 2026', kind: 'badges' },
   { id: '2026-release-3', year: 2026, title: 'Release 3 · Share an approach, earn an hour', date: 'October 8, 2026', kind: 'editorial-credit' },
   { id: '2026-release-2', year: 2026, title: 'Release 2 · Earlier solves, better ranks', date: 'October 8, 2026', kind: 'ranking' },
   { id: '2026-editorials-release-1', year: 2026, title: 'Release 1 · Community editorials', date: 'October 5, 2026', kind: 'editorials' },
@@ -23,7 +24,18 @@ export function Releases() {
         <span className="muted">Read release</span>
       </summary>
       <div className="editorial-body">
-        {release.kind === 'editorial-credit' ? <>
+        {release.kind === 'badges' ? <>
+          <h3>Participant tags recognize your practice</h3>
+          <p>Your card now highlights practice topics, consistency, community contributions, and extra practice. Focus, tap, or hover over a tag to see its criteria and the observed activity behind it. Expand your card to see all your tags.</p>
+          <ul>
+            <li>Topic tags start at two distinct accepted problems. Three, including a Medium or Hard, earn the strong-topic level. They describe problem topics, not the technique used in your code.</li>
+            <li>A golden week requires seven consecutive days with both problems accepted on time.</li>
+            <li>Extra practice counts distinct problems outside the event calendar after both daily problems are accepted on time and before the next 06:00 release. Recent accepted submissions are a limited observation, not a complete history.</li>
+            <li>Closely spaced accepts describe submission timing. They do not measure solving time or demonstrate AI use.</li>
+            <li>Tags recognize activity without changing points or ranking time. Complete topic collections are awarded at event closure.</li>
+          </ul>
+          <p>Try first. Getting help is welcome; understanding and explaining your solution is the real win.</p>
+        </> : release.kind === 'editorial-credit' ? <>
           <h3>Validated editorials now reduce ranking time</h3>
           <p>Share an implementation different from those already published for the same problem. Once your editorial is reviewed, validated, and published, you earn <strong>one hour off your total ranking time</strong>.</p>
           <ul>

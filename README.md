@@ -190,3 +190,8 @@ movimiento reducido. Esto no afecta puntos ni rachas.
 ## Organización del código
 
 Ver [arquitectura y guía para extender el sitio](ARCHITECTURE.md).
+
+Las tarjetas muestran hasta tres etiquetas destacadas; al expandirlas aparecen todas.
+Los tooltips funcionan con mouse, foco de teclado y toque. Las etiquetas se calculan
+en el sincronizador y no cambian el ranking. Los snapshots anteriores sin `badges`
+siguen siendo válidos. El preview local incluye etiquetas sintéticas.

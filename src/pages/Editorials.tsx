@@ -4,6 +4,7 @@ import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 import type { EventData } from "../data/schema";
 import { selectedEdition } from '../editions';
+import { LearningNotice } from '../components/LearningNotice';
 
 const contributionForm = 'https://docs.google.com/forms/d/e/1FAIpQLSf9-LzVLUh5QxSgLrp6bFqJHCmuGKhP5yyetMvY0NRG7N1owA/viewform?usp=header';
 export function Editorials({data, loading = false, error = false, hash = ''}: {data:EventData|null; loading?:boolean; error?:boolean; hash?:string}) {
@@ -12,6 +13,7 @@ export function Editorials({data, loading = false, error = false, hash = ''}: {d
   return <section className="editorials">
     <h2>Community editorials</h2>
     <p>Different approaches, shared by the people solving the challenge.</p>
+    <LearningNotice compact />
     <p className="muted">Reviewed contributions appear after the problem’s daily window closes at 06:00 Guadalajara time. A published editorial validated as a different implementation earns its author one hour off their ranking time. Contributions do not add problem points.</p>
     {selectedEdition.year === 2026 && <aside className="notice">
       <strong>Share your approach</strong>

@@ -8,6 +8,7 @@ import { Timestamp } from './Timestamp';
 import { ParticipantDetails } from './ParticipantDetails';
 import { RankTarget } from './RankTarget';
 import { InfoTooltip } from './InfoTooltip';
+import { ParticipantBadges } from '../features/badges/ParticipantBadges';
 
 export function ParticipantRow({ person, rival, data, now, zone, started }: {
   person: Participant; rival?: Participant; data: EventData; now: number; zone: string; started: boolean;
@@ -31,6 +32,7 @@ export function ParticipantRow({ person, rival, data, now, zone, started }: {
             {contributions.length > 0 && <a className="contributor-indicator" href={`#editorial-${[...contributions].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt))[0].id}`} aria-label={`View ${contributions.length} editorial ${contributions.length === 1 ? 'contribution' : 'contributions'} by ${person.display_name}`} title="Community editorial contributor">✎</a>}
           </h2>
           <small>@{person.leetcode_username}</small>
+          <ParticipantBadges badges={person.badges} compact />
           {started && <small className="rank-target-summary">{rival
             ? `${closed ? 'Final gap' : 'Next rank'} · ${rival.display_name} · ${rival.problemsCompleted === person.problemsCompleted ? rivalTimeGap > 0 ? `${elapsedLabel(rivalTimeGap)} behind on time` : 'Time tied' : closed ? `${rival.problemsCompleted - person.problemsCompleted} points behind` : `+${rival.problemsCompleted - person.problemsCompleted} to tie on points`}`
             : closed ? 'Finished #1' : 'Leading the ranking'}</small>}
@@ -47,6 +49,7 @@ export function ParticipantRow({ person, rival, data, now, zone, started }: {
         </button>
       </div>
       <div id={panel} hidden={!open} className="participant-expanded">
+        <ParticipantBadges badges={person.badges} />
         {started && <RankTarget person={person} rival={rival} data={data} now={now} zone={zone} />}
         <dl className="stats participant-extra-stats">
           <div><dt>Ranking time <InfoTooltip label="ranking time">Total time from each problem’s publication to its first accepted submission, plus late penalties, minus one hour per editorial validated as a different implementation. Minimum zero. With equal problem totals, less time ranks higher.</InfoTooltip></dt><dd className="elapsed-time">{elapsedLabel(time.totalSeconds)}</dd></div>

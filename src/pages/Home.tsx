@@ -3,6 +3,7 @@ import { type Day, type EventData } from "../data/schema";
 import { Timestamp } from "../components/Timestamp";
 import { ProblemCards } from "../components/ProblemCards";
 import { Countdown } from "../components/Countdown";
+import { LearningNotice } from "../components/LearningNotice";
 
 function dayNumber(day: Day) {
   return Number(day.date.slice(-2)).toString().padStart(2, "0");
@@ -70,6 +71,7 @@ export function Home({
           </div>
           {today ? (
             <>
+              <LearningNotice />
               <div className="daily-focus" aria-label="Today's focus">
                 <span className="daily-focus-mark" aria-hidden="true">◆</span>
                 <div>

@@ -85,7 +85,7 @@ test('validated editorial credit changes rank and the latest release tracks read
   await expect(tab).toHaveClass(/has-unseen-content/);
   await tab.click();
   const note = page.locator('details.release-note').first();
-  await expect(note).toContainText('Release 3');
+  await expect(note).toContainText('Release 4');
   await note.locator('summary').click();
   await expect(note).not.toHaveClass(/has-unseen-content/);
   await expect(tab).toHaveClass(/has-unseen-content/);
@@ -130,4 +130,35 @@ test('unannounced editions redirect to the latest announced year', async ({ page
   await page.goto('/codetober/2099/?source=test#main');
   await expect(page).toHaveURL(/\/codetober\/2026\/\?source=test#main$/);
   await expect(page.getByRole('heading', { name: 'Problems', exact: true })).toBeVisible();
+});
+
+test('participant tags expose evidence on focus and touch without overflow', async ({ page }, testInfo) => {
+  await page.clock.install({ time: new Date('2026-10-02T14:00:00Z') });
+  const tags = [
+    { id: 'topic-dp', category: 'topic', level: 2, ruleVersion: 1, evaluatedAt: snapshot.generatedAt, evidence: { solved: 3, mediumHard: 1 } },
+    { id: 'on-fire', category: 'consistency', ruleVersion: 1, evaluatedAt: snapshot.generatedAt, evidence: { days: 3 } },
+    { id: 'extra-mile', category: 'activity', ruleVersion: 1, evaluatedAt: snapshot.generatedAt, evidence: { qualifyingDays: 3, windowDays: 7, extraProblems: 2 } },
+    { id: 'accepted-burst', category: 'activity', ruleVersion: 1, evaluatedAt: snapshot.generatedAt, evidence: { qualifyingDays: 3, windowDays: 5, maxGapSeconds: 120 } },
+  ];
+  await page.route('**/data/data.json', route => route.fulfill({ json: { ...snapshot,
+    participants: snapshot.participants.map((person, i) => i === 0 ? { ...person, badges: tags } : person),
+  } }));
+  await page.goto('/codetober/2026/');
+  await expect(page.getByRole('tabpanel', { name: 'Problems' }).getByText('Inténtalo primero.')).toBeVisible();
+  await page.getByRole('tab', { name: 'Scoreboard' }).click();
+  const person = page.locator('.participant').filter({ has: page.getByRole('heading', { name: 'Example Amy' }) });
+  await expect(person.locator('.compact-badges .badge-pill')).toHaveCount(3);
+  const featured = person.locator('.compact-badges').getByRole('button', { name: /Una más y me voy/ });
+  await featured.click();
+  await expect(page.getByRole('tooltip')).toContainText('3 de las últimas 7');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.keyboard.press('Escape');
+  await expect(page.getByRole('tooltip')).toHaveCount(0);
+  await person.getByRole('button', { name: 'Expand progress for Example Amy' }).click();
+  await expect(person.locator('.participant-expanded .badge-pill')).toHaveCount(4);
+  await person.locator('.participant-expanded').getByRole('button', { name: /Aceptados en ráfaga/ }).focus();
+  await expect(page.getByRole('tooltip')).toContainText('no mide el tiempo de resolución');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
+  await page.screenshot({ path: testInfo.outputPath('participant-tags.png'), fullPage: true });
 });
