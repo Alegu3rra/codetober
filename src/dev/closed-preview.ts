@@ -1,4 +1,4 @@
-import type { EventData } from '../data';
+import type { EventData } from "../data/schema";
 import { previewData } from './preview';
 
 // Entirely fictional archive. No private calendar or participant data is read.

@@ -1,5 +1,6 @@
 import React from 'react';
-import { elapsedLabel, type EventData, type Participant } from '../data';
+import { elapsedLabel } from "../format/time";
+import { type EventData, type Participant } from "../data/schema";
 import { rankTarget } from '../rank-target';
 import { Timestamp } from './Timestamp';
 

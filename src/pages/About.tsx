@@ -1,6 +1,6 @@
 import { selectedEdition } from "../editions";
 import React from "react";
-import { formURL } from "../data";
+import { formURL } from "../data/urls";
 import { organizer } from "../content";
 
 export function About({ now = Date.now() }: { now?: number }) {

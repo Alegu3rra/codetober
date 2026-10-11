@@ -186,3 +186,7 @@ su propio indicador; actualizar un aporte existente no lo reinicia. Los previews
 usan almacenamiento separado. Si el almacenamiento está bloqueado funciona durante
 la visita. Al borrarlo o cambiar de dispositivo las marcas reaparecen. Se respeta
 movimiento reducido. Esto no afecta puntos ni rachas.
+
+## Organización del código
+
+Ver [arquitectura y guía para extender el sitio](ARCHITECTURE.md).

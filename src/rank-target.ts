@@ -1,4 +1,6 @@
-import { type EventData, type Participant, dailyFirstAcceptance, rankingTime } from './data';
+import { type EventData, type Participant } from "./data/schema";
+import { dailyFirstAcceptance } from "./features/participants/progress";
+import { rankingTime } from "./features/ranking/time";
 
 export function rankTarget(person: Participant, rival: Participant, data: EventData, now: number) {
   const pointsToTie = Math.max(0, rival.problemsCompleted - person.problemsCompleted);

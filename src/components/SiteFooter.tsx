@@ -1,5 +1,5 @@
 import React from "react";
-import { type EventData } from "../data";
+import { type EventData } from "../data/schema";
 import { Timestamp } from "./Timestamp";
 
 export function SiteFooter({ data, zone }: { data?: EventData | null; zone: string }) {

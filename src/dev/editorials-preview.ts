@@ -1,5 +1,5 @@
 import { previewData } from './preview';
-import type { EventData } from '../data';
+import type { EventData } from "../data/schema";
 export const editorialsPreviewData: EventData = structuredClone(previewData);
 const first = editorialsPreviewData.days[0];
 first.title = 'Arrays · Editorial layout preview';

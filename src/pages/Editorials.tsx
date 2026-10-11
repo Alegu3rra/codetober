@@ -2,7 +2,7 @@ import { useContentIndicators, editorialViewId } from "../hooks/useViewedContent
 import React from 'react';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import type { EventData } from '../data';
+import type { EventData } from "../data/schema";
 import { selectedEdition } from '../editions';
 
 const contributionForm = 'https://docs.google.com/forms/d/e/1FAIpQLSf9-LzVLUh5QxSgLrp6bFqJHCmuGKhP5yyetMvY0NRG7N1owA/viewform?usp=header';

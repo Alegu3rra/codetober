@@ -1,4 +1,4 @@
-import type { EventData } from '../data';
+import type { EventData } from "../data/schema";
 
 // Synthetic UI fixtures only; never import the private calendar here.
 export const previewData: EventData = {

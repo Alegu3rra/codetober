@@ -2,7 +2,7 @@ import configuredRegistry from "./editions.json";
 import { annualRegistry, releaseInstant } from "../shared/annual-editions.mjs";
 // Freeze the available years at build time. A visitor's clock cannot announce one.
 const registry = annualRegistry(configuredRegistry, Number(import.meta.env.VITE_EDITION_BUILD_TIME));
-import type { EventData } from "./data";
+import type { EventData } from "./data/schema";
 export const editions = registry.editions.filter(e => e.announced);
 export const latestYear = registry.latestYear;
 export const editionRoot = import.meta.env.BASE_URL.replace(/\d{4}\/$/, "");

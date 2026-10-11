@@ -1,5 +1,8 @@
 import React, { useId, useState } from 'react';
-import { firstSolveToday, rankingTime, elapsedLabel, type EventData, type Participant } from '../data';
+import { firstSolveToday } from "../features/participants/progress";
+import { rankingTime } from "../features/ranking/time";
+import { elapsedLabel } from "../format/time";
+import { type EventData, type Participant } from "../data/schema";
 import { StreakFlame } from './StreakFlame';
 import { Timestamp } from './Timestamp';
 import { ParticipantDetails } from './ParticipantDetails';

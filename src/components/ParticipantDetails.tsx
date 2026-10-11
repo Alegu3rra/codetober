@@ -1,5 +1,7 @@
 import React from "react";
-import { elapsedLabel, problemRankingTime, type Editorial, type Participant, type EventData } from "../data";
+import { elapsedLabel } from "../format/time";
+import { problemRankingTime } from "../features/ranking/time";
+import { type Editorial, type Participant, type EventData } from "../data/schema";
 import { Timestamp } from "./Timestamp";
 import { StreakFlame } from "./StreakFlame";
 

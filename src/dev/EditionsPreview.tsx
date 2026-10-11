@@ -4,7 +4,7 @@ import { Scoreboard } from '../pages/Scoreboard';
 import { SiteFooter } from '../components/SiteFooter';
 import { previewData } from './preview';
 import { closedPreviewData } from './closed-preview';
-import type { EventData } from '../data';
+import type { EventData } from "../data/schema";
 import './editions-preview.css';
 
 type Scenario = 'upcoming' | 'active' | 'closed';

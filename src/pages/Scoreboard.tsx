@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { filterParticipants, type EventData } from "../data";
+import { filterParticipants } from "../features/participants/search";
+import { type EventData } from "../data/schema";
 import { ParticipantRow } from "../components/ParticipantRow";
-import { orderedParticipants } from "../data";
+import { orderedParticipants } from "../features/ranking/time";
 
 export function Scoreboard({
   data,

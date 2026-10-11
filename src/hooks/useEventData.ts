@@ -1,6 +1,7 @@
 import { selectedEdition, emptyEditionData } from "../editions";
 import { useEffect, useState } from "react";
-import { dataSchema, dataURL, type EventData } from "../data";
+import { dataSchema, type EventData } from "../data/schema";
+import { dataURL } from "../data/urls";
 
 export function useEventData() {
   const mode = import.meta.env.DEV ? new URLSearchParams(window.location.search).get("preview") : null;

@@ -1,5 +1,5 @@
 import React from "react";
-import { type Day, type Editorial } from "../data";
+import { type Day, type Editorial } from "../data/schema";
 
 export function ProblemCards({ day, editorials = [], showFocus = false }: { day: Day; editorials?: Editorial[]; showFocus?: boolean }) {
   return (

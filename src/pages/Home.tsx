@@ -1,5 +1,5 @@
 import React from "react";
-import { type Day, type EventData } from "../data";
+import { type Day, type EventData } from "../data/schema";
 import { Timestamp } from "../components/Timestamp";
 import { ProblemCards } from "../components/ProblemCards";
 import { Countdown } from "../components/Countdown";
