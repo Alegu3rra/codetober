@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-11T08:58:07.992Z",
-  "lastSuccessfulSyncAt": "2026-10-11T08:58:07.992Z",
-  "participantsLastSuccessAt": "2026-10-11T08:58:07.992Z",
+  "generatedAt": "2026-10-11T13:23:02.327Z",
+  "lastSuccessfulSyncAt": "2026-10-11T13:23:02.327Z",
+  "participantsLastSuccessAt": "2026-10-11T13:23:02.327Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -347,6 +347,27 @@
           "url": "https://leetcode.com/problems/shortest-path-visiting-all-nodes/"
         }
       ]
+    },
+    {
+      "id": "day-11",
+      "date": "2026-10-11",
+      "title": "Palindrome ID",
+      "description": "A pair selected around palindromic problem IDs.",
+      "releaseAt": "2026-10-11T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "symmetric-tree",
+          "title": "Symmetric Tree",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/symmetric-tree/"
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "title": "Palindrome Partitioning",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/palindrome-partitioning/"
+        }
+      ]
     }
   ],
   "participants": [
@@ -406,6 +427,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -488,9 +513,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": "2026-10-11T04:11:57.000Z"
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -550,6 +583,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -632,9 +669,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": "2026-10-11T06:51:37.000Z"
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -694,6 +739,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -776,9 +825,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": "2026-10-10T20:52:40.000Z"
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -838,6 +895,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -920,9 +981,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -982,6 +1051,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1064,9 +1137,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -1126,6 +1207,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1208,9 +1293,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": "2026-10-11T02:04:53.000Z"
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -1270,6 +1363,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1352,9 +1449,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -1370,9 +1475,9 @@
       "completionTimeSeconds": 356903,
       "problemsCompleted": 18,
       "daysCompleted": 9,
-      "currentStreak": 9,
+      "currentStreak": 0,
       "bestStreak": 9,
-      "currentStreakLevel": 2,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 9,
       "dayProgress": [
         {
@@ -1413,6 +1518,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -1496,9 +1605,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -1506,17 +1623,17 @@
       "participant_id": "participant-013",
       "display_name": "Saúl Villeda",
       "leetcode_username": "sav1209",
-      "latePenaltySeconds": 0,
+      "latePenaltySeconds": 86400,
       "editorialCreditSeconds": 0,
       "creditedEditorials": 0,
-      "rankingTimeSeconds": 445338,
+      "rankingTimeSeconds": 618157,
       "onTimeProblemsCompleted": 17,
-      "completionTimeSeconds": 445338,
-      "problemsCompleted": 17,
+      "completionTimeSeconds": 531757,
+      "problemsCompleted": 18,
       "daysCompleted": 8,
-      "currentStreak": 9,
+      "currentStreak": 0,
       "bestStreak": 9,
-      "currentStreakLevel": 1,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 8,
       "dayProgress": [
         {
@@ -1557,6 +1674,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -1635,14 +1756,22 @@
         },
         {
           "titleSlug": "rotting-oranges",
-          "firstAcceptedAt": null
+          "firstAcceptedAt": "2026-10-11T12:00:19.000Z"
         },
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -1658,9 +1787,9 @@
       "completionTimeSeconds": 553223,
       "problemsCompleted": 11,
       "daysCompleted": 3,
-      "currentStreak": 8,
+      "currentStreak": 0,
       "bestStreak": 8,
-      "currentStreakLevel": 1,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 3,
       "dayProgress": [
         {
@@ -1701,6 +1830,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -1784,9 +1917,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -1846,6 +1987,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1928,9 +2073,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -1990,6 +2143,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2072,9 +2229,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -2090,9 +2255,9 @@
       "completionTimeSeconds": 489925,
       "problemsCompleted": 10,
       "daysCompleted": 1,
-      "currentStreak": 9,
+      "currentStreak": 0,
       "bestStreak": 9,
-      "currentStreakLevel": 1,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 1,
       "dayProgress": [
         {
@@ -2133,6 +2298,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -2216,9 +2385,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -2277,6 +2454,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -2360,9 +2541,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -2378,9 +2567,9 @@
       "completionTimeSeconds": 184089,
       "problemsCompleted": 7,
       "daysCompleted": 2,
-      "currentStreak": 2,
+      "currentStreak": 0,
       "bestStreak": 2,
-      "currentStreakLevel": 1,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 1,
       "dayProgress": [
         {
@@ -2421,6 +2610,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -2504,9 +2697,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -2565,6 +2766,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -2648,9 +2853,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -2709,6 +2922,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -2792,9 +3009,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -2853,6 +3078,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -2936,9 +3165,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -2997,6 +3234,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -3080,9 +3321,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -3141,6 +3390,10 @@
         },
         {
           "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
           "onTimeProblems": 0
         }
       ],
@@ -3224,9 +3477,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -3286,6 +3547,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3368,9 +3633,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -3430,6 +3703,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3512,9 +3789,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -3574,6 +3859,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3656,9 +3945,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 23
     },
@@ -3718,6 +4015,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3800,9 +4101,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 24
     },
@@ -3862,6 +4171,10 @@
         {
           "date": "2026-10-10",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3944,9 +4257,17 @@
         {
           "titleSlug": "shortest-path-visiting-all-nodes",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
         }
       ],
-      "lastSyncedAt": "2026-10-11T08:58:07.992Z",
+      "lastSyncedAt": "2026-10-11T13:23:02.327Z",
       "syncFailed": false,
       "rank": 25
     }
