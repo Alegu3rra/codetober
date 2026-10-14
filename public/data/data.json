@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-14T07:53:23.375Z",
+  "generatedAt": "2026-10-14T12:00:19.654Z",
   "lastSuccessfulSyncAt": "2026-10-14T07:53:23.375Z",
   "participantsLastSuccessAt": "2026-10-14T07:53:23.375Z",
   "participantsFailed": false,
@@ -408,6 +408,27 @@
           "title": "Container With Most Water",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/container-with-most-water/"
+        }
+      ]
+    },
+    {
+      "id": "day-14",
+      "date": "2026-10-14",
+      "title": "Blind Solve",
+      "description": "Read the statement and choose your approach before checking the tags.",
+      "releaseAt": "2026-10-14T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "backspace-string-compare",
+          "title": "Backspace String Compare",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/backspace-string-compare/"
+        },
+        {
+          "titleSlug": "asteroid-collision",
+          "title": "Asteroid Collision",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/asteroid-collision/"
         }
       ]
     }
