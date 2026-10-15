@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-15T11:19:29.158Z",
+  "generatedAt": "2026-10-15T12:00:17.575Z",
   "lastSuccessfulSyncAt": "2026-10-15T11:19:29.158Z",
   "participantsLastSuccessAt": "2026-10-15T11:19:29.158Z",
   "participantsFailed": false,
@@ -429,6 +429,27 @@
           "title": "Asteroid Collision",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/asteroid-collision/"
+        }
+      ]
+    },
+    {
+      "id": "day-15",
+      "date": "2026-10-15",
+      "title": "Linear Time",
+      "description": "Aim for a solution that runs in O(n) time.",
+      "releaseAt": "2026-10-15T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "find-pivot-index",
+          "title": "Find Pivot Index",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/find-pivot-index/"
+        },
+        {
+          "titleSlug": "subarray-sum-equals-k",
+          "title": "Subarray Sum Equals K",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/subarray-sum-equals-k/"
         }
       ]
     }
