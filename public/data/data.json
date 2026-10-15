@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-15T17:01:19.403Z",
-  "lastSuccessfulSyncAt": "2026-10-15T17:01:19.403Z",
-  "participantsLastSuccessAt": "2026-10-15T17:01:19.403Z",
+  "generatedAt": "2026-10-15T17:48:19.599Z",
+  "lastSuccessfulSyncAt": "2026-10-15T17:48:19.599Z",
+  "participantsLastSuccessAt": "2026-10-15T17:48:19.599Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -660,7 +660,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -671,7 +671,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -682,7 +682,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -693,7 +693,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -704,7 +704,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -715,7 +715,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -726,7 +726,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 4
@@ -737,7 +737,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -748,7 +748,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 8
           }
@@ -757,7 +757,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 15
           }
@@ -766,7 +766,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 15
           }
@@ -775,7 +775,7 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 5
           }
@@ -784,7 +784,7 @@
           "id": "extra-time",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "extraProblems": 16
           }
@@ -793,7 +793,7 @@
           "id": "extra-mile",
           "category": "activity",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "qualifyingDays": 6,
             "windowDays": 7,
@@ -801,7 +801,7 @@
           }
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -1010,7 +1010,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -1021,7 +1021,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -1032,7 +1032,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -1043,7 +1043,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -1054,7 +1054,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -1065,7 +1065,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -1076,7 +1076,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 4
@@ -1087,7 +1087,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -1098,7 +1098,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 8
           }
@@ -1107,7 +1107,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 15
           }
@@ -1116,7 +1116,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 9
           }
@@ -1125,7 +1125,7 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4
           }
@@ -1134,13 +1134,13 @@
           "id": "extra-time",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "extraProblems": 1
           }
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -1349,7 +1349,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -1360,7 +1360,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -1371,7 +1371,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -1382,7 +1382,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -1393,7 +1393,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -1404,7 +1404,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -1415,7 +1415,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 4
@@ -1426,7 +1426,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -1437,7 +1437,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 8
           }
@@ -1446,7 +1446,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 15
           }
@@ -1455,7 +1455,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 7
           }
@@ -1464,7 +1464,7 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4
           }
@@ -1473,13 +1473,13 @@
           "id": "extra-time",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "extraProblems": 2
           }
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -1688,7 +1688,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -1699,7 +1699,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -1710,7 +1710,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -1721,7 +1721,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -1732,7 +1732,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -1743,7 +1743,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -1754,7 +1754,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 3
@@ -1765,7 +1765,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -1776,7 +1776,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 8
           }
@@ -1785,7 +1785,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 15
           }
@@ -1794,7 +1794,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 8
           }
@@ -1803,7 +1803,7 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 5
           }
@@ -1812,13 +1812,13 @@
           "id": "extra-time",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "extraProblems": 3
           }
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -2027,7 +2027,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -2038,7 +2038,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -2049,7 +2049,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -2060,7 +2060,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -2071,7 +2071,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -2082,7 +2082,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -2093,7 +2093,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 3
@@ -2104,7 +2104,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -2115,7 +2115,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 8
           }
@@ -2124,7 +2124,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 4
           }
@@ -2133,7 +2133,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 9
           }
@@ -2142,14 +2142,14 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {}
         },
         {
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 5
           }
@@ -2158,7 +2158,7 @@
           "id": "extra-time",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "extraProblems": 1
           }
@@ -2167,13 +2167,13 @@
           "id": "knowledge-sharer",
           "category": "contribution",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "contributions": 1
           }
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -2382,7 +2382,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -2393,7 +2393,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -2404,7 +2404,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -2415,7 +2415,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -2426,7 +2426,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -2437,7 +2437,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -2448,7 +2448,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 3
@@ -2459,7 +2459,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -2470,7 +2470,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 8
           }
@@ -2479,7 +2479,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 14
           }
@@ -2488,7 +2488,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 14
           }
@@ -2497,13 +2497,13 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 5
           }
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -2712,7 +2712,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -2723,7 +2723,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -2734,7 +2734,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -2745,7 +2745,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -2756,7 +2756,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -2767,7 +2767,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -2778,7 +2778,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 3
@@ -2789,7 +2789,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -2800,7 +2800,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 8
           }
@@ -2809,7 +2809,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 14
           }
@@ -2818,7 +2818,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 11
           }
@@ -2827,13 +2827,13 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4
           }
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -3042,7 +3042,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -3053,7 +3053,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -3064,7 +3064,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -3075,7 +3075,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -3086,7 +3086,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -3097,7 +3097,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -3108,7 +3108,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 3
@@ -3119,7 +3119,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -3130,7 +3130,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 8
           }
@@ -3139,7 +3139,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 14
           }
@@ -3148,7 +3148,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 7
           }
@@ -3157,13 +3157,13 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4
           }
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -3372,7 +3372,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -3383,7 +3383,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -3394,7 +3394,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -3405,7 +3405,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -3416,7 +3416,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -3427,7 +3427,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -3438,7 +3438,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -3449,7 +3449,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -3460,7 +3460,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 8
           }
@@ -3469,7 +3469,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 8
           }
@@ -3478,20 +3478,20 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {}
         },
         {
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3
           }
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -3700,7 +3700,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -3711,7 +3711,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 2
@@ -3722,7 +3722,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -3733,7 +3733,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -3744,7 +3744,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -3755,7 +3755,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -3766,7 +3766,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 6
           }
@@ -3775,7 +3775,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "days": 4
           }
@@ -3784,11 +3784,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -3997,7 +3997,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -4008,7 +4008,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -4019,7 +4019,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -4030,7 +4030,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -4041,7 +4041,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 4
           }
@@ -4050,11 +4050,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -4263,7 +4263,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -4274,7 +4274,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -4285,7 +4285,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -4296,7 +4296,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -4307,7 +4307,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -4318,7 +4318,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 5
           }
@@ -4327,11 +4327,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -4540,7 +4540,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -4551,7 +4551,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -4562,7 +4562,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -4573,7 +4573,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -4584,7 +4584,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 4
           }
@@ -4593,13 +4593,279 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 13
+    },
+    {
+      "participant_id": "participant-020",
+      "display_name": "Lalo Castro",
+      "leetcode_username": "eduardo_castro_24",
+      "latePenaltySeconds": 0,
+      "editorialCreditSeconds": 0,
+      "creditedEditorials": 0,
+      "rankingTimeSeconds": 236427,
+      "onTimeProblemsCompleted": 10,
+      "completionTimeSeconds": 236427,
+      "problemsCompleted": 10,
+      "daysCompleted": 3,
+      "currentStreak": 1,
+      "bestStreak": 2,
+      "currentStreakLevel": 2,
+      "bestStreakGoldenDays": 1,
+      "dayProgress": [
+        {
+          "date": "2026-10-01",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-02",
+          "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-03",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-04",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-05",
+          "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-06",
+          "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-07",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-08",
+          "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-09",
+          "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-10",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-11",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-12",
+          "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-13",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-14",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-15",
+          "onTimeProblems": 2
+        }
+      ],
+      "results": [
+        {
+          "titleSlug": "best-time-to-buy-and-sell-stock",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "maximum-subarray",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "min-stack",
+          "firstAcceptedAt": "2026-10-02T20:35:02.000Z"
+        },
+        {
+          "titleSlug": "binary-subarrays-with-sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "minimum-window-substring",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "sliding-window-maximum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "3sum",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "largest-rectangle-in-histogram",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "binary-search",
+          "firstAcceptedAt": "2026-10-05T18:14:14.000Z"
+        },
+        {
+          "titleSlug": "number-of-islands",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "contains-duplicate",
+          "firstAcceptedAt": "2026-10-06T17:57:44.000Z"
+        },
+        {
+          "titleSlug": "longest-consecutive-sequence",
+          "firstAcceptedAt": "2026-10-06T19:32:23.000Z"
+        },
+        {
+          "titleSlug": "climbing-stairs",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "course-schedule",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "reverse-string",
+          "firstAcceptedAt": "2026-10-08T19:02:57.000Z"
+        },
+        {
+          "titleSlug": "rotate-array",
+          "firstAcceptedAt": "2026-10-08T20:03:18.000Z"
+        },
+        {
+          "titleSlug": "search-in-rotated-sorted-array",
+          "firstAcceptedAt": "2026-10-09T19:42:31.000Z"
+        },
+        {
+          "titleSlug": "median-of-two-sorted-arrays",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "rotting-oranges",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "shortest-path-visiting-all-nodes",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "symmetric-tree",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "palindrome-partitioning",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "merge-sorted-array",
+          "firstAcceptedAt": "2026-10-12T16:32:33.000Z"
+        },
+        {
+          "titleSlug": "product-of-array-except-self",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "majority-element",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "container-with-most-water",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "backspace-string-compare",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "asteroid-collision",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "find-pivot-index",
+          "firstAcceptedAt": "2026-10-15T16:58:06.000Z"
+        },
+        {
+          "titleSlug": "subarray-sum-equals-k",
+          "firstAcceptedAt": "2026-10-15T17:01:39.000Z"
+        }
+      ],
+      "badges": [
+        {
+          "id": "topic-binary-search",
+          "category": "topic",
+          "ruleVersion": 1,
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
+          "evidence": {
+            "solved": 2,
+            "mediumHard": 1
+          },
+          "level": 1
+        },
+        {
+          "id": "topic-two-pointers",
+          "category": "topic",
+          "ruleVersion": 1,
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
+          "evidence": {
+            "solved": 3,
+            "mediumHard": 1
+          },
+          "level": 2
+        },
+        {
+          "id": "topic-hashing",
+          "category": "topic",
+          "ruleVersion": 1,
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
+          "evidence": {
+            "solved": 3,
+            "mediumHard": 2
+          },
+          "level": 2
+        },
+        {
+          "id": "topic-prefix-sums",
+          "category": "topic",
+          "ruleVersion": 1,
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
+          "evidence": {
+            "solved": 2,
+            "mediumHard": 1
+          },
+          "level": 1
+        },
+        {
+          "id": "all-rounder",
+          "category": "achievement",
+          "ruleVersion": 1,
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
+          "evidence": {
+            "topics": 4
+          }
+        },
+        {
+          "id": "comeback",
+          "category": "achievement",
+          "ruleVersion": 1,
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
+          "evidence": {}
+        }
+      ],
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
+      "syncFailed": false,
+      "rank": 14
     },
     {
       "participant_id": "participant-022",
@@ -4806,7 +5072,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -4817,7 +5083,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -4828,7 +5094,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -4839,7 +5105,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -4850,7 +5116,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "topics": 4
           }
@@ -4859,266 +5125,20 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {}
         },
         {
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3
           }
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
-      "syncFailed": false,
-      "rank": 14
-    },
-    {
-      "participant_id": "participant-020",
-      "display_name": "Lalo Castro",
-      "leetcode_username": "eduardo_castro_24",
-      "latePenaltySeconds": 0,
-      "editorialCreditSeconds": 0,
-      "creditedEditorials": 0,
-      "rankingTimeSeconds": 218328,
-      "onTimeProblemsCompleted": 9,
-      "completionTimeSeconds": 218328,
-      "problemsCompleted": 9,
-      "daysCompleted": 2,
-      "currentStreak": 1,
-      "bestStreak": 2,
-      "currentStreakLevel": 1,
-      "bestStreakGoldenDays": 1,
-      "dayProgress": [
-        {
-          "date": "2026-10-01",
-          "onTimeProblems": 0
-        },
-        {
-          "date": "2026-10-02",
-          "onTimeProblems": 1
-        },
-        {
-          "date": "2026-10-03",
-          "onTimeProblems": 0
-        },
-        {
-          "date": "2026-10-04",
-          "onTimeProblems": 0
-        },
-        {
-          "date": "2026-10-05",
-          "onTimeProblems": 1
-        },
-        {
-          "date": "2026-10-06",
-          "onTimeProblems": 2
-        },
-        {
-          "date": "2026-10-07",
-          "onTimeProblems": 0
-        },
-        {
-          "date": "2026-10-08",
-          "onTimeProblems": 2
-        },
-        {
-          "date": "2026-10-09",
-          "onTimeProblems": 1
-        },
-        {
-          "date": "2026-10-10",
-          "onTimeProblems": 0
-        },
-        {
-          "date": "2026-10-11",
-          "onTimeProblems": 0
-        },
-        {
-          "date": "2026-10-12",
-          "onTimeProblems": 1
-        },
-        {
-          "date": "2026-10-13",
-          "onTimeProblems": 0
-        },
-        {
-          "date": "2026-10-14",
-          "onTimeProblems": 0
-        },
-        {
-          "date": "2026-10-15",
-          "onTimeProblems": 1
-        }
-      ],
-      "results": [
-        {
-          "titleSlug": "best-time-to-buy-and-sell-stock",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "maximum-subarray",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "min-stack",
-          "firstAcceptedAt": "2026-10-02T20:35:02.000Z"
-        },
-        {
-          "titleSlug": "binary-subarrays-with-sum",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "minimum-window-substring",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "sliding-window-maximum",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "3sum",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "largest-rectangle-in-histogram",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "binary-search",
-          "firstAcceptedAt": "2026-10-05T18:14:14.000Z"
-        },
-        {
-          "titleSlug": "number-of-islands",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "contains-duplicate",
-          "firstAcceptedAt": "2026-10-06T17:57:44.000Z"
-        },
-        {
-          "titleSlug": "longest-consecutive-sequence",
-          "firstAcceptedAt": "2026-10-06T19:32:23.000Z"
-        },
-        {
-          "titleSlug": "climbing-stairs",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "course-schedule",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "reverse-string",
-          "firstAcceptedAt": "2026-10-08T19:02:57.000Z"
-        },
-        {
-          "titleSlug": "rotate-array",
-          "firstAcceptedAt": "2026-10-08T20:03:18.000Z"
-        },
-        {
-          "titleSlug": "search-in-rotated-sorted-array",
-          "firstAcceptedAt": "2026-10-09T19:42:31.000Z"
-        },
-        {
-          "titleSlug": "median-of-two-sorted-arrays",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "rotting-oranges",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "shortest-path-visiting-all-nodes",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "symmetric-tree",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "palindrome-partitioning",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "merge-sorted-array",
-          "firstAcceptedAt": "2026-10-12T16:32:33.000Z"
-        },
-        {
-          "titleSlug": "product-of-array-except-self",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "majority-element",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "container-with-most-water",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "backspace-string-compare",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "asteroid-collision",
-          "firstAcceptedAt": null
-        },
-        {
-          "titleSlug": "find-pivot-index",
-          "firstAcceptedAt": "2026-10-15T16:58:06.000Z"
-        },
-        {
-          "titleSlug": "subarray-sum-equals-k",
-          "firstAcceptedAt": null
-        }
-      ],
-      "badges": [
-        {
-          "id": "topic-binary-search",
-          "category": "topic",
-          "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
-          "evidence": {
-            "solved": 2,
-            "mediumHard": 1
-          },
-          "level": 1
-        },
-        {
-          "id": "topic-two-pointers",
-          "category": "topic",
-          "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
-          "evidence": {
-            "solved": 3,
-            "mediumHard": 1
-          },
-          "level": 2
-        },
-        {
-          "id": "topic-hashing",
-          "category": "topic",
-          "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
-          "evidence": {
-            "solved": 2,
-            "mediumHard": 1
-          },
-          "level": 1
-        },
-        {
-          "id": "comeback",
-          "category": "achievement",
-          "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
-          "evidence": {}
-        }
-      ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -5327,7 +5347,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -5338,7 +5358,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 0
@@ -5349,11 +5369,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -5562,7 +5582,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -5573,7 +5593,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -5584,11 +5604,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -5797,7 +5817,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-15T17:01:19.403Z",
+          "evaluatedAt": "2026-10-15T17:48:19.599Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -5805,7 +5825,7 @@
           "level": 1
         }
       ],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -6010,7 +6030,7 @@
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -6215,7 +6235,7 @@
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -6420,7 +6440,7 @@
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -6625,7 +6645,7 @@
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -6830,7 +6850,7 @@
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 23
     },
@@ -7035,7 +7055,7 @@
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 24
     },
@@ -7240,7 +7260,7 @@
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-15T17:01:19.403Z",
+      "lastSyncedAt": "2026-10-15T17:48:19.599Z",
       "syncFailed": false,
       "rank": 25
     }
