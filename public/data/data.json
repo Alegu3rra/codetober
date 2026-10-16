@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-16T07:14:40.704Z",
+  "generatedAt": "2026-10-16T12:00:16.969Z",
   "lastSuccessfulSyncAt": "2026-10-16T07:14:40.704Z",
   "participantsLastSuccessAt": "2026-10-16T07:14:40.704Z",
   "participantsFailed": false,
@@ -450,6 +450,27 @@
           "title": "Subarray Sum Equals K",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/subarray-sum-equals-k/"
+        }
+      ]
+    },
+    {
+      "id": "day-16",
+      "date": "2026-10-16",
+      "title": "Range Day",
+      "description": "Work with intervals and reason about sums across ranges.",
+      "releaseAt": "2026-10-16T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "merge-intervals",
+          "title": "Merge Intervals",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/merge-intervals/"
+        },
+        {
+          "titleSlug": "count-of-range-sum",
+          "title": "Count of Range Sum",
+          "difficulty": "Hard",
+          "url": "https://leetcode.com/problems/count-of-range-sum/"
         }
       ]
     }
