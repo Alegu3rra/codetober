@@ -47,7 +47,7 @@ test('request failures have retry, and About remains available', async () => {
   vi.mocked(fetch).mockRejectedValue(Error('offline'));
   render(<App />); expect(await screen.findByRole('alert')).toHaveTextContent('Could not load');
   fireEvent.click(screen.getByRole('tab', { name: 'About / Join' }));
-  expect(screen.getByText(/Hello, I’m Alejandra/)).toBeVisible();
+  expect(screen.getByRole('heading', { name: 'About Codetober' })).toBeVisible();
   vi.mocked(fetch).mockResolvedValue({ ok: true, json: async () => fixture } as Response);
   fireEvent.click(screen.getByRole('button', { name: 'Retry' }));
   await screen.findByText(/Local demo/);
@@ -58,6 +58,10 @@ test('release tab tracks each release independently and stays read after reload'
   const tab = screen.getByRole('tab', { name: 'Releases' });
   expect(tab).toHaveClass('has-unseen-content');
   fireEvent.click(tab);
+  const communityRelease = screen.getByText('Release 6 · Stay connected').closest('details')!;
+  communityRelease.open = true;
+  fireEvent(communityRelease, new Event('toggle'));
+  expect(tab).toHaveClass('has-unseen-content');
   const recoveryRelease = screen.getByText('Release 5 · Extraordinarios weekend').closest('details')!;
   recoveryRelease.open = true;
   fireEvent(recoveryRelease, new Event('toggle'));

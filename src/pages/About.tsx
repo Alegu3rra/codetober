@@ -2,14 +2,16 @@ import { selectedEdition } from "../editions";
 import React from "react";
 import { formURL } from "../data/urls";
 import { organizer } from "../content";
+import { communityUrl, communityQrAssets } from '../community';
 
 export function About({ now = Date.now() }: { now?: number }) {
+  const qr = communityQrAssets();
   const form = formURL((selectedEdition.year === 2026 && import.meta.env.VITE_JOIN_FORM_URL) || selectedEdition.registrationUrl || undefined);
   // October 30 is included in full, in Guadalajara (UTC-6).
   const registrationOpen = !!form && !!selectedEdition.registrationCloseAt && now < Date.parse(selectedEdition.registrationCloseAt);
   return (
     <section className="about">
-      <h2>Hello, I’m {organizer.name}.</h2>
+      <h2>About Codetober</h2>
       {organizer.biography && <p>{organizer.biography}</p>}
       <p>
         Codetober is a community initiative to encourage programming practice
@@ -19,6 +21,7 @@ export function About({ now = Date.now() }: { now?: number }) {
         This is an independent initiative and is not affiliated with or endorsed
         by LeetCode.
       </p>
+
       <h2>How it works</h2>
       <ul className="rules">
         <li>
@@ -76,6 +79,17 @@ export function About({ now = Date.now() }: { now?: number }) {
       ) : (
         <p className="empty">{!form ? "Registration is not open yet." : "Registration is closed. Thank you for your interest!"}</p>
       )}
+      <div id="community" className="community-invitation" aria-labelledby="community-heading" tabIndex={-1}>
+        <h2 id="community-heading">Join the WhatsApp community</h2>
+        <p>Announcements and reminders, together in WhatsApp.</p>
+        <a href={communityUrl} target="_blank" rel="noreferrer">Join the community ↗</a>
+        <details className="community-qr">
+          <summary>Scan a QR code instead</summary>
+          <img src={qr.svg} alt="QR code for the Codetober WhatsApp community" width="168" height="168" />
+          <a href={qr.png} download="codetober-community-qr.png">Download clean QR code</a>
+        </details>
+        <p className="muted">Optional; challenge registration is separate.</p>
+      </div>
     </section>
   );
 }

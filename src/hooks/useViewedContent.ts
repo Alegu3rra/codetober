@@ -1,5 +1,6 @@
 import { createContext, useCallback, useContext, useEffect, useState } from 'react';
 
+export const communityViewId = 'community:whatsapp:v1';
 export const editorialViewId = (id: string) => `editorial:${id}`;
 export const releaseViewId = (id: string) => `release:${id}`;
 function readSeen(key: string): Set<string> {

@@ -219,3 +219,16 @@ uses published problems and recorded first acceptances; it does not change
 the competition ranking. The tab hides after event closure, while its direct
 link remains available for reference. On mobile, navigation uses a hamburger
 menu that closes after choosing a section.
+
+
+## WhatsApp community
+
+The invitation URL lives in `src/community.ts`. The header icon and About / Join
+share the viewed-content indicator; the gold highlight clears after opening
+the invitation section and persists in local storage. `#community` opens the
+section directly. Its QR stays collapsed until requested and has a PNG download.
+The QR is generated locally without an external QR service or tracking redirect.
+
+When changing the invite link, regenerate both committed QR assets with
+`python3 scripts/generate-community-qr.py` (requires `qrcode` and `Pillow`),
+then scan the PNG to verify it matches the new link. Do not crop its white border.

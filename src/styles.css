@@ -118,6 +118,23 @@ header {
   color: var(--muted);
   font-family: var(--mono);
 }
+.header-actions { display: flex; align-items: center; gap: 14px; }
+.community-header-link {
+  display: inline-flex; align-items: center; justify-content: center;
+  position: relative; width: 32px; height: 32px; flex-shrink: 0;
+  color: var(--muted); border: 1px solid var(--line); border-radius: 50%;
+}
+.community-header-link:hover { color: var(--teal); border-color: var(--teal); }
+.community-header-link.has-unseen-content { color: #ffd978; border-color: #ffd97888; }
+.community-new-dot { position: absolute; top: 0; right: 0; width: 5px; height: 5px; border-radius: 50%; background: #ffd978; }
+.community-invitation { margin: 12px 0 0; padding: 12px 14px; font-size: .8rem; border: 1px solid var(--line); border-radius: 8px; scroll-margin-top: 16px; }
+.community-invitation h2 { margin-bottom: 6px; font-size: .9rem; }
+.community-invitation p { margin-bottom: 8px; }
+.community-invitation > .muted { margin: 10px 0 0; font-size: .72rem; }
+.community-qr { margin-top: 8px; }
+.community-qr summary { color: var(--muted); cursor: pointer; font-size: .75rem; }
+.community-qr img { display: block; width: 168px; max-width: 100%; height: auto; margin: 16px 0 12px; background: white; }
+.community-qr > a { font-size: .75rem; }
 .tabs {
   display: flex;
   gap: 26px;

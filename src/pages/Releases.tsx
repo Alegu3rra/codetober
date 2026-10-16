@@ -3,6 +3,7 @@ import { selectedEdition } from '../editions';
 import { releaseViewId, useContentIndicators } from '../hooks/useViewedContent';
 
 export const releaseNotes = [
+  { id: '2026-release-6', year: 2026, title: 'Release 6 · Stay connected', date: 'October 16, 2026', kind: 'community' },
   { id: '2026-release-5', year: 2026, title: 'Release 5 · Extraordinarios weekend', date: 'October 16, 2026', kind: 'recovery' },
   { id: '2026-release-4', year: 2026, title: 'Release 4 · Your practice, your tags', date: 'October 11, 2026', kind: 'badges' },
   { id: '2026-release-3', year: 2026, title: 'Release 3 · Share an approach, earn an hour', date: 'October 8, 2026', kind: 'editorial-credit' },
@@ -25,7 +26,16 @@ export function Releases() {
         <span className="muted">Read release</span>
       </summary>
       <div className="editorial-body">
-        {release.kind === 'recovery' ? <>
+        {release.kind === 'community' ? <>
+          <h3>The WhatsApp community is here</h3>
+          <p>Find announcements and reminders through the small chat icon in the header or the invitation beside challenge registration in About / Join.</p>
+          <ul>
+            <li>The invitation includes a direct join link and a clean, downloadable QR code.</li>
+            <li>Gold highlights in the header and About / Join indicate the new invitation. Opening it clears both highlights for this browser.</li>
+            <li>The header icon opens About / Join and scrolls directly to the invitation.</li>
+            <li>The organizer credit now appears in the footer. Joining WhatsApp is optional and separate from challenge registration.</li>
+          </ul>
+        </> : release.kind === 'recovery' ? <>
           <h3>Catch up with extraordinarios</h3>
           <p>October 17 at 06:00 through October 19 at 06:00, 2026, Guadalajara time. The start is included; the end is excluded.</p>
           <p>Problems whose daily window has closed by the start of the weekend and that you still have pending can be recovered. Your first accepted submission during this period counts as <strong>24 hours total per problem</strong>, with no accumulated delay and no additional late penalty.</p>

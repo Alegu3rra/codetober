@@ -1,5 +1,5 @@
 import { recoveryEventFor } from "../../shared/extraordinary-events.mjs";
-import { ViewedContentContext, useViewedContent, editorialViewId, releaseViewId } from "../hooks/useViewedContent";
+import { ViewedContentContext, useViewedContent, communityViewId, editorialViewId, releaseViewId } from "../hooks/useViewedContent";
 import { selectedEdition, latestYear, editionURL, previousEdition } from "../editions";
 import React, { useEffect, useRef, useState } from "react";
 import { Editorials } from "./Editorials";
@@ -16,13 +16,15 @@ import { eventName, configuredZone } from "../config";
 const regularTabs = ["Problems", "Scoreboard", "Editorials", "Releases", "About / Join"] as const;
 
 export function EventPage() {
-  const [active, setActive] = useState(window.location.hash === '#extraordinarios' ? 5 : window.location.hash.startsWith('#editorial') ? 2 : 0);
+  const [active, setActive] = useState(window.location.hash === '#community' ? 4 : window.location.hash === '#extraordinarios' ? 5 : window.location.hash.startsWith('#editorial') ? 2 : 0);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [communityNavigation, setCommunityNavigation] = useState(0);
   const menuButton = useRef<HTMLButtonElement>(null);
   const [editorialHash, setEditorialHash] = useState(window.location.hash);
   useEffect(() => {
     const navigate = () => {
-      if (window.location.hash === '#extraordinarios') { setActive(5); setMenuOpen(false); }
+      if (window.location.hash === '#community') { setActive(4); setMenuOpen(false); setCommunityNavigation(value => value + 1); }
+      else if (window.location.hash === '#extraordinarios') { setActive(5); setMenuOpen(false); }
       else if (window.location.hash.startsWith('#editorial')) { setActive(2); setEditorialHash(window.location.hash); setMenuOpen(false); }
       else setActive(0);
     };
@@ -34,17 +36,28 @@ export function EventPage() {
   const showExtraordinary = !!event && (now < Date.parse(event.endAt) || window.location.hash === '#extraordinarios');
   const tabs: readonly string[] = showExtraordinary ? [...regularTabs, event.title] : regularTabs;
   const selected = active < tabs.length ? active : 0;
+  useEffect(() => {
+    if (selected !== 4 || window.location.hash !== '#community') return;
+    const invitation = document.getElementById('community');
+    // The browser's initial anchor jump runs while the destination tab is still hidden.
+    invitation?.focus({ preventScroll: true });
+    invitation?.scrollIntoView?.({ block: 'start', behavior: window.matchMedia?.('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' });
+  }, [selected, communityNavigation]);
   const preview = import.meta.env.DEV ? new URLSearchParams(window.location.search).get('preview') : null;
   const viewed = useViewedContent(`codetober:viewed:v1:${selectedEdition.year}:${preview ? `preview-${preview}` : 'live'}`);
   const newEditorials = data?.editorials?.some(e => viewed.isUnseen(editorialViewId(e.id))) ?? false;
   const newReleases = releaseNotes.some(release => release.year === selectedEdition.year && viewed.isUnseen(releaseViewId(release.id)));
-  const unreadTab = (index: number) => (index === 2 && newEditorials) || (index === 3 && newReleases);
+  const newCommunity = viewed.isUnseen(communityViewId);
+  useEffect(() => {
+    if (selected === 4 && newCommunity) viewed.markViewed(communityViewId);
+  }, [selected, newCommunity, viewed.markViewed]);
+  const unreadTab = (index: number) => (index === 2 && newEditorials) || (index === 3 && newReleases) || (index === 4 && newCommunity);
   const nav = useRef<HTMLDivElement>(null);
   useEffect(() => { document.title = eventName; }, []);
   const previous = previousEdition(now);
   const zone = data?.event.timezone || configuredZone;
   function activateTab(index: number, closeMenu = true) {
-    if (index !== 2 && (window.location.hash.startsWith('#editorial') || window.location.hash === '#extraordinarios')) {
+    if (index !== 2 && (window.location.hash.startsWith('#editorial') || window.location.hash === '#extraordinarios' || window.location.hash === '#community')) {
       window.history.replaceState(null, '', window.location.pathname + window.location.search);
       setEditorialHash('');
     }
