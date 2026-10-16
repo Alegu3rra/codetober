@@ -1,3 +1,4 @@
+import { isRecoveryAcceptance } from "../../../shared/extraordinary-events.mjs";
 import type { Participant, Day, EventData } from "../../data/schema";
 import { dailyFirstAcceptance } from "../participants/progress";
 import { editorialCredit } from "../editorials/credit";
@@ -23,23 +24,30 @@ export function problemRankingTime(person: Participant, day: Day, titleSlug: str
     return next > release ? Math.min(end, next) : end;
   }, Date.parse(data.event.closeAt));
   const elapsedSeconds = (accepted - release) / 1000;
-  const penaltySeconds = accepted >= deadline ? LATE_PENALTY_SECONDS : 0;
-  return { acceptedAt: new Date(accepted).toISOString(), elapsedSeconds, penaltySeconds, totalSeconds: elapsedSeconds + penaltySeconds };
+  const recovery = data.event.extraordinaryEvents?.find(event => isRecoveryAcceptance(event, deadline, accepted));
+  const recovered = !!recovery;
+  const recoveryCreditSeconds = recovery ? elapsedSeconds - recovery.problemTimeSeconds : 0;
+  const penaltySeconds = accepted >= deadline && !recovered ? LATE_PENALTY_SECONDS : 0;
+  return { acceptedAt: new Date(accepted).toISOString(), elapsedSeconds, penaltySeconds, recovered, recoveryCreditSeconds,
+    totalSeconds: elapsedSeconds + penaltySeconds - recoveryCreditSeconds };
 }
 export function rankingTime(person: Participant, data: EventData) {
-  let elapsedSeconds = 0, lateProblems = 0;
+  let elapsedSeconds = 0, lateProblems = 0, recoveryCreditSeconds = 0, recoveredProblems = 0;
   for (const day of data.days) {
     for (const problem of day.problems) {
       const time = problemRankingTime(person, day, problem.titleSlug, data);
       if (!time) continue;
       elapsedSeconds += time.elapsedSeconds;
+      recoveryCreditSeconds += time.recoveryCreditSeconds;
+      if (time.recovered) recoveredProblems++;
       if (time.penaltySeconds) lateProblems++;
     }
   }
   const penaltySeconds = lateProblems * LATE_PENALTY_SECONDS;
   const credit = editorialCredit(person, data);
   return { elapsedSeconds, lateProblems, penaltySeconds, editorialCreditSeconds: credit.seconds, creditedEditorials: credit.count,
-    totalSeconds: Math.max(0, elapsedSeconds + penaltySeconds - credit.seconds) };
+    ...(recoveredProblems ? { recoveryCreditSeconds, recoveredProblems } : {}),
+    totalSeconds: Math.max(0, elapsedSeconds + penaltySeconds - recoveryCreditSeconds - credit.seconds) };
 }
 export function orderedParticipants(data: EventData) {
   return [...data.participants].sort((a, b) => b.problemsCompleted - a.problemsCompleted

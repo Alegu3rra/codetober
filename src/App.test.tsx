@@ -58,6 +58,10 @@ test('release tab tracks each release independently and stays read after reload'
   const tab = screen.getByRole('tab', { name: 'Releases' });
   expect(tab).toHaveClass('has-unseen-content');
   fireEvent.click(tab);
+  const recoveryRelease = screen.getByText('Release 5 · Extraordinarios weekend').closest('details')!;
+  recoveryRelease.open = true;
+  fireEvent(recoveryRelease, new Event('toggle'));
+  expect(tab).toHaveClass('has-unseen-content');
   const tagsRelease = screen.getByText('Release 4 · Your practice, your tags').closest('details')!;
   tagsRelease.open = true;
   fireEvent(tagsRelease, new Event('toggle'));

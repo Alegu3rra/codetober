@@ -39,7 +39,7 @@ export function RankTarget({ person, rival, data, now, zone }: {
         <h4>Pending problems to start with</h4>
         <ul className="rank-target-problems">{suggestions.map(problem => <li key={problem.titleSlug}>
           <a href={problem.url} target="_blank" rel="noreferrer">{problem.title} ↗</a>
-          <small>{problem.onTime ? <>On time until <Timestamp value={problem.deadline} zone={zone} /></> : 'Late solve · adds 24 hours of penalty'}</small>
+          <small>{problem.onTime ? <>On time until <Timestamp value={problem.deadline} zone={zone} /></> : problem.recoveryEligible ? 'Extraordinarios · 24 hours total, no late penalty' : 'Late solve · adds 24 hours of penalty'}</small>
         </li>)}</ul>
       </>}
     </>}

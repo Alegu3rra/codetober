@@ -3,6 +3,7 @@ import { selectedEdition } from '../editions';
 import { releaseViewId, useContentIndicators } from '../hooks/useViewedContent';
 
 export const releaseNotes = [
+  { id: '2026-release-5', year: 2026, title: 'Release 5 · Extraordinarios weekend', date: 'October 16, 2026', kind: 'recovery' },
   { id: '2026-release-4', year: 2026, title: 'Release 4 · Your practice, your tags', date: 'October 11, 2026', kind: 'badges' },
   { id: '2026-release-3', year: 2026, title: 'Release 3 · Share an approach, earn an hour', date: 'October 8, 2026', kind: 'editorial-credit' },
   { id: '2026-release-2', year: 2026, title: 'Release 2 · Earlier solves, better ranks', date: 'October 8, 2026', kind: 'ranking' },
@@ -24,7 +25,17 @@ export function Releases() {
         <span className="muted">Read release</span>
       </summary>
       <div className="editorial-body">
-        {release.kind === 'badges' ? <>
+        {release.kind === 'recovery' ? <>
+          <h3>Catch up with extraordinarios</h3>
+          <p>October 17 at 06:00 through October 19 at 06:00, 2026, Guadalajara time. The start is included; the end is excluded.</p>
+          <p>Problems whose daily window has closed by the start of the weekend and that you still have pending can be recovered. Your first accepted submission during this period counts as <strong>24 hours total per problem</strong>, with no accumulated delay and no additional late penalty.</p>
+          <ul>
+            <li>The benefit stays after the weekend. Submission timestamps determine eligibility, even if synchronization happens later.</li>
+            <li>Earlier accepted submissions keep their existing time; resubmitting does not qualify them.</li>
+            <li>October 17–18 problems keep their normal daily rules. Problems accepted at or after October 19 at 06:00 also keep normal rules.</li>
+            <li>Each recovered problem earns its usual point. Recovery does not restore on-time credit, streaks, or golden days. Editorial credits still apply separately.</li>
+          </ul>
+        </> : release.kind === 'badges' ? <>
           <h3>Participant tags recognize your practice</h3>
           <p>Your card now highlights practice topics, consistency, community contributions, and extra practice. Focus, tap, or hover over a tag to see its criteria and the observed activity behind it. Expand your card to see all your tags.</p>
           <ul>

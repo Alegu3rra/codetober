@@ -1,3 +1,4 @@
+import { isRecoveryAcceptance } from "../shared/extraordinary-events.mjs";
 import { type EventData, type Participant } from "./data/schema";
 import { dailyFirstAcceptance } from "./features/participants/progress";
 import { rankingTime } from "./features/ranking/time";
@@ -16,6 +17,7 @@ export function rankTarget(person: Participant, rival: Participant, data: EventD
     }, day, data))).map(problem => ({
       ...problem, date: day.date, releaseAt: day.releaseAt,
       deadline: new Date(end).toISOString(), onTime: now < end,
+      recoveryEligible: data.event.extraordinaryEvents?.some(event => isRecoveryAcceptance(event, end, now)) ?? false,
     }));
   }).sort((a, b) => Number(b.onTime) - Number(a.onTime) || Date.parse(b.releaseAt) - Date.parse(a.releaseAt));
   const timeGapSeconds = ownTime.totalSeconds - rivalTime.totalSeconds;

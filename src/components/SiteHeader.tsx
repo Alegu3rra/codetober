@@ -1,10 +1,14 @@
 import { editions, selectedEdition, editionURL } from "../editions";
 import React from "react";
 import { eventName } from "../config";
+import type { ExtraordinaryEvent } from '../../shared/extraordinary-events.mjs';
+import { RecoveryCountdown } from './RecoveryCountdown';
 
-export function SiteHeader() {
+export function SiteHeader({ recoveryWindow, now = Date.now() }: { recoveryWindow?: ExtraordinaryEvent; now?: number }) {
   return (
-<header>
+<header className="site-header">
+        <RecoveryCountdown window={recoveryWindow} now={now} banner />
+        <div className="shell site-header-content">
         {editions.length > 1 ? <div className="edition-heading">
           <span aria-hidden="true">[</span><span className="edition-typing">
             <a href={editionURL(selectedEdition.year)}>Codetober</a>
@@ -26,6 +30,7 @@ export function SiteHeader() {
           <span aria-hidden="true">]</span>
         </a>}
         <a className="header-note" href="https://alegu3rra.github.io/">By: Alejandra Guerra</a>
+        </div>
       </header>
   );
 }

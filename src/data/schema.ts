@@ -2,6 +2,8 @@ import { z } from "zod";
 import { normalizeSnapshot } from "./compatibility";
 import { badgeSchema } from "../features/badges/schema";
 
+const extraordinaryEvent = z.object({ id: z.string().regex(/^[a-zA-Z0-9_-]{1,80}$/), type: z.literal("backlog-recovery"), title: z.string().min(1).max(100), startAt: z.string().datetime({ offset: true }), endAt: z.string().datetime({ offset: true }), problemTimeSeconds: z.literal(86400) }).refine(w => Date.parse(w.endAt) > Date.parse(w.startAt));
+
 const instant = z.string().datetime({ offset: true });
 const problem = z.object({ titleSlug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/), title: z.string(), difficulty: z.enum(['Easy','Medium','Hard']), url: z.string().url() })
   .refine(p => p.url === `https://leetcode.com/problems/${p.titleSlug}/`);
@@ -17,12 +19,14 @@ export type Editorial = z.infer<typeof editorialSchema>;
 const currentDataSchema = z.object({
   editorials: z.array(editorialSchema).optional(), editorialsFailed: z.boolean().optional(),
   version: z.literal(1), demo: z.boolean(), generatedAt: instant, lastSuccessfulSyncAt: instant.nullable(), participantsLastSuccessAt: instant.nullable(), participantsFailed: z.boolean(),
-  event: z.object({ timezone: z.string(), startAt: instant, closeAt: instant, totalProblems: z.literal(62), schedule: z.array(z.object({ date: z.string(), releaseAt: instant })) }),
+  event: z.object({ extraordinaryEvents: z.array(extraordinaryEvent).optional(), timezone: z.string(), startAt: instant, closeAt: instant, totalProblems: z.literal(62), schedule: z.array(z.object({ date: z.string(), releaseAt: instant })) }),
   days: z.array(z.object({ id: z.string(), date: z.string(), title: z.string(), description: z.string().optional(), releaseAt: instant, problems: z.array(problem).length(2) })),
   participants: z.array(z.object({ participant_id: z.string(), display_name: z.string(), leetcode_username: z.string().regex(/^[a-zA-Z0-9_-]{1,30}$/), rank: z.number().int().positive(),
     badges: z.array(badgeSchema).max(50).optional(),
     problemsCompleted: z.number().int().min(0).max(62), daysCompleted: z.number().int().min(0).max(31), currentStreak: z.number().int().min(0).max(31), bestStreak: z.number().int().min(0).max(31),
     completionTimeSeconds: z.number().nonnegative().optional(),
+    recoveryCreditSeconds: z.number().nonnegative().optional(),
+    recoveredProblems: z.number().int().nonnegative().optional(),
     latePenaltySeconds: z.number().nonnegative().optional(),
     rankingTimeSeconds: z.number().nonnegative().optional(),
     editorialCreditSeconds: z.number().nonnegative().optional(),

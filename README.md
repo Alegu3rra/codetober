@@ -195,3 +195,27 @@ Las tarjetas muestran hasta tres etiquetas destacadas; al expandirlas aparecen t
 Los tooltips funcionan con mouse, foco de teclado y toque. Las etiquetas se calculan
 en el sincronizador y no cambian el ranking. Los snapshots anteriores sin `badges`
 siguen siendo válidos. El preview local incluye etiquetas sintéticas.
+
+
+## Extraordinarios 2026
+
+The scoreboard uses `event.extraordinaryEvents` from the public snapshot. First
+acceptances during October 17, 06:00 through October 19, 06:00 Guadalajara time
+(end excluded) qualify only for problems whose daily window had ended by the
+start. A qualifying solve counts as 24 hours total, with no late penalty;
+editorial credits still apply separately. Histories show the fixed cost and
+participant cards show the recovery adjustment. No streak or on-time credit is
+restored. Benefits remain after the window ends. Before the first full sync with
+the new scorer, older snapshots retain their original scoring.
+
+Extraordinary events are optional per edition. Dates and rules come exclusively
+from the snapshot; the frontend never enables them based on an edition year.
+Editions without this metadata show no extraordinary-event counters or notices.
+
+The event countdown appears only in the full-width header banner, which links
+to the temporary Extraordinarios tab. That tab contains the rules and a
+searchable list of overdue problems by participant, most pending first. It
+uses published problems and recorded first acceptances; it does not change
+the competition ranking. The tab hides after event closure, while its direct
+link remains available for reference. On mobile, navigation uses a hamburger
+menu that closes after choosing a section.

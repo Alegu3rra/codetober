@@ -46,9 +46,9 @@ export function ParticipantDetails({
                     </span>
                     <span className={`result-time${time?.penaltySeconds ? ' result-time-late' : ''}`}
                       aria-label={`${problem.title}: ${time ? `${elapsedLabel(time.totalSeconds)} counted toward ranking time` : 'no ranking time recorded'}`}
-                      title={time ? `${elapsedLabel(time.elapsedSeconds)} since publication${time.penaltySeconds ? ' + 24h late penalty' : ''}` : 'No accepted submission recorded; no time added'}>
+                      title={time?.recovered ? 'Extraordinarios: fixed 24 hours total, no late penalty; benefit retained after the weekend' : time ? `${elapsedLabel(time.elapsedSeconds)} since publication${time.penaltySeconds ? ' + 24h late penalty' : ''}` : 'No accepted submission recorded; no time added'}>
                       {time ? elapsedLabel(time.totalSeconds) : '—'}
-                      {time?.penaltySeconds ? <small>Includes +24h late</small> : null}
+                      {time?.recovered ? <small>Extraordinarios · 24h total</small> : time?.penaltySeconds ? <small>Includes +24h late</small> : null}
                     </span>
                   </div>
                 );

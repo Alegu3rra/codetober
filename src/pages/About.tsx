@@ -41,7 +41,7 @@ export function About({ now = Date.now() }: { now?: number }) {
         <li>
           Your streak stays active until the daily window closes. Late solves
           still earn points, but add a one-time 24-hour ranking penalty per problem and do not restore streaks or golden days.
-          Time runs from each problem’s publication, not from when you start working.
+          An extraordinary recovery event, when announced for this edition, can override the time of qualifying pending problems. Otherwise, time runs from each problem’s publication, not from when you start working.
           Acceptance exactly at the next 06:00 is late.
           If points and ranking time both tie, best streak, name and participant ID decide the order.
         </li>
