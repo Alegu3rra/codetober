@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-17T09:26:06.248Z",
+  "generatedAt": "2026-10-17T12:00:12.241Z",
   "lastSuccessfulSyncAt": "2026-10-17T09:26:06.248Z",
   "participantsLastSuccessAt": "2026-10-17T09:26:06.248Z",
   "participantsFailed": false,
@@ -481,6 +481,27 @@
           "title": "Count of Range Sum",
           "difficulty": "Hard",
           "url": "https://leetcode.com/problems/count-of-range-sum/"
+        }
+      ]
+    },
+    {
+      "id": "day-17",
+      "date": "2026-10-17",
+      "title": "Prime Time",
+      "description": "Explore prime numbers and how to find them efficiently.",
+      "releaseAt": "2026-10-17T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "count-primes",
+          "title": "Count Primes",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/count-primes/"
+        },
+        {
+          "titleSlug": "closest-prime-numbers-in-range",
+          "title": "Closest Prime Numbers in Range",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/closest-prime-numbers-in-range/"
         }
       ]
     }
