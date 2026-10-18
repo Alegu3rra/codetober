@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-18T11:13:33.919Z",
+  "generatedAt": "2026-10-18T12:00:16.538Z",
   "lastSuccessfulSyncAt": "2026-10-18T11:13:33.919Z",
   "participantsLastSuccessAt": "2026-10-18T11:13:33.919Z",
   "participantsFailed": false,
@@ -502,6 +502,27 @@
           "title": "Closest Prime Numbers in Range",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/closest-prime-numbers-in-range/"
+        }
+      ]
+    },
+    {
+      "id": "day-18",
+      "date": "2026-10-18",
+      "title": "Explain It",
+      "description": "Solve the problems, then explain the key idea in your own words.",
+      "releaseAt": "2026-10-18T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "middle-of-the-linked-list",
+          "title": "Middle of the Linked List",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/middle-of-the-linked-list/"
+        },
+        {
+          "titleSlug": "lru-cache",
+          "title": "LRU Cache",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/lru-cache/"
         }
       ]
     }
