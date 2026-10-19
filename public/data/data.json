@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-19T10:49:27.761Z",
+  "generatedAt": "2026-10-19T12:00:19.478Z",
   "lastSuccessfulSyncAt": "2026-10-19T10:49:27.761Z",
   "participantsLastSuccessAt": "2026-10-19T10:49:27.761Z",
   "participantsFailed": false,
@@ -523,6 +523,27 @@
           "title": "LRU Cache",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/lru-cache/"
+        }
+      ]
+    },
+    {
+      "id": "day-19",
+      "date": "2026-10-19",
+      "title": "30 Minute Challenge",
+      "description": "Challenge yourself to make progress within 30 minutes.",
+      "releaseAt": "2026-10-19T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "is-subsequence",
+          "title": "Is Subsequence",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/is-subsequence/"
+        },
+        {
+          "titleSlug": "group-anagrams",
+          "title": "Group Anagrams",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/group-anagrams/"
         }
       ]
     }
