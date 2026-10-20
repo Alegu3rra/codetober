@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-20T11:34:48.575Z",
+  "generatedAt": "2026-10-20T12:00:20.355Z",
   "lastSuccessfulSyncAt": "2026-10-20T11:34:48.575Z",
   "participantsLastSuccessAt": "2026-10-20T11:34:48.575Z",
   "participantsFailed": false,
@@ -544,6 +544,27 @@
           "title": "Group Anagrams",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/group-anagrams/"
+        }
+      ]
+    },
+    {
+      "id": "day-20",
+      "date": "2026-10-20",
+      "title": "No STL Magic",
+      "description": "Implement the core technique yourself instead of relying on a library shortcut.",
+      "releaseAt": "2026-10-20T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "search-insert-position",
+          "title": "Search Insert Position",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/search-insert-position/"
+        },
+        {
+          "titleSlug": "sort-an-array",
+          "title": "Sort an Array",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/sort-an-array/"
         }
       ]
     }
