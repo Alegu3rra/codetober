@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-21T07:42:55.040Z",
+  "generatedAt": "2026-10-21T12:00:18.125Z",
   "lastSuccessfulSyncAt": "2026-10-21T07:42:55.040Z",
   "participantsLastSuccessAt": "2026-10-21T07:42:55.040Z",
   "participantsFailed": false,
@@ -565,6 +565,27 @@
           "title": "Sort an Array",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/sort-an-array/"
+        }
+      ]
+    },
+    {
+      "id": "day-21",
+      "date": "2026-10-21",
+      "title": "Opposite Approach",
+      "description": "Look for two different approaches and compare their trade-offs.",
+      "releaseAt": "2026-10-21T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "min-cost-climbing-stairs",
+          "title": "Min Cost Climbing Stairs",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/min-cost-climbing-stairs/"
+        },
+        {
+          "titleSlug": "kth-largest-element-in-an-array",
+          "title": "Kth Largest Element in an Array",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
         }
       ]
     }
