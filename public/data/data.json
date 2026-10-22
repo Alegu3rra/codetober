@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-22T07:38:31.709Z",
+  "generatedAt": "2026-10-22T12:00:15.404Z",
   "lastSuccessfulSyncAt": "2026-10-22T07:38:31.709Z",
   "participantsLastSuccessAt": "2026-10-22T07:38:31.709Z",
   "participantsFailed": false,
@@ -586,6 +586,27 @@
           "title": "Kth Largest Element in an Array",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/kth-largest-element-in-an-array/"
+        }
+      ]
+    },
+    {
+      "id": "day-22",
+      "date": "2026-10-22",
+      "title": "Palindrome ID II",
+      "description": "Another pair selected around palindromic problem IDs.",
+      "releaseAt": "2026-10-22T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "valid-anagram",
+          "title": "Valid Anagram",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/valid-anagram/"
+        },
+        {
+          "titleSlug": "word-search-ii",
+          "title": "Word Search II",
+          "difficulty": "Hard",
+          "url": "https://leetcode.com/problems/word-search-ii/"
         }
       ]
     }
