@@ -232,3 +232,53 @@ The QR is generated locally without an external QR service or tracking redirect.
 When changing the invite link, regenerate both committed QR assets with
 `python3 scripts/generate-community-qr.py` (requires `qrcode` and `Pillow`),
 then scan the PNG to verify it matches the new link. Do not crop its white border.
+
+
+## Preview de Extraordinarios II y Make a Wish
+
+Con `npm run dev`, abrir:
+
+- `/codetober/2026/?preview=wish#make-a-wish`: domingo activo, varita y polvo de hada en desktop.
+- `/codetober/2026/?preview=wish-upcoming#extraordinarios`: cuenta regresiva y pendientes antes del fin de semana.
+- `/codetober/2026/?preview=wish-review#make-a-wish`: resultado provisional al cierre.
+- `/codetober/2026/?preview=wish-tie#make-a-wish`: empate exacto, revisión por correo.
+- `/codetober/2026/?preview=wish-winner#make-a-wish`: ganador confirmado.
+
+Los previews son exclusivos de desarrollo, con personas y problemas ficticios;
+no importan ni revelan el calendario privado. Las tarjetas abren diálogos nativos
+con cierre por Escape y restauración del foco. Los botones de contacto copian la dirección y una plantilla con la elección;
+no abren un cliente de correo ni envían mensajes ni verifican identidades. Si el
+portapapeles está bloqueado, muestran texto seleccionable para copia manual.
+El efecto del domingo respeta movimiento reducido y se puede apagar.
+
+La interfaz lee el anuncio y resultado de `event.makeAWish`, opcional para
+compatibilidad con snapshots anteriores. No deduce un ganador en el navegador.
+Los cinco deseos son propuestas sujetas a revisión; no se aplican descuentos
+por abrir tarjetas ni enviar una elección.
+
+Validación del preview: `npx playwright test --config playwright.wishes.config.ts`.
+
+### Diseños de los deseos activados
+
+`/codetober/2026/?preview=wish-design&wish=one-more-spell#make-a-wish`
+abre un prototipo interactivo exclusivo de desarrollo. El selector permite recorrer
+los cinco deseos y sus estados Scheduled / Active / Closed. Las pestañas Problems,
+Make a Wish y Scoreboard muestran la navegación, pistas progresivas, práctica
+opcional, sorpresa del último día, editorial posterior y desglose de créditos.
+Los controles superiores simulan progreso. Make a Wish muestra participantes en
+una lista con buscador y filas expandibles, sin una sesión iniciada. Cada aceptado de ejemplo descuenta 2h
+una sola vez y conserva los puntos principales. Los problemas y pistas son ficticios.
+No hay solicitudes al sincronizador ni cambios en datos reales.
+
+El parámetro `wish` acepta los mismos cinco IDs del catálogo. Los diseños son
+propuestas de interfaz, no activan beneficios ni fijan fechas definitivas. Se
+prepara la versión conectada a datos después de seleccionar y aprobar el deseo.
+
+El prototipo reutiliza Home, ProblemCards, Scoreboard y ParticipantRow. One More
+Spell añade solo una card discreta debajo de los dos problemas diarios; las
+misiones fijas y su progreso viven en Make a Wish. Las pistas aparecen bajo
+cada problema nuevo. El Scoreboard conserva sus filas: el conteo mágico aparece
+solo al expandir el participante, y los aceptados opcionales se integran al
+histórico por fecha de aceptación en America/Mexico_City, con su descuento.
+Los puntos de extensión de estos componentes son opcionales y el sitio normal
+no recibe suplementos ni descuentos desde el preview.

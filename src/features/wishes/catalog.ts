@@ -1,0 +1,23 @@
+export const wishes = [
+  { id: 'one-more-spell', number: '01', title: 'One More Spell', motif: 'stars', tagline: 'A little more practice. A little less time.', reward: '−2h per extra problem',
+    description: 'Unlock one optional extra problem each day from the announcement of the approved wish through the end of Codetober.',
+    example: 'Solve Monday’s extra problem: −2h. Solve Tuesday’s: another −2h. Skip a day: no penalty.',
+    detail: 'Each extra problem earns the credit once. Extra solves do not change the main challenge’s points or streaks.' },
+  { id: 'second-chance', number: '02', title: 'Second Chance', motif: 'orbit', tagline: 'Meet a tricky topic with fresh eyes.', reward: '−2h for a new challenge',
+    description: 'Unlock a new optional problem about a topic that challenged the community. A fresh exercise gives everyone another chance to practice.',
+    example: 'A difficult topic returns in a different problem. Solve the new exercise to take 2 hours off your ranking time.',
+    detail: 'This is a new problem, not a resubmission of an old solve. The organizer reviews the topic and difficulty.' },
+  { id: 'spellbook-unlocked', number: '03', title: 'Spellbook Unlocked', motif: 'book', tagline: 'A nudge when the next step feels hidden.', reward: 'Progressive hints for everyone',
+    description: 'Unlock progressively more specific hints for the remaining daily problems, without revealing solution code.',
+    example: 'Hint 1 helps you observe a pattern. Hint 2 suggests a direction. Open only what you need.',
+    detail: 'Hints support the regular challenge. This wish grants no separate time credit and does not change scoring.' },
+  { id: 'the-final-quest', number: '04', title: 'The Final Quest', motif: 'path', tagline: 'Three stops on one last adventure.', reward: '−2h each · up to −6h',
+    description: 'Unlock a set of three optional problems to complete at your own pace before the challenge closes.',
+    example: 'One completed stop: −2h. Two: −4h. All three: −6h. There is no additional completion bonus.',
+    detail: 'Each problem earns its credit once. Skipping any stop has no penalty and does not affect main points or streaks.' },
+  { id: 'choose-the-last-problem', number: '05', title: 'Choose the Last Problem', motif: 'star', tagline: 'Leave your signature on the final day.', reward: 'One problem. Your choice.',
+    description: 'Propose one problem for the final day. The organizer checks that it is free, suitable, and has not appeared in this challenge.',
+    example: 'Keep your choice secret, deliver your editorial before release, and submit your accepted solution within the official final-day window.',
+    detail: 'The choice stays a surprise until release. The winner knows it in advance. Their editorial is published after the daily window closes and earns no extra editorial credit.' },
+] as const;
+export type Wish = typeof wishes[number];

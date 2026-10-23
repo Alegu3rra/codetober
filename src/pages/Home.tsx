@@ -14,11 +14,15 @@ export function Home({
   now,
   zone,
   editionNavigation,
+  afterDailyProblems,
+  renderProblemExtra,
 }: {
   data: EventData;
   now: number;
   zone: string;
   editionNavigation?: React.ReactNode;
+  afterDailyProblems?: React.ReactNode;
+  renderProblemExtra?: (problem: Day['problems'][number]) => React.ReactNode;
 }) {
   const days = [...data.days].sort((a, b) => b.date.localeCompare(a.date));
   const publishedDates = new Set(days.map((d) => d.date));
@@ -79,7 +83,8 @@ export function Home({
                   {today.description && <p className="daily-focus-description">{today.description}</p>}
                 </div>
               </div>
-              <ProblemCards day={today} editorials={data.editorials} />
+              <ProblemCards day={today} editorials={data.editorials} renderExtra={renderProblemExtra} />
+              {afterDailyProblems}
             </>
           ) : (
             <p className="empty">
@@ -114,7 +119,7 @@ export function Home({
                   {day.date.slice(5)} · 2 problems
                 </span>
               </summary>
-              <ProblemCards day={day} editorials={data.editorials} showFocus />
+              <ProblemCards day={day} editorials={data.editorials} showFocus renderExtra={renderProblemExtra} />
             </details>
           ))
         )}

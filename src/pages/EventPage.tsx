@@ -4,6 +4,7 @@ import { selectedEdition, latestYear, editionURL, previousEdition } from "../edi
 import React, { useEffect, useRef, useState } from "react";
 import { Editorials } from "./Editorials";
 import { Releases, releaseNotes } from "./Releases";
+import { MakeAWish } from "./MakeAWish";
 import { Extraordinary } from "./Extraordinary";
 import { Home } from "./Home";
 import { About } from "./About";
@@ -16,14 +17,15 @@ import { eventName, configuredZone } from "../config";
 const regularTabs = ["Problems", "Scoreboard", "Editorials", "Releases", "About / Join"] as const;
 
 export function EventPage() {
-  const [active, setActive] = useState(window.location.hash === '#community' ? 4 : window.location.hash === '#extraordinarios' ? 5 : window.location.hash.startsWith('#editorial') ? 2 : 0);
+  const [active, setActive] = useState(window.location.hash === '#make-a-wish' ? 99 : window.location.hash === '#community' ? 4 : window.location.hash === '#extraordinarios' ? 5 : window.location.hash.startsWith('#editorial') ? 2 : 0);
   const [menuOpen, setMenuOpen] = useState(false);
   const [communityNavigation, setCommunityNavigation] = useState(0);
   const menuButton = useRef<HTMLButtonElement>(null);
   const [editorialHash, setEditorialHash] = useState(window.location.hash);
   useEffect(() => {
     const navigate = () => {
-      if (window.location.hash === '#community') { setActive(4); setMenuOpen(false); setCommunityNavigation(value => value + 1); }
+      if (window.location.hash === '#make-a-wish') { setActive(99); setMenuOpen(false); }
+      else if (window.location.hash === '#community') { setActive(4); setMenuOpen(false); setCommunityNavigation(value => value + 1); }
       else if (window.location.hash === '#extraordinarios') { setActive(5); setMenuOpen(false); }
       else if (window.location.hash.startsWith('#editorial')) { setActive(2); setEditorialHash(window.location.hash); setMenuOpen(false); }
       else setActive(0);
@@ -34,8 +36,10 @@ export function EventPage() {
   const { data, error, loading, now, retry } = useEventData();
   const event = recoveryEventFor(data?.event.extraordinaryEvents, now);
   const showExtraordinary = !!event && (now < Date.parse(event.endAt) || window.location.hash === '#extraordinarios');
-  const tabs: readonly string[] = showExtraordinary ? [...regularTabs, event.title] : regularTabs;
-  const selected = active < tabs.length ? active : 0;
+  const wish = data?.event.makeAWish;
+  const wishIndex = wish ? (showExtraordinary ? 6 : 5) : -1;
+  const tabs: readonly string[] = [...regularTabs, ...(showExtraordinary ? [event!.title] : []), ...(wish ? ["Make a Wish"] : [])];
+  const selected = active === 99 ? Math.max(0, wishIndex) : active < tabs.length ? active : 0;
   useEffect(() => {
     if (selected !== 4 || window.location.hash !== '#community') return;
     const invitation = document.getElementById('community');
@@ -57,12 +61,13 @@ export function EventPage() {
   const previous = previousEdition(now);
   const zone = data?.event.timezone || configuredZone;
   function activateTab(index: number, closeMenu = true) {
-    if (index !== 2 && (window.location.hash.startsWith('#editorial') || window.location.hash === '#extraordinarios' || window.location.hash === '#community')) {
+    if (index !== 2 && (window.location.hash.startsWith('#editorial') || window.location.hash === '#extraordinarios' || window.location.hash === '#community' || window.location.hash === '#make-a-wish')) {
       window.history.replaceState(null, '', window.location.pathname + window.location.search);
       setEditorialHash('');
     }
-    if (index === 5) window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#extraordinarios`);
-    setActive(index);
+    if (index === 5 && showExtraordinary) window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#extraordinarios`);
+    if (index === wishIndex) window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#make-a-wish`);
+    setActive(index === wishIndex ? 99 : index);
     if (closeMenu) setMenuOpen(false);
   }
   function keyboard(event: React.KeyboardEvent) {
@@ -88,7 +93,7 @@ export function EventPage() {
       <a className="skip-link" href="#main">
         Skip to content
       </a>
-      <SiteHeader recoveryWindow={showExtraordinary ? event : undefined} now={now} />
+      <SiteHeader recoveryWindow={showExtraordinary ? event : undefined} wishEvent={wish} now={now} />
       <div className="shell">
       <nav aria-label="Primary" className={menuOpen ? 'primary-nav menu-open' : 'primary-nav'}>
         <button ref={menuButton} type="button" className="mobile-menu-toggle" aria-label="Toggle navigation menu"
@@ -155,7 +160,9 @@ export function EventPage() {
             hidden={selected !== i}
             tabIndex={0}
           >
-            {i === 5 && data && event ? (
+            {i === wishIndex && data && wish ? (
+              <MakeAWish data={data} event={wish} now={now} zone={zone} />
+            ) : i === 5 && data && event ? (
               <Extraordinary data={data} event={event} now={now} zone={zone} />
             ) : i === 4 ? (
               <About now={now} />

@@ -5,33 +5,43 @@ import { type Editorial, type Participant, type EventData } from "../data/schema
 import { Timestamp } from "./Timestamp";
 import { StreakFlame } from "./StreakFlame";
 
+export type AdditionalProblemHistory = { id: string; title: string; acceptedAt: string; creditSeconds: number; onOpen: () => void };
+
 export function ParticipantDetails({
   person,
   data,
   zone,
   contributions = [],
+  additionalHistory = [],
 }: {
   person: Participant;
   data: EventData;
   zone: string;
   contributions?: Editorial[];
+  additionalHistory?: AdditionalProblemHistory[];
 }) {
   const latestFirst = [...contributions].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt));
   const problemTitles = new Map(data.days.flatMap(day => day.problems.map(problem => [problem.titleSlug, problem.title] as const)));
+  const acceptanceDate = (value: string) => {
+    const parts = new Intl.DateTimeFormat('en', { timeZone: zone, year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date(value));
+    return ['year', 'month', 'day'].map(type => parts.find(p => p.type === type)!.value).join('-');
+  };
+  const dates = [...new Set([...data.days.map(d => d.date), ...additionalHistory.map(p => acceptanceDate(p.acceptedAt))])].sort();
   return (
     <div className="participant-details">
       <details className="participant-history">
-        <summary>View problem history · {data.days.reduce((count, day) => count + day.problems.length, 0)} problems</summary>
+        <summary>View problem history · {data.days.reduce((count, day) => count + day.problems.length, 0)} problems{additionalHistory.length > 0 && ` + ${additionalHistory.length} wish ${additionalHistory.length === 1 ? 'solve' : 'solves'}`}</summary>
         <div className="result-list">
           {data.days.length === 0 && <p>No problems published yet.</p>}
-          {data.days.map((day) => (
-            <section key={day.id} className="day-progress" aria-label={`Progress for ${day.date}`}>
-              <h3>{day.date} {person.dayProgress && (() => {
-                const count = person.dayProgress.find(d => d.date === day.date)?.onTimeProblems ?? 0;
+          {dates.map((date) => {
+            const day = data.days.find(d => d.date === date);
+            return <section key={date} className="day-progress" aria-label={`Progress for ${date}`}>
+              <h3>{date} {day && person.dayProgress && (() => {
+                const count = person.dayProgress.find(d => d.date === date)?.onTimeProblems ?? 0;
                 return <StreakFlame value={count} goldRatio={count === 2 ? 1 : 0}
-                  label={`${day.date} · ${count} of 2 problems on time${count === 2 ? " · Golden day" : ""}`} />;
+                  label={`${date} · ${count} of 2 problems on time${count === 2 ? " · Golden day" : ""}`} />;
               })()}</h3>
-              {day.problems.map((problem) => {
+              {day?.problems.map((problem) => {
                 const time = problemRankingTime(person, day, problem.titleSlug, data);
                 const accepted = time?.acceptedAt ?? null;
                 const editorial = latestFirst.find(entry => entry.titleSlug === problem.titleSlug);
@@ -53,8 +63,14 @@ export function ParticipantDetails({
                   </div>
                 );
               })}
-            </section>
-          ))}
+              {additionalHistory.filter(entry => acceptanceDate(entry.acceptedAt) === date)
+                .sort((a, b) => Date.parse(a.acceptedAt) - Date.parse(b.acceptedAt)).map(entry => <div className="result wish-history-result" key={entry.id}>
+                  <div className="result-problem"><button className="wish-history-link" onClick={entry.onOpen}>{entry.title} ↗</button><small>✧ Make a Wish · optional problem</small></div>
+                  <span>✓ Accepted · <Timestamp value={entry.acceptedAt} zone={zone} /></span>
+                  <span className="result-time">−{elapsedLabel(entry.creditSeconds)}<small>Credit awarded once</small></span>
+                </div>)}
+            </section>;
+          })}
         </div>
       </details>
       {latestFirst.length > 0 && <details className="participant-history editorial-history">

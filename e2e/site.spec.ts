@@ -1,5 +1,14 @@
-import { expect, test, type Locator } from '@playwright/test';
+import { expect, test, type Locator, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
+
+async function showNavigation(page: Page) {
+  const menu = page.getByRole('button', { name: 'Toggle navigation menu' });
+  if (await menu.isVisible() && await menu.getAttribute('aria-expanded') === 'false') await menu.click();
+}
+async function selectTab(page: Page, name: string) {
+  await showNavigation(page);
+  await page.getByRole('tab', { name, exact: true }).click();
+}
 
 async function expectAnchored(trigger: Locator, tooltip: Locator, below = false) {
   await expect(tooltip).toBeVisible();
@@ -47,6 +56,7 @@ test('published problems, ties, search, details, keyboard and accessibility', as
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
   await page.screenshot({ path: testInfo.outputPath('home.png'), fullPage: true });
+  await showNavigation(page);
   await page.getByRole('tab', { name: 'Problems' }).focus();
   await page.keyboard.press('ArrowRight');
   await expect(page.getByRole('tab', { name: 'Scoreboard' })).toBeFocused();
@@ -79,8 +89,8 @@ test('published problems, ties, search, details, keyboard and accessibility', as
   await page.keyboard.press('Escape');
   await expect(page.getByRole('tooltip')).toHaveCount(0);
   await page.screenshot({ path: testInfo.outputPath('rank-target.png'), fullPage: true });
-  await page.getByRole('tab', { name: 'About / Join' }).click();
-  await expect(page.getByText(/Hello, I’m Alejandra/)).toBeVisible();
+  await selectTab(page, 'About / Join');
+  await expect(page.getByRole('heading', { name: 'About Codetober', exact: true })).toBeVisible();
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
 });
 test('validated editorial credit changes rank and the latest release tracks reading independently', async ({ page }, testInfo) => {
@@ -89,17 +99,18 @@ test('validated editorial credit changes rank and the latest release tracks read
     idea: 'A different reviewed implementation', solution: 'example code', filename: 'solution.cpp', language: 'C++', complexity: 'O(n)' }] };
   await page.route('**/data/data.json', route => route.fulfill({ json: credited }));
   await page.goto('/codetober/2026/');
-  await page.getByRole('tab', { name: 'Scoreboard' }).click();
+  await selectTab(page, 'Scoreboard');
   const author = page.locator('.participant').filter({ has: page.getByRole('heading', { name: 'Example Bea' }) });
   await expect(author.getByLabel('Rank 1', { exact: true })).toBeVisible();
   await author.getByRole('button', { name: 'Expand progress for Example Bea' }).click();
   await expect(author.getByText('−1h 0m 0s')).toBeVisible();
   expect((await new AxeBuilder({ page }).analyze()).violations).toEqual([]);
-  const tab = page.getByRole('tab', { name: 'Releases' });
+  await showNavigation(page);
+  const tab = page.getByRole('tab', { name: 'Releases', includeHidden: true });
   await expect(tab).toHaveClass(/has-unseen-content/);
   await tab.click();
   const note = page.locator('details.release-note').first();
-  await expect(note).toContainText('Release 4');
+  await expect(note).toContainText('Release 7 · A weekend of second chances & wishes');
   await note.locator('summary').click();
   await expect(note).not.toHaveClass(/has-unseen-content/);
   await expect(tab).toHaveClass(/has-unseen-content/);
@@ -107,7 +118,7 @@ test('validated editorial credit changes rank and the latest release tracks read
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await page.screenshot({ path: testInfo.outputPath('release-3.png'), fullPage: true });
   await page.reload();
-  await page.getByRole('tab', { name: 'Releases' }).click();
+  await selectTab(page, 'Releases');
   await expect(page.locator('details.release-note').first()).not.toHaveClass(/has-unseen-content/);
 });
 test('05:59 countdown never reveals content and 06:00 waits for server publication', async ({ page }) => {
@@ -159,7 +170,7 @@ test('participant tags expose evidence on focus and touch without overflow', asy
   } }));
   await page.goto('/codetober/2026/');
   await expect(page.getByRole('tabpanel', { name: 'Problems' }).getByText('Try it first.')).toBeVisible();
-  await page.getByRole('tab', { name: 'Scoreboard' }).click();
+  await selectTab(page, 'Scoreboard');
   const person = page.locator('.participant').filter({ has: page.getByRole('heading', { name: 'Example Amy' }) });
   await expect(person.locator('.compact-badges .badge-pill')).toHaveCount(3);
   const featured = person.locator('.compact-badges').getByRole('button', { name: /One More Problem/ });

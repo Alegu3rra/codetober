@@ -5,13 +5,16 @@ import { elapsedLabel } from "../format/time";
 import { type EventData, type Participant } from "../data/schema";
 import { StreakFlame } from './StreakFlame';
 import { Timestamp } from './Timestamp';
-import { ParticipantDetails } from './ParticipantDetails';
+import { ParticipantDetails, type AdditionalProblemHistory } from './ParticipantDetails';
 import { RankTarget } from './RankTarget';
 import { InfoTooltip } from './InfoTooltip';
 import { ParticipantBadges } from '../features/badges/ParticipantBadges';
 
-export function ParticipantRow({ person, rival, data, now, zone, started }: {
+export type ParticipantSupplement = { rankingCreditSeconds: number; stats: React.ReactNode; history: AdditionalProblemHistory[] };
+
+export function ParticipantRow({ person, rival, data, now, zone, started, supplement, rivalSupplement }: {
   person: Participant; rival?: Participant; data: EventData; now: number; zone: string; started: boolean;
+  supplement?: ParticipantSupplement; rivalSupplement?: ParticipantSupplement;
 }) {
   const contributions = (data.editorials ?? []).filter(e => e.participant_id === person.participant_id);
   const [open, setOpen] = useState(false);
@@ -19,7 +22,8 @@ export function ParticipantRow({ person, rival, data, now, zone, started }: {
   const closed = now >= Date.parse(data.event.closeAt);
   const stale = !closed && (!person.lastSyncedAt || now - Date.parse(person.lastSyncedAt) > 2 * 3600000);
   const time = rankingTime(person, data);
-  const rivalTimeGap = rival ? time.totalSeconds - rankingTime(rival, data).totalSeconds : 0;
+  const totalSeconds = Math.max(0, time.totalSeconds - (supplement?.rankingCreditSeconds ?? 0));
+  const rivalTimeGap = rival ? totalSeconds - Math.max(0, rankingTime(rival, data).totalSeconds - (rivalSupplement?.rankingCreditSeconds ?? 0)) : 0;
   const firstToday = firstSolveToday(person, data, now);
   const warning = !closed && (person.syncFailed || stale);
   return (
@@ -52,10 +56,11 @@ export function ParticipantRow({ person, rival, data, now, zone, started }: {
         <ParticipantBadges badges={person.badges} />
         {started && <RankTarget person={person} rival={rival} data={data} now={now} zone={zone} />}
         <dl className="stats participant-extra-stats">
-          <div><dt>Ranking time <InfoTooltip label="ranking time">Total time from each problem’s publication to its first accepted submission, plus late penalties, minus one hour per editorial validated as a different implementation and any extraordinarios recovery adjustment. Minimum zero. With equal problem totals, less time ranks higher.</InfoTooltip></dt><dd className="elapsed-time">{elapsedLabel(time.totalSeconds)}</dd></div>
+          <div><dt>Ranking time <InfoTooltip label="ranking time">Total time from each problem’s publication to its first accepted submission, plus late penalties, minus one hour per editorial validated as a different implementation and any extraordinarios recovery adjustment{supplement ? ", minus any granted wish credits" : ""}. Minimum zero. With equal problem totals, less time ranks higher.</InfoTooltip></dt><dd className="elapsed-time">{elapsedLabel(totalSeconds)}</dd></div>
           <div><dt>Late penalty · {time.lateProblems} problems <InfoTooltip label="late penalty">24 hours added once for each problem accepted at or after 06:00 the next day. Eligible extraordinarios solves have no late penalty. This penalty is already included in ranking time.</InfoTooltip></dt><dd className="elapsed-time">{elapsedLabel(time.penaltySeconds)}</dd></div>
           {!!time.recoveredProblems && <div><dt>Extraordinarios · {time.recoveredProblems} recovered problems <InfoTooltip label="extraordinarios">Each qualifying problem counts as 24 hours total with no late penalty. The recovery adjustment replaces the accumulated delay and stays after the weekend.</InfoTooltip></dt><dd className="elapsed-time">−{elapsedLabel(time.recoveryCreditSeconds!)}</dd></div>}
           <div><dt>Editorial credit · {time.creditedEditorials} {time.creditedEditorials === 1 ? 'contribution' : 'contributions'} <InfoTooltip label="editorial credit">One hour of credit per published editorial reviewed as a different implementation for that problem. Each contribution counts once. The credit is already deducted from ranking time, which cannot fall below zero.</InfoTooltip></dt><dd className="elapsed-time">−{elapsedLabel(time.editorialCreditSeconds)}</dd></div>
+          {supplement?.stats}
           <div><dt>Best streak</dt><dd><StreakFlame value={person.bestStreak}
             goldRatio={person.bestStreak ? (person.bestStreakGoldenDays ?? 0) / person.bestStreak : 0}
             label={`${person.bestStreak}-day best streak · ${person.bestStreakGoldenDays ?? 0} golden days`} /></dd></div>
@@ -66,7 +71,7 @@ export function ParticipantRow({ person, rival, data, now, zone, started }: {
           {closed ? 'Event closed · Last sync: ' : person.syncFailed ? '⚠ Last query failed · ' : stale ? '⚠ Update overdue · ' : '✓ Synced · '}
           <Timestamp value={person.lastSyncedAt} zone={zone} />
         </p>
-        <ParticipantDetails person={person} data={data} zone={zone} contributions={contributions} />
+        <ParticipantDetails person={person} data={data} zone={zone} contributions={contributions} additionalHistory={supplement?.history} />
       </div>
     </article>
   );

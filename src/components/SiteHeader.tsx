@@ -4,13 +4,16 @@ import { communityViewId, useContentIndicators } from "../hooks/useViewedContent
 import { eventName } from "../config";
 import type { ExtraordinaryEvent } from '../../shared/extraordinary-events.mjs';
 import { RecoveryCountdown } from './RecoveryCountdown';
+import { WishBanner } from '../features/wishes/WishBanner';
+import type { WishEvent } from '../features/wishes/schema';
 
-export function SiteHeader({ recoveryWindow, now = Date.now() }: { recoveryWindow?: ExtraordinaryEvent; now?: number }) {
+export function SiteHeader({ recoveryWindow, wishEvent, now = Date.now() }: { recoveryWindow?: ExtraordinaryEvent; wishEvent?: WishEvent; now?: number }) {
   const { isUnseen, markViewed } = useContentIndicators();
   const communityIsNew = isUnseen(communityViewId);
   return (
 <header className="site-header">
         <RecoveryCountdown window={recoveryWindow} now={now} banner />
+        <WishBanner event={wishEvent} now={now} />
         <div className="shell site-header-content">
         {editions.length > 1 ? <div className="edition-heading">
           <span aria-hidden="true">[</span><span className="edition-typing">

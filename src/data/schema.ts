@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { normalizeSnapshot } from "./compatibility";
 import { badgeSchema } from "../features/badges/schema";
+import { wishEventSchema } from '../features/wishes/schema';
 
 const extraordinaryEvent = z.object({ id: z.string().regex(/^[a-zA-Z0-9_-]{1,80}$/), type: z.literal("backlog-recovery"), title: z.string().min(1).max(100), startAt: z.string().datetime({ offset: true }), endAt: z.string().datetime({ offset: true }), problemTimeSeconds: z.literal(86400) }).refine(w => Date.parse(w.endAt) > Date.parse(w.startAt));
 
@@ -19,7 +20,7 @@ export type Editorial = z.infer<typeof editorialSchema>;
 const currentDataSchema = z.object({
   editorials: z.array(editorialSchema).optional(), editorialsFailed: z.boolean().optional(),
   version: z.literal(1), demo: z.boolean(), generatedAt: instant, lastSuccessfulSyncAt: instant.nullable(), participantsLastSuccessAt: instant.nullable(), participantsFailed: z.boolean(),
-  event: z.object({ extraordinaryEvents: z.array(extraordinaryEvent).optional(), timezone: z.string(), startAt: instant, closeAt: instant, totalProblems: z.literal(62), schedule: z.array(z.object({ date: z.string(), releaseAt: instant })) }),
+  event: z.object({ makeAWish: wishEventSchema.optional(), extraordinaryEvents: z.array(extraordinaryEvent).optional(), timezone: z.string(), startAt: instant, closeAt: instant, totalProblems: z.literal(62), schedule: z.array(z.object({ date: z.string(), releaseAt: instant })) }),
   days: z.array(z.object({ id: z.string(), date: z.string(), title: z.string(), description: z.string().optional(), releaseAt: instant, problems: z.array(problem).length(2) })),
   participants: z.array(z.object({ participant_id: z.string(), display_name: z.string(), leetcode_username: z.string().regex(/^[a-zA-Z0-9_-]{1,30}$/), rank: z.number().int().positive(),
     badges: z.array(badgeSchema).max(50).optional(),

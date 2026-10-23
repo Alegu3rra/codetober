@@ -3,6 +3,7 @@ import { selectedEdition } from '../editions';
 import { releaseViewId, useContentIndicators } from '../hooks/useViewedContent';
 
 export const releaseNotes = [
+  { id: '2026-release-7', year: 2026, title: 'Release 7 · A weekend of second chances & wishes', date: 'October 23, 2026', kind: 'wishes' },
   { id: '2026-release-6', year: 2026, title: 'Release 6 · Stay connected', date: 'October 16, 2026', kind: 'community' },
   { id: '2026-release-5', year: 2026, title: 'Release 5 · Extraordinarios weekend', date: 'October 16, 2026', kind: 'recovery' },
   { id: '2026-release-4', year: 2026, title: 'Release 4 · Your practice, your tags', date: 'October 11, 2026', kind: 'badges' },
@@ -26,7 +27,12 @@ export function Releases() {
         <span className="muted">Read release</span>
       </summary>
       <div className="editorial-body">
-        {release.kind === 'community' ? <>
+        {release.kind === 'wishes' ? <>
+          <h3>Extraordinarios returns · Make a Wish arrives</h3>
+          <p>Extraordinarios opens again October 24 at 06:00 through October 26 at 06:00, Guadalajara time. Eligible pending problems count as 24 hours total with no extra late penalty. Credits from the first recovery weekend stay.</p>
+          <p>On Sunday October 25, complete both daily problems during their official window to earn a wish for the community. The second accepted submission determines completion time; the first breaks ties. Exact ties are reviewed by email to determine one wish.</p>
+          <p>Explore five educational wish proposals and their visual guides in the Make a Wish tab. The confirmed winner sends their choice from their registration email within 24 hours. Benefits start after organizer approval and announcement.</p>
+        </> : release.kind === 'community' ? <>
           <h3>The WhatsApp community is here</h3>
           <p>Find announcements and reminders through the small chat icon in the header or the invitation beside challenge registration in About / Join.</p>
           <ul>

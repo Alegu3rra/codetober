@@ -1,7 +1,7 @@
 import React from "react";
 import { type Day, type Editorial } from "../data/schema";
 
-export function ProblemCards({ day, editorials = [], showFocus = false }: { day: Day; editorials?: Editorial[]; showFocus?: boolean }) {
+export function ProblemCards({ day, editorials = [], showFocus = false, renderExtra }: { day: Day; editorials?: Editorial[]; showFocus?: boolean; renderExtra?: (problem: Day['problems'][number]) => React.ReactNode }) {
   return (
     <div className="problems">
       {day.problems.map((problem, i) => (
@@ -25,6 +25,7 @@ export function ProblemCards({ day, editorials = [], showFocus = false }: { day:
             Solve on LeetCode ↗
           </a>
           {editorials.some(e => e.titleSlug === problem.titleSlug) && <p><a href={`#editorial-${editorials.find(e => e.titleSlug === problem.titleSlug)!.id}`}>View editorial →</a></p>}
+          {renderExtra?.(problem)}
         </article>
       ))}
     </div>

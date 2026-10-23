@@ -1,21 +1,28 @@
 import React, { useState } from "react";
 import { filterParticipants } from "../features/participants/search";
-import { type EventData } from "../data/schema";
-import { ParticipantRow } from "../components/ParticipantRow";
-import { orderedParticipants } from "../features/ranking/time";
+import { type EventData, type Participant } from "../data/schema";
+import { ParticipantRow, type ParticipantSupplement } from "../components/ParticipantRow";
+import { orderedParticipants, rankingTime } from "../features/ranking/time";
 
 export function Scoreboard({
   data,
   now,
   zone,
+  participantSupplement,
 }: {
   data: EventData;
   now: number;
   zone: string;
+  participantSupplement?: (person: Participant) => ParticipantSupplement | undefined;
 }) {
   const [query, setQuery] = useState("");
   const started = now >= Date.parse(data.event.startAt);
   const ranking = orderedParticipants(data);
+  if (participantSupplement) {
+    const adjusted = (p: Participant) => Math.max(0, rankingTime(p, data).totalSeconds - (participantSupplement(p)?.rankingCreditSeconds ?? 0));
+    ranking.sort((a, b) => b.problemsCompleted - a.problemsCompleted || adjusted(a) - adjusted(b) || a.rank - b.rank);
+    ranking.forEach((person, i) => { person.rank = i + 1; });
+  }
   const participants = filterParticipants(ranking, query);
   return (
     <section>
@@ -35,7 +42,8 @@ export function Scoreboard({
         {participants.length === 1 ? "participant" : "participants"} · Challenge
         statistics only
       </p>
-      {participants.map(person => <ParticipantRow key={person.participant_id} person={person} rival={ranking[person.rank - 2]} data={data} now={now} zone={zone} started={started} />)}
+      {participants.map(person => <ParticipantRow key={person.participant_id} person={person} rival={ranking[person.rank - 2]} data={data} now={now} zone={zone} started={started}
+        supplement={participantSupplement?.(person)} rivalSupplement={ranking[person.rank - 2] ? participantSupplement?.(ranking[person.rank - 2]) : undefined} />)}
       {!participants.length && (
         <p className="empty">
           {data.participants.length

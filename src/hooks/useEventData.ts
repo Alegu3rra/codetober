@@ -5,8 +5,9 @@ import { dataURL } from "../data/urls";
 
 export function useEventData() {
   const mode = import.meta.env.DEV ? new URLSearchParams(window.location.search).get("preview") : null;
-  const preview = mode === "1" || mode === "closed" || mode === "editorials";
-  const previewTime = Date.parse(mode === "closed" ? "2026-11-02T12:00:00Z" : "2026-10-03T18:00:00Z");
+  const preview = mode === "1" || mode === "closed" || mode === "editorials" || !!mode?.startsWith("wish");
+  const wishTimes: Record<string, string> = { wish: "2026-10-25T15:00:00Z", "wish-upcoming": "2026-10-23T18:00:00Z", "wish-review": "2026-10-26T13:00:00Z", "wish-tie": "2026-10-26T13:00:00Z", "wish-winner": "2026-10-26T14:00:00Z" };
+  const previewTime = Date.parse(mode && wishTimes[mode] ? wishTimes[mode] : mode === "closed" ? "2026-11-02T12:00:00Z" : "2026-10-03T18:00:00Z");
   const [data, setData] = useState<EventData | null>(null);
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(true);
@@ -23,7 +24,9 @@ export function useEventData() {
     async function refresh() {
       try {
         if (import.meta.env.DEV && preview) {
-          const fixture = mode === "editorials"
+          const fixture = mode?.startsWith("wish")
+            ? (await import("../dev/wish-preview")).wishPreviewData(mode)
+            : mode === "editorials"
             ? (await import("../dev/editorials-preview")).editorialsPreviewData
             : mode === "closed"
             ? (await import("../dev/closed-preview")).closedPreviewData

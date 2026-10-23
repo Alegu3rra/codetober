@@ -811,3 +811,121 @@ footer p:first-child {
   .recovery-countdown .recovery-countdown-content { gap: 8px; }
   .recovery-countdown-content > div { gap: 7px; }
 }
+
+/* Make a Wish: warm gold, drawn constellations, and optional Sunday magic. */
+.wish-banner { display: flex; align-items: center; justify-content: center; gap: 14px; padding: 10px 24px; color: #f1dba3; background: #242119; border-bottom: 1px solid #51452c; text-decoration: none; font-size: .75rem; flex-wrap: wrap; }
+.wish-banner:hover { background: #30291c; color: #fff1c9; }
+.wish-banner-star { font-size: 1.5rem; line-height: 1; }
+.wish-banner .countdown { color: #ffe6a7; }
+.wish-banner-action { text-decoration: underline; text-underline-offset: 4px; }
+.wish-page { --wish-gold: #efd394; --wish-muted: #bfb49b; padding-bottom: 24px; }
+.wish-hero { display: grid; grid-template-columns: 1.55fr 1fr; gap: 32px; align-items: center; padding: 46px 38px 36px; margin-top: 12px; border: 1px solid #55472f; border-radius: 16px; overflow: hidden; background: radial-gradient(ellipse at 85% 35%, #48351c55, transparent 60%), #14181a; }
+.wish-eyebrow { text-transform: uppercase; letter-spacing: .13em; color: #d5bd85; font-size: .68rem; line-height: 1.7; }
+.wish-hero h2 { font-size: clamp(2.5rem, 5vw, 4rem); letter-spacing: -.06em; margin: 16px 0; line-height: 1.15; }
+.wish-hero h2 span:first-child { color: var(--wish-gold); }
+.wish-heading-star { display: inline-block; font-size: .65em; margin-left: 16px; vertical-align: top; color: var(--wish-gold); }
+.wish-lead { color: #e2d8c2; font-size: 1.05rem; line-height: 1.8; }
+.wish-hero-copy > p:not(.wish-eyebrow):not(.wish-lead) { font-size: .8rem; max-width: 560px; line-height: 1.9; }
+.wish-timing { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 28px; color: var(--wish-gold); font-size: .78rem; }
+.wish-timing .countdown { font-size: 1.25rem; }
+.wish-date { color: var(--wish-muted); font-size: .68rem !important; }
+.wish-hero-art { text-align: center; color: #cbb78d; font-size: .7rem; }
+.wish-hero-art .wish-art { width: 100%; height: auto; max-width: 390px; filter: drop-shadow(0 0 24px #d0a95130); transform: rotate(-9deg); }
+.wish-art { height: 140px; width: 240px; max-width: 100%; color: #e5c47b; }
+.wish-orbit { stroke: #cfb16b; stroke-width: 1; opacity: .22; }
+.wish-orbit-outer { stroke-dasharray: 2 8; opacity: .28; }
+.wish-drawing { stroke: currentColor; stroke-width: 1.8; stroke-linejoin: round; stroke-linecap: round; }
+.wish-drawing text { stroke: none; fill: #f1deb4; font: 12px 'Roboto Mono', monospace; }
+.wish-sparkles { stroke: #f0d99d; stroke-width: 1.3; }
+.wish-result { display: flex; gap: 18px; padding: 22px 26px; background: #201f19; border: 1px solid #48412f; border-radius: 12px; margin: 24px 0 40px; }
+.wish-result > span { font-size: 1.8rem; color: var(--wish-gold); }
+.wish-result h3 { margin: 0; color: #edddba; font-size: .92rem; }
+.wish-result p { font-size: .78rem; line-height: 1.9; margin-bottom: 0; }
+.wish-section-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; margin: 36px 0 20px; }
+.wish-section-heading h3 { margin: 5px 0; font-size: 1.2rem; }
+.wish-section-heading p { margin: 0; }
+.wish-section-heading > span { font-size: .7rem; }
+.wish-problems { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.wish-problems a { display: flex; flex-direction: column; gap: 12px; padding: 22px; border: 1px solid #45402e; background: #171c1e; border-radius: 10px; text-decoration: none; }
+.wish-problems strong { color: #f0dfb9; font-size: .9rem; line-height: 1.6; }
+.wish-problems a > span:last-child { color: #adb4b4; font-size: .68rem; line-height: 1.8; }
+.wish-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.wish-card { display: flex; flex-direction: column; align-items: stretch; padding: 22px; border: 1px solid #454030; border-radius: 12px; background: linear-gradient(145deg, #24231d, #151c20); text-align: left; color: #e6e7e3; font-family: inherit; transition: border-color .18s, transform .18s; }
+.wish-card:hover { border-color: #d7b567; background: linear-gradient(145deg, #302a1d, #192124); transform: translateY(-3px); }
+.wish-card:focus-visible { outline: 2px solid #ffe3a1; outline-offset: 4px; }
+.wish-card-top { display: flex; justify-content: space-between; color: #b5a27b; font-size: .7rem; }
+.wish-card .wish-art { align-self: center; margin: 8px 0; }
+.wish-card h4 { margin: 4px 0 8px; color: #f2dfb5; font-size: .95rem; line-height: 1.6; }
+.wish-card p { color: #bec2bc; font-size: .75rem; line-height: 1.8; margin: 0 0 22px; }
+.wish-reward { color: #f0d28f; font-size: .72rem; line-height: 1.8; }
+.wish-card .wish-reward { margin-top: auto; }
+.wish-card-explore { margin-top: 18px; padding-top: 16px; border-top: 1px solid #454030; color: #c7bb9c; font-size: .68rem; }
+.wish-custom { display: flex; gap: 24px; padding: 28px; border: 1px dashed #685838; border-radius: 12px; margin: 24px 0; background: #201e1855; }
+.wish-custom > span { font-size: 2rem; color: #e5c47b; }
+.wish-custom h3 { margin-top: 0; font-size: 1rem; }
+.wish-custom p { font-size: .78rem; line-height: 1.9; }
+.wish-custom a { color: #f0d28f; font-size: .8rem; }
+.wish-custom .muted { font-size: .68rem; overflow-wrap: anywhere; }
+.wish-rules { border: 1px solid #3d423d; border-radius: 10px; padding: 20px 24px; font-size: .78rem; }
+.wish-rules summary { color: #d7c399; cursor: pointer; }
+.wish-rules li { margin: 16px 0; line-height: 1.9; }
+.wish-modal { box-sizing: border-box; max-width: 580px; width: calc(100% - 32px); max-height: calc(100dvh - 48px); padding: 32px; background: #192022; color: #e3e6e3; border: 1px solid #927644; border-radius: 16px; overflow: auto; box-shadow: 0 25px 90px #0009; }
+.wish-modal::backdrop { background: #080c10d9; backdrop-filter: blur(5px); }
+.wish-modal > .wish-art { display: block; margin: 0 auto; }
+.wish-modal h2 { color: #f2dfb5; font-size: 1.5rem; line-height: 1.4; }
+.wish-modal p { font-size: .8rem; line-height: 1.9; }
+.wish-modal-close { position: absolute; right: 14px; top: 12px; width: 40px; height: 40px; font-size: 1.5rem; border-radius: 50%; color: #e8d4a9; background: #302d23; border: 1px solid #645335; }
+.wish-example { padding: 18px; background: #28271f; border-radius: 10px; border-left: 2px solid #ddbc75; margin: 20px 0; }
+.wish-example strong { font-size: .75rem; color: #e8ce92; }
+.wish-example p { margin-bottom: 0; }
+.wish-cta { display: inline-block; border: 1px solid #b79856; padding: 12px 16px; background: #e2c47e; color: #171b1e; text-decoration: none; border-radius: 6px; font-size: .75rem; }
+.wish-mail-note { color: #adb8b7; font-size: .68rem !important; }
+.wish-effects-toggle { background: #24251f; color: #e4ce9d; border: 1px solid #665738; border-radius: 6px; padding: 10px 14px; font-size: .7rem; }
+.fairy-dust { position: fixed; inset: 0; pointer-events: none; z-index: 20; overflow: hidden; }
+.fairy-spark { position: absolute; color: #ffe3a0; font-size: 11px; text-shadow: 0 0 8px #f6c967; animation: fairy-fall .75s ease-out forwards; }
+@keyframes fairy-fall { from { opacity: .9; transform: translate(-5px, 5px) scale(1); } to { opacity: 0; transform: translate(var(--drift), 35px) scale(.2) rotate(70deg); } }
+@media (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .wish-wand, .wish-wand a, .wish-wand button { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='m7 7 19 19' stroke='%23efd394' stroke-width='4'/%3E%3Cpath d='m7 1 2 4 5 1-4 3 1 5-4-3-4 3 1-5-4-3 5-1Z' fill='%23ffe5a4' stroke='%238b723c'/%3E%3C/svg%3E") 7 7, auto; }
+}
+@media (max-width: 900px) { .wish-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .wish-hero { gap: 12px; padding: 28px; grid-template-columns: 1.6fr 1fr; } }
+@media (max-width: 600px) {
+  .wish-banner { gap: 7px 10px; padding: 10px 16px; justify-content: flex-start; font-size: .65rem; }
+  .wish-banner > span:not(.wish-banner-star):not(.countdown):not(.wish-banner-action) { flex-basis: calc(100% - 36px); order: 3; }
+  .wish-banner-action { margin-left: auto; font-size: .6rem; }
+  .wish-hero { display: block; padding: 25px 20px; position: relative; }
+  .wish-hero-art { display: none; }
+  .wish-hero h2 { font-size: 2.6rem; }
+  .wish-hero-copy > .wish-eyebrow { font-size: .6rem; }
+  .wish-grid, .wish-problems { grid-template-columns: 1fr; }
+  .wish-card { padding: 20px; }
+  .wish-card .wish-art { height: 120px; }
+  .wish-custom { padding: 22px; gap: 12px; }
+  .wish-result { padding: 20px; }
+  .wish-modal { padding: 24px; }
+  .wish-section-heading { margin-top: 30px; }
+}
+@media (prefers-reduced-motion: reduce) { .fairy-dust { display: none; } .wish-card { transition: none; } .wish-card:hover { transform: none; } }
+
+.wish-chevron { flex-shrink: 0; vertical-align: middle; }
+.wish-art { flex-shrink: 0; }
+.wish-contact { margin-top: 24px; padding-top: 20px; border-top: 1px solid #514831; min-width: 0; }
+.wish-contact-label { color: #c7ccb9; font-size: .73rem !important; margin-bottom: 10px; }
+.wish-contact-address { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-bottom: 16px; }
+.wish-contact-address > span { color: #eed59d; font-family: var(--mono); font-size: .82rem; overflow-wrap: anywhere; }
+.wish-contact-address > button { padding: 7px 12px; color: #ead39e; border: 1px solid #71603d; border-radius: 5px; background: #29291f; font-size: .72rem; min-height: 36px; }
+.wish-contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; }
+.wish-contact-actions > [role="status"] { color: #acd8bd; font-size: .72rem; }
+.wish-contact-actions .wish-cta { cursor: pointer; }
+.wish-contact-template { margin-top: 14px; }
+.wish-contact-template summary { padding: 8px 0; color: #c8bd9e; font-size: .72rem; }
+.wish-contact-template textarea { display: block; width: 100%; min-height: 200px; resize: vertical; padding: 14px; margin: 6px 0 14px; border: 1px solid #63583c; border-radius: 6px; color: #dbe3d8; background: #121a1b; font: .75rem/1.8 var(--mono); box-sizing: border-box; }
+.wish-contact .wish-mail-note { margin: 14px 0 0; }
+.wish-custom > div { min-width: 0; flex: 1; }
+.wish-custom .wish-contact { margin-top: 18px; }
+.wish-custom .wish-contact .wish-cta { color: #171b1e; }
+@media (max-width: 600px) {
+  .wish-contact-address { align-items: start; }
+  .wish-contact-address > button { min-height: 40px; }
+  .wish-contact-actions > [role="status"] { flex-basis: 100%; }
+}
+.wish-modal-close { position: sticky; top: 0; right: auto; display: flex; align-items: center; justify-content: center; margin: -16px -16px -24px auto; z-index: 2; }
