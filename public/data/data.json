@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-23T07:35:58.388Z",
+  "generatedAt": "2026-10-23T12:00:20.455Z",
   "lastSuccessfulSyncAt": "2026-10-23T07:35:58.388Z",
   "participantsLastSuccessAt": "2026-10-23T07:35:58.388Z",
   "participantsFailed": false,
@@ -607,6 +607,27 @@
           "title": "Word Search II",
           "difficulty": "Hard",
           "url": "https://leetcode.com/problems/word-search-ii/"
+        }
+      ]
+    },
+    {
+      "id": "day-23",
+      "date": "2026-10-23",
+      "title": "Fresh Problem",
+      "description": "Explore a more recent addition to the problem collection.",
+      "releaseAt": "2026-10-23T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-i",
+          "title": "Concatenate Non-Zero Digits and Multiply by Sum I",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/"
+        },
+        {
+          "titleSlug": "concatenate-non-zero-digits-and-multiply-by-sum-ii",
+          "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/"
         }
       ]
     }
