@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-24T11:07:45.272Z",
+  "generatedAt": "2026-10-24T12:00:15.140Z",
   "lastSuccessfulSyncAt": "2026-10-24T11:07:45.272Z",
   "participantsLastSuccessAt": "2026-10-24T11:07:45.272Z",
   "participantsFailed": false,
@@ -648,6 +648,27 @@
           "title": "Concatenate Non-Zero Digits and Multiply by Sum II",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/"
+        }
+      ]
+    },
+    {
+      "id": "day-24",
+      "date": "2026-10-24",
+      "title": "DP Weekend",
+      "description": "Define states and transitions to solve the pair with dynamic programming.",
+      "releaseAt": "2026-10-24T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "house-robber",
+          "title": "House Robber",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/house-robber/"
+        },
+        {
+          "titleSlug": "burst-balloons",
+          "title": "Burst Balloons",
+          "difficulty": "Hard",
+          "url": "https://leetcode.com/problems/burst-balloons/"
         }
       ]
     }
