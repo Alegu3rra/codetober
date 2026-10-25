@@ -1,9 +1,9 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-25T12:00:16.159Z",
-  "lastSuccessfulSyncAt": "2026-10-25T09:51:12.266Z",
-  "participantsLastSuccessAt": "2026-10-25T09:51:12.266Z",
+  "generatedAt": "2026-10-25T14:24:44.358Z",
+  "lastSuccessfulSyncAt": "2026-10-25T14:24:44.358Z",
+  "participantsLastSuccessAt": "2026-10-25T14:24:44.358Z",
   "participantsFailed": false,
   "event": {
     "timezone": "America/Mexico_City",
@@ -162,7 +162,7 @@
       "contactEmail": "alegu3rra@gmail.com",
       "bonusSeconds": 7200,
       "result": {
-        "status": "announced",
+        "status": "open",
         "candidates": []
       }
     }
@@ -809,6 +809,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1003,6 +1007,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": "2026-10-24T17:43:31.000Z"
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -1010,7 +1022,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -1021,7 +1033,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -1032,7 +1044,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -1043,7 +1055,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 3
@@ -1054,7 +1066,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -1065,7 +1077,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -1076,7 +1088,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 9,
             "mediumHard": 6
@@ -1087,7 +1099,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 5
@@ -1098,7 +1110,7 @@
           "id": "topic-backtracking",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -1109,7 +1121,7 @@
           "id": "topic-math",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -1120,7 +1132,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 10
           }
@@ -1129,7 +1141,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 24
           }
@@ -1138,7 +1150,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 15
           }
@@ -1147,7 +1159,7 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8
           }
@@ -1156,7 +1168,7 @@
           "id": "extra-time",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "extraProblems": 16
           }
@@ -1165,7 +1177,7 @@
           "id": "extra-mile",
           "category": "activity",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "qualifyingDays": 4,
             "windowDays": 7,
@@ -1173,7 +1185,7 @@
           }
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 1
     },
@@ -1291,6 +1303,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1485,6 +1501,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": "2026-10-25T04:44:20.000Z"
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -1492,7 +1516,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -1503,7 +1527,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -1514,7 +1538,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -1525,7 +1549,7 @@
           "id": "explains-binary-search",
           "category": "contribution",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "contributions": 2
           }
@@ -1534,7 +1558,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 3
@@ -1545,7 +1569,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -1556,7 +1580,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -1567,7 +1591,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 9,
             "mediumHard": 6
@@ -1578,7 +1602,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 5
@@ -1589,7 +1613,7 @@
           "id": "topic-backtracking",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -1600,7 +1624,7 @@
           "id": "topic-math",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -1611,7 +1635,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 10
           }
@@ -1620,7 +1644,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 24
           }
@@ -1629,7 +1653,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 9
           }
@@ -1638,7 +1662,7 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8
           }
@@ -1647,7 +1671,7 @@
           "id": "extra-time",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "extraProblems": 1
           }
@@ -1656,13 +1680,13 @@
           "id": "knowledge-sharer",
           "category": "contribution",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "contributions": 2
           }
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 2
     },
@@ -1780,6 +1804,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -1974,6 +2002,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": "2026-10-24T13:54:36.000Z"
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -1981,7 +2017,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -1992,7 +2028,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -2003,7 +2039,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -2014,7 +2050,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 3
@@ -2025,7 +2061,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -2036,7 +2072,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -2047,7 +2083,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 9,
             "mediumHard": 6
@@ -2058,7 +2094,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 5
@@ -2069,7 +2105,7 @@
           "id": "topic-backtracking",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -2080,7 +2116,7 @@
           "id": "topic-math",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -2091,7 +2127,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 10
           }
@@ -2100,7 +2136,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 24
           }
@@ -2109,7 +2145,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 13
           }
@@ -2118,7 +2154,7 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8
           }
@@ -2127,13 +2163,13 @@
           "id": "extra-time",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "extraProblems": 2
           }
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 3
     },
@@ -2251,6 +2287,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2445,6 +2485,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": "2026-10-24T22:49:54.000Z"
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -2452,7 +2500,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 3
@@ -2463,7 +2511,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -2474,7 +2522,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -2485,7 +2533,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 3
@@ -2496,7 +2544,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -2507,7 +2555,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -2518,7 +2566,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 9,
             "mediumHard": 6
@@ -2529,7 +2577,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 5
@@ -2540,7 +2588,7 @@
           "id": "topic-backtracking",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -2551,7 +2599,7 @@
           "id": "topic-math",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -2562,7 +2610,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 10
           }
@@ -2571,7 +2619,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 24
           }
@@ -2580,7 +2628,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 24
           }
@@ -2589,13 +2637,13 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8
           }
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 4
     },
@@ -2713,6 +2761,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -2907,6 +2959,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -2914,7 +2974,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 2
@@ -2925,7 +2985,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -2936,7 +2996,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -2947,7 +3007,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 3
@@ -2958,7 +3018,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -2969,7 +3029,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -2980,7 +3040,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 9,
             "mediumHard": 6
@@ -2991,7 +3051,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 4
@@ -3002,7 +3062,7 @@
           "id": "topic-math",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -3013,7 +3073,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 9
           }
@@ -3022,7 +3082,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 24
           }
@@ -3031,7 +3091,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 12
           }
@@ -3040,7 +3100,7 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6
           }
@@ -3049,13 +3109,13 @@
           "id": "extra-time",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "extraProblems": 4
           }
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 5
     },
@@ -3173,6 +3233,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 1
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -3367,6 +3431,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -3374,7 +3446,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 2
@@ -3385,7 +3457,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -3396,7 +3468,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -3407,7 +3479,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 3
@@ -3418,7 +3490,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -3429,7 +3501,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -3440,7 +3512,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 5
@@ -3451,7 +3523,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 4
@@ -3462,7 +3534,7 @@
           "id": "topic-math",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -3473,7 +3545,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 9
           }
@@ -3482,7 +3554,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 24
           }
@@ -3491,7 +3563,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 7
           }
@@ -3500,13 +3572,13 @@
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4
           }
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 6
     },
@@ -3524,9 +3596,9 @@
       "completionTimeSeconds": 1715325,
       "problemsCompleted": 42,
       "daysCompleted": 19,
-      "currentStreak": 6,
+      "currentStreak": 0,
       "bestStreak": 9,
-      "currentStreakLevel": 1,
+      "currentStreakLevel": 0,
       "bestStreakGoldenDays": 9,
       "dayProgress": [
         {
@@ -3623,6 +3695,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -3818,6 +3894,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -3825,7 +3909,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 1
@@ -3836,7 +3920,7 @@
           "id": "explains-dp",
           "category": "contribution",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "contributions": 1
           }
@@ -3845,7 +3929,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -3856,7 +3940,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -3867,7 +3951,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 3
@@ -3878,7 +3962,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -3889,7 +3973,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -3900,7 +3984,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 9,
             "mediumHard": 6
@@ -3911,7 +3995,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -3922,7 +4006,7 @@
           "id": "topic-math",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -3933,25 +4017,16 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 9
-          }
-        },
-        {
-          "id": "on-fire",
-          "category": "consistency",
-          "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
-          "evidence": {
-            "days": 6
           }
         },
         {
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 9
           }
@@ -3960,14 +4035,14 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         },
         {
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 5
           }
@@ -3976,7 +4051,7 @@
           "id": "extra-time",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "extraProblems": 1
           }
@@ -3985,13 +4060,13 @@
           "id": "knowledge-sharer",
           "category": "contribution",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "contributions": 2
           }
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 7
     },
@@ -4109,6 +4184,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 2
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -4303,6 +4382,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": "2026-10-25T03:31:54.000Z"
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -4310,7 +4397,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 5,
             "mediumHard": 3
@@ -4321,7 +4408,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -4332,7 +4419,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -4343,7 +4430,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 3
@@ -4354,7 +4441,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -4365,7 +4452,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -4376,7 +4463,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 5
@@ -4387,7 +4474,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 4
@@ -4398,7 +4485,7 @@
           "id": "topic-backtracking",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -4409,7 +4496,7 @@
           "id": "topic-math",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -4420,7 +4507,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 10
           }
@@ -4429,7 +4516,7 @@
           "id": "on-fire",
           "category": "consistency",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 3
           }
@@ -4438,7 +4525,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 11
           }
@@ -4447,14 +4534,14 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         },
         {
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 7
           }
@@ -4463,15 +4550,15 @@
           "id": "accepted-burst",
           "category": "activity",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
-            "qualifyingDays": 3,
+            "qualifyingDays": 4,
             "windowDays": 5,
             "maxGapSeconds": 120
           }
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 8
     },
@@ -4588,6 +4675,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -4783,6 +4874,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -4790,7 +4889,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -4801,7 +4900,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -4812,7 +4911,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -4823,7 +4922,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 8,
             "mediumHard": 3
@@ -4834,7 +4933,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -4845,7 +4944,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -4856,7 +4955,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 5
@@ -4867,7 +4966,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 3
@@ -4878,7 +4977,7 @@
           "id": "topic-math",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -4889,7 +4988,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 9
           }
@@ -4898,7 +4997,7 @@
           "id": "golden-week",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "days": 8
           }
@@ -4907,20 +5006,20 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         },
         {
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3
           }
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 9
     },
@@ -5037,6 +5136,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -5232,6 +5335,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -5239,7 +5350,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -5250,7 +5361,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 6,
             "mediumHard": 2
@@ -5261,7 +5372,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -5272,7 +5383,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -5283,7 +5394,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 4,
             "mediumHard": 2
@@ -5294,7 +5405,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -5305,7 +5416,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 6
           }
@@ -5314,11 +5425,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 10
     },
@@ -5435,6 +5546,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -5630,6 +5745,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -5637,7 +5760,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -5648,7 +5771,7 @@
           "id": "topic-graphs",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -5659,7 +5782,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -5670,7 +5793,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -5681,7 +5804,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 4
           }
@@ -5690,11 +5813,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 11
     },
@@ -5811,6 +5934,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -6006,6 +6133,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -6013,7 +6148,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -6024,7 +6159,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -6035,7 +6170,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -6046,7 +6181,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -6057,7 +6192,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -6068,7 +6203,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 5
           }
@@ -6077,11 +6212,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 12
     },
@@ -6198,6 +6333,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -6393,6 +6532,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -6400,7 +6547,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -6411,7 +6558,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -6422,7 +6569,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -6433,7 +6580,7 @@
           "id": "topic-prefix-sums",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -6444,7 +6591,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 4
           }
@@ -6453,11 +6600,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 13
     },
@@ -6574,6 +6721,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -6769,6 +6920,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -6776,7 +6935,7 @@
           "id": "topic-binary-search",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -6787,7 +6946,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -6798,7 +6957,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -6809,7 +6968,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 2
@@ -6820,7 +6979,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 4
           }
@@ -6829,11 +6988,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 14
     },
@@ -6950,6 +7109,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -7145,6 +7308,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -7152,7 +7323,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -7163,7 +7334,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 3
@@ -7174,7 +7345,7 @@
           "id": "topic-stacks",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -7185,7 +7356,7 @@
           "id": "topic-hashing",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -7196,7 +7367,7 @@
           "id": "all-rounder",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "topics": 4
           }
@@ -7205,20 +7376,20 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         },
         {
           "id": "hard-hunter",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3
           }
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 15
     },
@@ -7335,6 +7506,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -7530,6 +7705,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -7537,7 +7720,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -7548,7 +7731,7 @@
           "id": "topic-two-pointers",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 0
@@ -7559,11 +7742,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 16
     },
@@ -7680,6 +7863,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -7875,6 +8062,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -7882,7 +8077,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 3,
             "mediumHard": 1
@@ -7893,7 +8088,7 @@
           "id": "topic-sliding-window",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 2
@@ -7904,11 +8099,11 @@
           "id": "comeback",
           "category": "achievement",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {}
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 17
     },
@@ -8025,6 +8220,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -8220,6 +8419,14 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [
@@ -8227,7 +8434,7 @@
           "id": "topic-dp",
           "category": "topic",
           "ruleVersion": 1,
-          "evaluatedAt": "2026-10-25T09:51:12.266Z",
+          "evaluatedAt": "2026-10-25T14:24:44.358Z",
           "evidence": {
             "solved": 2,
             "mediumHard": 1
@@ -8235,7 +8442,7 @@
           "level": 1
         }
       ],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 18
     },
@@ -8352,6 +8559,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -8547,10 +8758,18 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 19
     },
@@ -8667,6 +8886,10 @@
         },
         {
           "date": "2026-10-24",
+          "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
           "onTimeProblems": 0
         }
       ],
@@ -8862,10 +9085,18 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 20
     },
@@ -8983,6 +9214,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -9177,10 +9412,18 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 21
     },
@@ -9298,6 +9541,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -9492,10 +9739,18 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 22
     },
@@ -9613,6 +9868,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -9807,10 +10066,18 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 23
     },
@@ -9928,6 +10195,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -10122,10 +10393,18 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 24
     },
@@ -10243,6 +10522,10 @@
         {
           "date": "2026-10-24",
           "onTimeProblems": 0
+        },
+        {
+          "date": "2026-10-25",
+          "onTimeProblems": 0
         }
       ],
       "results": [
@@ -10437,10 +10720,18 @@
         {
           "titleSlug": "burst-balloons",
           "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "firstAcceptedAt": null
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "firstAcceptedAt": null
         }
       ],
       "badges": [],
-      "lastSyncedAt": "2026-10-25T09:51:12.266Z",
+      "lastSyncedAt": "2026-10-25T14:24:44.358Z",
       "syncFailed": false,
       "rank": 25
     }
