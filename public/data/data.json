@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-25T09:51:12.266Z",
+  "generatedAt": "2026-10-25T12:00:16.159Z",
   "lastSuccessfulSyncAt": "2026-10-25T09:51:12.266Z",
   "participantsLastSuccessAt": "2026-10-25T09:51:12.266Z",
   "participantsFailed": false,
@@ -669,6 +669,27 @@
           "title": "Burst Balloons",
           "difficulty": "Hard",
           "url": "https://leetcode.com/problems/burst-balloons/"
+        }
+      ]
+    },
+    {
+      "id": "day-25",
+      "date": "2026-10-25",
+      "title": "Make a Wish",
+      "description": "Pair your spells and potions, find the magical number, and unlock a wish for the community. Complete both problems during the daily window to enter Make a Wish.",
+      "releaseAt": "2026-10-25T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "successful-pairs-of-spells-and-potions",
+          "title": "Successful Pairs of Spells and Potions",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/"
+        },
+        {
+          "titleSlug": "nth-magical-number",
+          "title": "Nth Magical Number",
+          "difficulty": "Hard",
+          "url": "https://leetcode.com/problems/nth-magical-number/"
         }
       ]
     }
