@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-26T06:18:49.506Z",
+  "generatedAt": "2026-10-26T12:00:24.896Z",
   "lastSuccessfulSyncAt": "2026-10-26T06:18:49.506Z",
   "participantsLastSuccessAt": "2026-10-26T06:18:49.506Z",
   "participantsFailed": false,
@@ -696,6 +696,27 @@
           "title": "Nth Magical Number",
           "difficulty": "Hard",
           "url": "https://leetcode.com/problems/nth-magical-number/"
+        }
+      ]
+    },
+    {
+      "id": "day-26",
+      "date": "2026-10-26",
+      "title": "Counting Choices",
+      "description": "Count possible paths and arrangements without listing every possibility.",
+      "releaseAt": "2026-10-26T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "unique-paths",
+          "title": "Unique Paths",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/unique-paths/"
+        },
+        {
+          "titleSlug": "count-all-valid-pickup-and-delivery-options",
+          "title": "Count All Valid Pickup and Delivery Options",
+          "difficulty": "Hard",
+          "url": "https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/"
         }
       ]
     }
