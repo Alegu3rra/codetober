@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-27T06:20:11.470Z",
+  "generatedAt": "2026-10-27T12:00:15.948Z",
   "lastSuccessfulSyncAt": "2026-10-27T06:20:11.470Z",
   "participantsLastSuccessAt": "2026-10-27T06:20:11.470Z",
   "participantsFailed": false,
@@ -717,6 +717,27 @@
           "title": "Count All Valid Pickup and Delivery Options",
           "difficulty": "Hard",
           "url": "https://leetcode.com/problems/count-all-valid-pickup-and-delivery-options/"
+        }
+      ]
+    },
+    {
+      "id": "day-27",
+      "date": "2026-10-27",
+      "title": "Lucky 7 II",
+      "description": "Another pair connected to the number 7 through their problem IDs.",
+      "releaseAt": "2026-10-27T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "squares-of-a-sorted-array",
+          "title": "Squares of a Sorted Array",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/squares-of-a-sorted-array/"
+        },
+        {
+          "titleSlug": "cheapest-flights-within-k-stops",
+          "title": "Cheapest Flights Within K Stops",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/"
         }
       ]
     }
