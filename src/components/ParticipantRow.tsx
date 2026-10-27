@@ -9,6 +9,7 @@ import { ParticipantDetails, type AdditionalProblemHistory } from './Participant
 import { RankTarget } from './RankTarget';
 import { InfoTooltip } from './InfoTooltip';
 import { ParticipantBadges } from '../features/badges/ParticipantBadges';
+import { closingWishWinner } from '../features/wishes/ClosingAnnouncement';
 
 export type ParticipantSupplement = { rankingCreditSeconds: number; stats: React.ReactNode; history: AdditionalProblemHistory[] };
 
@@ -17,6 +18,10 @@ export function ParticipantRow({ person, rival, data, now, zone, started, supple
   supplement?: ParticipantSupplement; rivalSupplement?: ParticipantSupplement;
 }) {
   const contributions = (data.editorials ?? []).filter(e => e.participant_id === person.participant_id);
+  const wishResult = data.event.makeAWish?.result;
+  const wishWinner = closingWishWinner(data)?.participant_id === person.participant_id || (wishResult?.winnerId === person.participant_id
+    && ['confirmed', 'wish-review', 'approved', 'applied', 'expired'].includes(wishResult.status));
+  const winnerTag = wishWinner ? <a className="badge-pill badge-achievement wish-winner-tag" href="#make-a-wish" title="Confirmed Make a Wish winner · October 25, 2026"><span aria-hidden="true">✧</span> Make a Wish winner</a> : null;
   const [open, setOpen] = useState(false);
   const panel = useId();
   const closed = now >= Date.parse(data.event.closeAt);
@@ -36,7 +41,7 @@ export function ParticipantRow({ person, rival, data, now, zone, started, supple
             {contributions.length > 0 && <a className="contributor-indicator" href={`#editorial-${[...contributions].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt))[0].id}`} aria-label={`View ${contributions.length} editorial ${contributions.length === 1 ? 'contribution' : 'contributions'} by ${person.display_name}`} title="Community editorial contributor">✎</a>}
           </h2>
           <small>@{person.leetcode_username}</small>
-          <ParticipantBadges badges={person.badges} compact />
+          <ParticipantBadges badges={person.badges} compact>{winnerTag}</ParticipantBadges>
           {started && <small className="rank-target-summary">{rival
             ? `${closed ? 'Final gap' : 'Next rank'} · ${rival.display_name} · ${rival.problemsCompleted === person.problemsCompleted ? rivalTimeGap > 0 ? `${elapsedLabel(rivalTimeGap)} behind on time` : 'Time tied' : closed ? `${rival.problemsCompleted - person.problemsCompleted} points behind` : `+${rival.problemsCompleted - person.problemsCompleted} to tie on points`}`
             : closed ? 'Finished #1' : 'Leading the ranking'}</small>}
@@ -53,7 +58,8 @@ export function ParticipantRow({ person, rival, data, now, zone, started, supple
         </button>
       </div>
       <div id={panel} hidden={!open} className="participant-expanded">
-        <ParticipantBadges badges={person.badges} />
+        {wishWinner && <p className="wish-winner-detail"><span aria-hidden="true">✧</span> Make a Wish winner · October 25, 2026. <a href="#make-a-wish">See the community wish →</a></p>}
+        <ParticipantBadges badges={person.badges}>{winnerTag}</ParticipantBadges>
         {started && <RankTarget person={person} rival={rival} data={data} now={now} zone={zone} />}
         <dl className="stats participant-extra-stats">
           <div><dt>Ranking time <InfoTooltip label="ranking time">Total time from each problem’s publication to its first accepted submission, plus late penalties, minus one hour per editorial validated as a different implementation and any extraordinarios recovery adjustment{supplement ? ", minus any granted wish credits" : ""}. Minimum zero. With equal problem totals, less time ranks higher.</InfoTooltip></dt><dd className="elapsed-time">{elapsedLabel(totalSeconds)}</dd></div>

@@ -1,4 +1,5 @@
 import { useId, useRef, useState } from 'react';
+import type { ReactNode } from 'react';
 import { AnchoredTooltip } from '../../components/AnchoredTooltip';
 import { badgePresentation, featuredBadges } from './catalog';
 import type { ParticipantBadge } from './schema';
@@ -20,10 +21,11 @@ function Badge({ badge }: { badge: ParticipantBadge }) {
   </span>;
 }
 
-export function ParticipantBadges({ badges = [], compact = false }: { badges?: ParticipantBadge[]; compact?: boolean }) {
+export function ParticipantBadges({ badges = [], compact = false, children }: { badges?: ParticipantBadge[]; compact?: boolean; children?: ReactNode }) {
   const visible = (compact ? featuredBadges(badges) : badges).filter(b => badgePresentation(b));
-  if (!visible.length) return null;
+  if (!visible.length && !children) return null;
   return <div className={`participant-badges${compact ? ' compact-badges' : ''}`} aria-label={compact ? 'Featured participant tags' : 'All participant tags'}>
     {visible.map(badge => <Badge key={badge.id} badge={badge} />)}
+    {children}
   </div>;
 }

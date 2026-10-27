@@ -5,6 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Editorials } from "./Editorials";
 import { Releases, releaseNotes } from "./Releases";
 import { MakeAWish } from "./MakeAWish";
+import { closingWishWinner, WinnerAnnouncement, WinnerNotice } from '../features/wishes/ClosingAnnouncement';
 import { Extraordinary } from "./Extraordinary";
 import { Home } from "./Home";
 import { About } from "./About";
@@ -16,7 +17,7 @@ import { eventName, configuredZone } from "../config";
 
 const regularTabs = ["Problems", "Scoreboard", "Editorials", "Releases", "About / Join"] as const;
 
-export function EventPage() {
+export function EventPage({ wishAnnouncement, problemsAnnouncement }: { wishAnnouncement?: React.ReactNode; problemsAnnouncement?: React.ReactNode } = {}) {
   const [active, setActive] = useState(window.location.hash === '#make-a-wish' ? 99 : window.location.hash === '#community' ? 4 : window.location.hash === '#extraordinarios' ? 5 : window.location.hash.startsWith('#editorial') ? 2 : 0);
   const [menuOpen, setMenuOpen] = useState(false);
   const [communityNavigation, setCommunityNavigation] = useState(0);
@@ -37,6 +38,7 @@ export function EventPage() {
   const event = recoveryEventFor(data?.event.extraordinaryEvents, now);
   const showExtraordinary = !!event && (now < Date.parse(event.endAt) || window.location.hash === '#extraordinarios');
   const wish = data?.event.makeAWish;
+  const hasClosingAnnouncement = !!data && !!closingWishWinner(data);
   const wishIndex = wish ? (showExtraordinary ? 6 : 5) : -1;
   const tabs: readonly string[] = [...regularTabs, ...(showExtraordinary ? [event!.title] : []), ...(wish ? ["Make a Wish"] : [])];
   const selected = active === 99 ? Math.max(0, wishIndex) : active < tabs.length ? active : 0;
@@ -161,7 +163,7 @@ export function EventPage() {
             tabIndex={0}
           >
             {i === wishIndex && data && wish ? (
-              <MakeAWish data={data} event={wish} now={now} zone={zone} />
+              wishAnnouncement ?? (hasClosingAnnouncement ? <WinnerAnnouncement /> : <MakeAWish data={data} event={wish} now={now} zone={zone} />)
             ) : i === 5 && data && event ? (
               <Extraordinary data={data} event={event} now={now} zone={zone} />
             ) : i === 4 ? (
@@ -176,7 +178,7 @@ export function EventPage() {
               </p>
             ) : data ? (
               i === 0 ? (
-                <Home data={data} now={now} zone={zone} editionNavigation={selectedEdition.year === latestYear && previous ? <a href={editionURL(previous.year)}>View previous edition →</a> : undefined} />
+                <>{problemsAnnouncement ?? (hasClosingAnnouncement ? <WinnerNotice /> : null)}<Home data={data} now={now} zone={zone} editionNavigation={selectedEdition.year === latestYear && previous ? <a href={editionURL(previous.year)}>View previous edition →</a> : undefined} /></>
               ) : (
                 <Scoreboard data={data} now={now} zone={zone} />
               )

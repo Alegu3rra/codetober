@@ -929,3 +929,8 @@ footer p:first-child {
   .wish-contact-actions > [role="status"] { flex-basis: 100%; }
 }
 .wish-modal-close { position: sticky; top: 0; right: auto; display: flex; align-items: center; justify-content: center; margin: -16px -16px -24px auto; z-index: 2; }
+.wish-winner-tag { text-decoration: none; cursor: pointer; }
+.wish-winner-tag:hover { color: #ffe6aa; border-color: #d1b06b; }
+.wish-winner-tag > span { font-size: .95rem; line-height: 1; }
+.wish-winner-detail { padding: 12px 15px; border-left: 2px solid #c6a45e; background: #d8b76b0b; color: #d8c18e; font-size: .72rem; line-height: 1.9; }
+.wish-winner-detail a { color: #e5c988; }

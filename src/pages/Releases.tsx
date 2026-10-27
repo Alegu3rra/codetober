@@ -3,6 +3,7 @@ import { selectedEdition } from '../editions';
 import { releaseViewId, useContentIndicators } from '../hooks/useViewedContent';
 
 export const releaseNotes = [
+  { id: '2026-release-8', year: 2026, title: 'Release 8 · One wish. One last surprise.', date: 'October 26, 2026', kind: 'closing-wish' },
   { id: '2026-release-7', year: 2026, title: 'Release 7 · A weekend of second chances & wishes', date: 'October 23, 2026', kind: 'wishes' },
   { id: '2026-release-6', year: 2026, title: 'Release 6 · Stay connected', date: 'October 16, 2026', kind: 'community' },
   { id: '2026-release-5', year: 2026, title: 'Release 5 · Extraordinarios weekend', date: 'October 16, 2026', kind: 'recovery' },
@@ -27,7 +28,13 @@ export function Releases() {
         <span className="muted">Read release</span>
       </summary>
       <div className="editorial-body">
-        {release.kind === 'wishes' ? <>
+        {release.kind === 'closing-wish' ? <>
+          <h3>Rafael’s choice: Choose the Last Problem</h3>
+          <p>Rafael López (@Jirafa745) is the confirmed Make a Wish winner. He chose to propose one reviewed problem for October 31, replacing one of the two regular daily slots. His gold winner tag appears alongside his other scoreboard tags.</p>
+          <p>The statement and input stay secret until October 31 at 06:00, Mexico City time. The official window closes November 1 at 06:00. Normal scoring and streak rules apply.</p>
+          <p>We are preparing an Advent-style answer format. Access and submission instructions will be announced before opening. Rafael must also submit during the official window; his editorial is delivered beforehand, published after closing, and earns no additional credit.</p>
+          <p><a href="#make-a-wish">Read the winner’s announcement and closing-day plan →</a></p>
+        </> : release.kind === 'wishes' ? <>
           <h3>Extraordinarios returns · Make a Wish arrives</h3>
           <p>Extraordinarios opens again October 24 at 06:00 through October 26 at 06:00, Guadalajara time. Eligible pending problems count as 24 hours total with no extra late penalty. Credits from the first recovery weekend stay.</p>
           <p>On Sunday October 25, complete both daily problems during their official window to earn a wish for the community. The second accepted submission determines completion time; the first breaks ties. Exact ties are reviewed by email to determine one wish.</p>
