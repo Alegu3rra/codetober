@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-28T09:45:08.561Z",
+  "generatedAt": "2026-10-28T12:00:17.158Z",
   "lastSuccessfulSyncAt": "2026-10-28T09:45:08.561Z",
   "participantsLastSuccessAt": "2026-10-28T09:45:08.561Z",
   "participantsFailed": false,
@@ -738,6 +738,27 @@
           "title": "Cheapest Flights Within K Stops",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/"
+        }
+      ]
+    },
+    {
+      "id": "day-28",
+      "date": "2026-10-28",
+      "title": "Space vs Time",
+      "description": "Compare approaches that trade extra memory for faster execution.",
+      "releaseAt": "2026-10-28T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "valid-palindrome",
+          "title": "Valid Palindrome",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/valid-palindrome/"
+        },
+        {
+          "titleSlug": "find-the-duplicate-number",
+          "title": "Find the Duplicate Number",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/find-the-duplicate-number/"
         }
       ]
     }
