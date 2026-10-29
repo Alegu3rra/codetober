@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-29T11:00:55.698Z",
+  "generatedAt": "2026-10-29T12:00:19.922Z",
   "lastSuccessfulSyncAt": "2026-10-29T11:00:55.698Z",
   "participantsLastSuccessAt": "2026-10-29T11:00:55.698Z",
   "participantsFailed": false,
@@ -759,6 +759,27 @@
           "title": "Find the Duplicate Number",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/find-the-duplicate-number/"
+        }
+      ]
+    },
+    {
+      "id": "day-29",
+      "date": "2026-10-29",
+      "title": "Matrix Mode",
+      "description": "Navigate rows and columns and reason about paths through a matrix.",
+      "releaseAt": "2026-10-29T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "spiral-matrix",
+          "title": "Spiral Matrix",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/spiral-matrix/"
+        },
+        {
+          "titleSlug": "longest-increasing-path-in-a-matrix",
+          "title": "Longest Increasing Path in a Matrix",
+          "difficulty": "Hard",
+          "url": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/"
         }
       ]
     }
