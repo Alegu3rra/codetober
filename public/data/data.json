@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-30T11:17:33.301Z",
+  "generatedAt": "2026-10-30T12:00:14.511Z",
   "lastSuccessfulSyncAt": "2026-10-30T11:17:33.301Z",
   "participantsLastSuccessAt": "2026-10-30T11:17:33.301Z",
   "participantsFailed": false,
@@ -780,6 +780,27 @@
           "title": "Longest Increasing Path in a Matrix",
           "difficulty": "Hard",
           "url": "https://leetcode.com/problems/longest-increasing-path-in-a-matrix/"
+        }
+      ]
+    },
+    {
+      "id": "day-30",
+      "date": "2026-10-30",
+      "title": "Mystery Number",
+      "description": "A surprise pair. Let the statements guide your approach.",
+      "releaseAt": "2026-10-30T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "remove-all-adjacent-duplicates-in-string",
+          "title": "Remove All Adjacent Duplicates in String",
+          "difficulty": "Easy",
+          "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/"
+        },
+        {
+          "titleSlug": "minimum-time-to-make-rope-colorful",
+          "title": "Minimum Time to Make Rope Colorful",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/minimum-time-to-make-rope-colorful/"
         }
       ]
     }
