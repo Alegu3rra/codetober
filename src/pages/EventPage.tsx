@@ -14,18 +14,29 @@ import { SiteHeader } from "../components/SiteHeader";
 import { SiteFooter } from "../components/SiteFooter";
 import { useEventData } from "../hooks/useEventData";
 import { eventName, configuredZone } from "../config";
+import type { Day } from '../data/schema';
+import { AnswerChallengeDialog } from '../features/answer-challenge/AnswerChallengeDialog';
+import { EventArchive } from '../components/EventArchive';
+const ProjectJournal=React.lazy(()=>import('./ProjectJournal'));
 
 const regularTabs = ["Problems", "Scoreboard", "Editorials", "Releases", "About / Join"] as const;
 
-export function EventPage({ wishAnnouncement, problemsAnnouncement }: { wishAnnouncement?: React.ReactNode; problemsAnnouncement?: React.ReactNode } = {}) {
-  const [active, setActive] = useState(window.location.hash === '#make-a-wish' ? 99 : window.location.hash === '#community' ? 4 : window.location.hash === '#extraordinarios' ? 5 : window.location.hash.startsWith('#editorial') ? 2 : 0);
+export function EventPage({ wishAnnouncement, problemsAnnouncement, renderProblemAction }: { wishAnnouncement?: React.ReactNode; problemsAnnouncement?: React.ReactNode; renderProblemAction?: (problem: Day['problems'][number]) => React.ReactNode } = {}) {
+  const [active, setActive] = useState(window.location.hash === '#journal' ? 98 : window.location.hash === '#make-a-wish' ? 99 : window.location.hash === '#community' ? 4 : window.location.hash === '#extraordinarios' ? 5 : window.location.hash.startsWith('#editorial') ? 2 : 0);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [answerSlug,setAnswerSlug] = useState<string|null>(null);
+  const answerTrigger = useRef<HTMLButtonElement|null>(null);
+  function closeAnswer() {
+    setAnswerSlug(null);
+    requestAnimationFrame(()=>answerTrigger.current?.focus());
+  }
   const [communityNavigation, setCommunityNavigation] = useState(0);
   const menuButton = useRef<HTMLButtonElement>(null);
   const [editorialHash, setEditorialHash] = useState(window.location.hash);
   useEffect(() => {
     const navigate = () => {
-      if (window.location.hash === '#make-a-wish') { setActive(99); setMenuOpen(false); }
+      if (window.location.hash === '#journal') { setActive(98); setMenuOpen(false); }
+      else if (window.location.hash === '#make-a-wish') { setActive(99); setMenuOpen(false); }
       else if (window.location.hash === '#community') { setActive(4); setMenuOpen(false); setCommunityNavigation(value => value + 1); }
       else if (window.location.hash === '#extraordinarios') { setActive(5); setMenuOpen(false); }
       else if (window.location.hash.startsWith('#editorial')) { setActive(2); setEditorialHash(window.location.hash); setMenuOpen(false); }
@@ -35,13 +46,16 @@ export function EventPage({ wishAnnouncement, problemsAnnouncement }: { wishAnno
     return () => window.removeEventListener('hashchange', navigate);
   }, []);
   const { data, error, loading, now, retry } = useEventData();
+  const closed=!!data&&now>=Date.parse(data.event.closeAt);
   const event = recoveryEventFor(data?.event.extraordinaryEvents, now);
   const showExtraordinary = !!event && (now < Date.parse(event.endAt) || window.location.hash === '#extraordinarios');
   const wish = data?.event.makeAWish;
   const hasClosingAnnouncement = !!data && !!closingWishWinner(data);
-  const wishIndex = wish ? (showExtraordinary ? 6 : 5) : -1;
-  const tabs: readonly string[] = [...regularTabs, ...(showExtraordinary ? [event!.title] : []), ...(wish ? ["Make a Wish"] : [])];
-  const selected = active === 99 ? Math.max(0, wishIndex) : active < tabs.length ? active : 0;
+  const showWish=!!wish&&(!closed||window.location.hash==='#make-a-wish');
+  const wishIndex = showWish ? (showExtraordinary ? 6 : 5) : -1;
+  const tabs: readonly string[] = [...regularTabs, ...(showExtraordinary ? [event!.title] : []), ...(showWish ? ["Make a Wish"] : []),'Project journal'];
+  const journalIndex=tabs.length-1;
+  const selected = active===98?journalIndex:active === 99 ? Math.max(0, wishIndex) : active < tabs.length ? active : 0;
   useEffect(() => {
     if (selected !== 4 || window.location.hash !== '#community') return;
     const invitation = document.getElementById('community');
@@ -63,13 +77,14 @@ export function EventPage({ wishAnnouncement, problemsAnnouncement }: { wishAnno
   const previous = previousEdition(now);
   const zone = data?.event.timezone || configuredZone;
   function activateTab(index: number, closeMenu = true) {
-    if (index !== 2 && (window.location.hash.startsWith('#editorial') || window.location.hash === '#extraordinarios' || window.location.hash === '#community' || window.location.hash === '#make-a-wish')) {
+    if (index !== 2 && (window.location.hash.startsWith('#editorial') || window.location.hash === '#extraordinarios' || window.location.hash === '#community' || window.location.hash === '#make-a-wish' || window.location.hash === '#journal')) {
       window.history.replaceState(null, '', window.location.pathname + window.location.search);
       setEditorialHash('');
     }
     if (index === 5 && showExtraordinary) window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#extraordinarios`);
     if (index === wishIndex) window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#make-a-wish`);
-    setActive(index === wishIndex ? 99 : index);
+    if (index === journalIndex) window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}#journal`);
+    setActive(index===journalIndex?98:index === wishIndex ? 99 : index);
     if (closeMenu) setMenuOpen(false);
   }
   function keyboard(event: React.KeyboardEvent) {
@@ -95,7 +110,7 @@ export function EventPage({ wishAnnouncement, problemsAnnouncement }: { wishAnno
       <a className="skip-link" href="#main">
         Skip to content
       </a>
-      <SiteHeader recoveryWindow={showExtraordinary ? event : undefined} wishEvent={wish} now={now} />
+      <SiteHeader recoveryWindow={!closed&&showExtraordinary ? event : undefined} wishEvent={closed?undefined:wish} now={now} />
       <div className="shell">
       <nav aria-label="Primary" className={menuOpen ? 'primary-nav menu-open' : 'primary-nav'}>
         <button ref={menuButton} type="button" className="mobile-menu-toggle" aria-label="Toggle navigation menu"
@@ -152,6 +167,7 @@ export function EventPage({ wishAnnouncement, problemsAnnouncement }: { wishAnno
             list is shown.
           </p>
         )}
+        {data?.event.answerChallenge?.syncFailed&&<p className="notice warning">Final challenge results are delayed. Previously confirmed results are preserved.</p>}
         {/* {data && now - Date.parse(data.generatedAt) > 2 * 3600000 && <p className="notice warning">This snapshot is over two hours old. Releases and results may be delayed.</p>} */}
         {tabs.map((_, i) => (
           <div
@@ -162,10 +178,12 @@ export function EventPage({ wishAnnouncement, problemsAnnouncement }: { wishAnno
             hidden={selected !== i}
             tabIndex={0}
           >
-            {i === wishIndex && data && wish ? (
-              wishAnnouncement ?? (hasClosingAnnouncement ? <WinnerAnnouncement /> : <MakeAWish data={data} event={wish} now={now} zone={zone} />)
+            {i===journalIndex ? (
+              selected===journalIndex&&<React.Suspense fallback={<p className="empty">Loading project journal…</p>}><ProjectJournal/></React.Suspense>
+            ) : i === wishIndex && data && wish ? (
+              closed?<EventArchive data={data}/>:wishAnnouncement ?? (hasClosingAnnouncement ? <WinnerAnnouncement /> : <MakeAWish data={data} event={wish} now={now} zone={zone} />)
             ) : i === 5 && data && event ? (
-              <Extraordinary data={data} event={event} now={now} zone={zone} />
+              closed?<EventArchive data={data}/>:<Extraordinary data={data} event={event} now={now} zone={zone} />
             ) : i === 4 ? (
               <About now={now} />
             ) : i === 3 ? (
@@ -178,7 +196,11 @@ export function EventPage({ wishAnnouncement, problemsAnnouncement }: { wishAnno
               </p>
             ) : data ? (
               i === 0 ? (
-                <>{problemsAnnouncement ?? (hasClosingAnnouncement ? <WinnerNotice /> : null)}<Home data={data} now={now} zone={zone} editionNavigation={selectedEdition.year === latestYear && previous ? <a href={editionURL(previous.year)}>View previous edition →</a> : undefined} /></>
+                <>{closed?<EventArchive data={data}/>:problemsAnnouncement ?? (hasClosingAnnouncement ? <WinnerNotice /> : null)}<Home data={data} now={now} zone={zone} renderProblemAction={renderProblemAction ?? (problem=>problem.source==='answer-challenge'
+                  ? data.event.answerChallenge?.problems.some(p=>p.titleSlug===problem.titleSlug)
+                    ? <button className="answer-open" onClick={event=>{answerTrigger.current=event.currentTarget;setAnswerSlug(problem.titleSlug);}}>{data.event.answerChallenge.archived?'View closing status':'Open final challenge →'}</button>
+                    : <span>Final challenge access will be available shortly.</span>
+                  : undefined)} editionNavigation={selectedEdition.year === latestYear && previous ? <a href={editionURL(previous.year)}>View previous edition →</a> : undefined} /></>
               ) : (
                 <Scoreboard data={data} now={now} zone={zone} />
               )
@@ -189,6 +211,8 @@ export function EventPage({ wishAnnouncement, problemsAnnouncement }: { wishAnno
         ))}
       </main>
       <SiteFooter data={data} zone={zone} />
+      {answerSlug&&data?.event.answerChallenge&&<AnswerChallengeDialog key={answerSlug} config={data.event.answerChallenge} titleSlug={answerSlug}
+        statement={data.days.flatMap(d=>d.problems).find(p=>p.titleSlug===answerSlug)?.statement} close={closeAnswer}/>}
     </div></ViewedContentContext.Provider>
   );
 }

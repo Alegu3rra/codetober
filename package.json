@@ -17,7 +17,8 @@
     "dev:editions": "vite --open /codetober/2026/?preview=editions",
     "build:pages": "node scripts/build-pages.mjs",
     "edition:announce": "node scripts/announce-edition.mjs",
-    "dev:editorials": "vite --open /codetober/2026/?preview=editorials#editorials"
+    "dev:editorials": "vite --open /codetober/2026/?preview=editorials#editorials",
+    "test:validator:e2e": "playwright test --config playwright.validator.config.ts"
   },
   "dependencies": {
     "@fontsource/roboto-mono": "^5.2.0",

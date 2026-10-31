@@ -6,8 +6,14 @@ import { wishEventSchema } from '../features/wishes/schema';
 const extraordinaryEvent = z.object({ id: z.string().regex(/^[a-zA-Z0-9_-]{1,80}$/), type: z.literal("backlog-recovery"), title: z.string().min(1).max(100), startAt: z.string().datetime({ offset: true }), endAt: z.string().datetime({ offset: true }), problemTimeSeconds: z.literal(86400) }).refine(w => Date.parse(w.endAt) > Date.parse(w.startAt));
 
 const instant = z.string().datetime({ offset: true });
-const problem = z.object({ titleSlug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/), title: z.string(), difficulty: z.enum(['Easy','Medium','Hard']), url: z.string().url() })
-  .refine(p => p.url === `https://leetcode.com/problems/${p.titleSlug}/`);
+const problem = z.object({ titleSlug: z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/), title: z.string(), difficulty: z.enum(['Easy','Medium','Hard']), url: z.string(), source:z.literal('answer-challenge').optional(),statement:z.string().max(100000).optional() })
+  .refine(p => p.url === (p.source === 'answer-challenge' ? `#answer-${p.titleSlug}` : `https://leetcode.com/problems/${p.titleSlug}/`));
+export const answerChallengeSchema = z.object({
+  eventId:z.string(),endpoint:z.string().url(),demo:z.boolean(),opensAt:instant,closesAt:instant,
+  archived:z.boolean(),syncFailed:z.boolean(),lastSyncedAt:instant.nullable(),
+  problems:z.array(z.object({problemId:z.string().regex(/^[a-z0-9-]{1,80}$/),problemVersion:z.number().int().positive(),titleSlug:z.string()})).min(1).max(2),
+});
+export type AnswerChallenge = z.infer<typeof answerChallengeSchema>;
 export const editorialSchema = z.object({
   id: z.string().regex(/^[a-zA-Z0-9_-]{1,80}$/), titleSlug: z.string(), participant_id: z.string(),
   authorName: z.string(), username: z.string(), publishedAt: instant,
@@ -20,7 +26,7 @@ export type Editorial = z.infer<typeof editorialSchema>;
 const currentDataSchema = z.object({
   editorials: z.array(editorialSchema).optional(), editorialsFailed: z.boolean().optional(),
   version: z.literal(1), demo: z.boolean(), generatedAt: instant, lastSuccessfulSyncAt: instant.nullable(), participantsLastSuccessAt: instant.nullable(), participantsFailed: z.boolean(),
-  event: z.object({ makeAWish: wishEventSchema.optional(), extraordinaryEvents: z.array(extraordinaryEvent).optional(), timezone: z.string(), startAt: instant, closeAt: instant, totalProblems: z.literal(62), schedule: z.array(z.object({ date: z.string(), releaseAt: instant })) }),
+  event: z.object({ answerChallenge:answerChallengeSchema.optional(), makeAWish: wishEventSchema.optional(), extraordinaryEvents: z.array(extraordinaryEvent).optional(), timezone: z.string(), startAt: instant, closeAt: instant, totalProblems: z.literal(62), schedule: z.array(z.object({ date: z.string(), releaseAt: instant })) }),
   days: z.array(z.object({ id: z.string(), date: z.string(), title: z.string(), description: z.string().optional(), releaseAt: instant, problems: z.array(problem).length(2) })),
   participants: z.array(z.object({ participant_id: z.string(), display_name: z.string(), leetcode_username: z.string().regex(/^[a-zA-Z0-9_-]{1,30}$/), rank: z.number().int().positive(),
     badges: z.array(badgeSchema).max(50).optional(),
@@ -39,6 +45,21 @@ const currentDataSchema = z.object({
     lastSyncedAt: instant.nullable(), syncFailed: z.boolean(), results: z.array(z.object({ titleSlug: z.string(), firstAcceptedAt: instant.nullable() })),
   })),
 }).superRefine((data, context) => {
+  const challenge=data.event.answerChallenge;
+  if (challenge) {
+    const url=new URL(challenge.endpoint);
+    const validURL=!url.username && !url.password && !url.search && !url.hash && url.pathname.endsWith('/validator')
+      && (challenge.demo ? data.demo && url.protocol==='http:' && ['localhost','127.0.0.1'].includes(url.hostname)
+        : url.protocol==='https:' && /^[a-z0-9]+\.supabase\.co$/.test(url.hostname));
+    const mapped=challenge.problems.map(p=>p.titleSlug);
+    const published=data.days.flatMap(d=>d.problems).filter(p=>p.source==='answer-challenge');
+    if (!validURL || challenge.demo!==data.demo || new Set(mapped).size!==mapped.length
+      || mapped.length!==published.length || published.some(p=>!mapped.includes(p.titleSlug))
+      || Date.parse(challenge.opensAt)>Date.parse(data.generatedAt)
+      || Date.parse(challenge.closesAt)!==Date.parse(data.event.closeAt)) {
+      context.addIssue({code:'custom',message:'Invalid answer challenge configuration'});
+    }
+  }
   const slugs = new Set(data.days.flatMap(d => d.problems.map(p => p.titleSlug)));
   if (data.days.some(d => Date.parse(d.releaseAt) > Date.parse(data.generatedAt)) || data.participants.some(p => p.results.some(r => !slugs.has(r.titleSlug)))) {
     context.addIssue({ code: 'custom', message: 'Invalid published snapshot' });

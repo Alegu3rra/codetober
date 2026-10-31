@@ -19,6 +19,13 @@ test('compact cards select one topic, constancy label and achievement; details r
   view.rerender(<ParticipantBadges badges={badges} />);
   expect(screen.getAllByRole('button')).toHaveLength(5);
 });
+test('closing recognition stays inline and takes priority without exceeding three featured tags',()=>{
+  const badges=[badge('topic-dp','topic',{solved:4}),badge('on-fire','consistency',{days:31}),badge('hard-hunter','achievement',{solved:4}),badge('codetober-finisher','achievement',{solved:62,total:62})];
+  expect(featuredBadges(badges).map(b=>b.id)).toEqual(['codetober-finisher','topic-dp','on-fire']);
+  render(<ParticipantBadges badges={badges} compact/>);
+  expect(screen.getByRole('button',{name:/Codetober Finisher/})).toBeInTheDocument();
+  expect(screen.getAllByRole('button')).toHaveLength(3);
+});
 test('tooltips expose measured evidence on focus and touch and dismiss with Escape or blur', () => {
   render(<ParticipantBadges badges={[badge('accepted-burst', 'activity', { qualifyingDays: 3, windowDays: 5, maxGapSeconds: 120 })]} />);
   const trigger = screen.getByRole('button', { name: /Accepted in Bursts/ });

@@ -13,6 +13,9 @@ const topics: Record<string, { name: string; icon: string; description: string }
   math: { name: 'Math Mind', icon: '🔢', description: 'prime numbers, counting, and mathematical properties' },
 };
 const achievements: Record<string, { name: string; icon: string; tooltip: (e: ParticipantBadge['evidence']) => string }> = {
+  'codetober-finisher': { name:'Codetober Finisher',icon:'🏁',tooltip:e=>`Completed all ${e.solved}/${e.total} problems with valid acceptances before closure. On-time and late solves both count. Verified corrections may update this recognition.` },
+  'past-halfway': { name:'Past Halfway',icon:'🌗',tooltip:e=>`Completed ${e.solved}/${e.total} problems before closure: more than 50% of the edition. Exactly half does not qualify. This tag does not change ranking.` },
+  'took-part': { name:'Took Part',icon:'🌱',tooltip:e=>`Completed ${e.solved}/${e.total} problems before closure. Every recorded solve is part of your practice history. This tag does not change ranking.` },
   'on-fire': { name: 'On Fire', icon: '🔥', tooltip: e => `Recorded at least one on-time Accepted submission for ${e.days} consecutive days.` },
   'golden-week': { name: 'Golden Week', icon: '🏅', tooltip: e => `Completed both daily problems on time for ${e.days} consecutive days. This achievement is retained throughout the edition.` },
   'hard-hunter': { name: 'Hard Hunter', icon: '💀', tooltip: e => `Recorded Accepted submissions for ${e.solved} distinct Hard problems in this edition.` },
@@ -48,5 +51,6 @@ export function featuredBadges(badges: ParticipantBadge[]) {
   const priority = ['extra-mile', 'community-voice', 'hard-hunter', 'all-rounder', 'knowledge-sharer', 'extra-time', 'comeback', 'accepted-burst'];
   const achievement = priority.map(id => known.find(b => b.id === id)).find(Boolean)
     ?? known.find(b => b.id.startsWith('collection-') || b.id.startsWith('explains-'));
-  return [topic, consistency, achievement].filter((b): b is ParticipantBadge => !!b);
+  const completion = ['codetober-finisher','past-halfway','took-part'].map(id=>known.find(b=>b.id===id)).find(Boolean);
+  return [completion, topic, consistency, achievement].filter((b): b is ParticipantBadge => !!b).slice(0,3);
 }

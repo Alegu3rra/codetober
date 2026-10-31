@@ -40,7 +40,9 @@ test('keyboard tabs, search, participant details and error labels', async () => 
   fireEvent.change(screen.getByRole('searchbox'), { target: { value: 'not-a-user' } });
   expect(screen.getByText('No participants match your search.')).toBeVisible();
   fireEvent.keyDown(tab, { key: 'End' });
-  expect(screen.getByRole('tab', { name: 'About / Join' })).toHaveFocus();
+  expect(screen.getByRole('tab', { name: 'Project journal' })).toHaveFocus();
+  await screen.findByRole('heading',{name:'Project journal'});
+  fireEvent.click(screen.getByRole('tab',{name:'About / Join'}));
   expect(screen.getByText(/Registration closes October 30/)).toBeVisible();
 });
 test('request failures have retry, and About remains available', async () => {
@@ -58,6 +60,9 @@ test('release tab tracks each release independently and stays read after reload'
   const tab = screen.getByRole('tab', { name: 'Releases' });
   expect(tab).toHaveClass('has-unseen-content');
   fireEvent.click(tab);
+  const finalRelease=screen.getByText('Release 9 · The final chapter, kept for later').closest('details')!;
+  finalRelease.open=true;fireEvent(finalRelease,new Event('toggle'));
+  expect(tab).toHaveClass('has-unseen-content');
   const closingRelease = screen.getByText('Release 8 · One wish. One last surprise.').closest('details')!;
   closingRelease.open = true;
   fireEvent(closingRelease, new Event('toggle'));

@@ -33,6 +33,7 @@ jobs:
           VITE_EVENT_TIMEZONE: ${{ vars.VITE_EVENT_TIMEZONE || 'America/Mexico_City' }}
           VITE_JOIN_FORM_URL: ${{ vars.VITE_JOIN_FORM_URL }}
           VITE_PUBLIC_DATA_BASE_URL: ${{ vars.VITE_PUBLIC_DATA_BASE_URL }}
+          VITE_VALIDATOR_TURNSTILE_SITE_KEY: ${{ vars.VITE_VALIDATOR_TURNSTILE_SITE_KEY }}
       - uses: actions/upload-pages-artifact@v3
         if: github.ref == 'refs/heads/main' && vars.ENABLE_DEPLOYMENT == 'true'
         with:

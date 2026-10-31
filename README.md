@@ -1,5 +1,26 @@
 # Codetober — proyecto público
 
+Al cerrar la edición, Problems muestra un archivo compacto y las dinámicas pasadas
+se conservan en un desplegable; sus banners activos desaparecen. El icono de archivo
+del encabezado enlaza ediciones cerradas. El selector de año sigue disponible cuando
+hay varias ediciones anunciadas. `?preview=closed` permite revisar estos cambios
+en desarrollo; `?preview=editions` conserva el simulador anual.
+
+Los reconocimientos de cierre (`Codetober Finisher`, `Past Halfway`, `Took Part`)
+vienen del snapshot privado: 62/62, 32–61 y 1–31 respectivamente. No cambian puntos
+ni tiempos y no se conceden antes de cerrar. `Project journal` es una pestaña
+estática cargada bajo demanda, con decisiones y aprendizajes; no admite registros
+personales ni secretos. Las notas distinguen producción de experimentos locales.
+
+El problema final propio usa `source: "answer-challenge"` en el snapshot y abre
+un diálogo de código, descarga y archivo UTF-8. Solo consulta el API al abrir o
+realizar una acción; el score sigue leyendo el snapshot estático. El build real
+necesita la variable pública `VITE_VALIDATOR_TURNSTILE_SITE_KEY`, nunca un secreto.
+Una fuente archivada muestra su cierre sin llamar al backend. El preview local
+`?preview=wish-validator` y `npm run test:validator:e2e` usan contenido ficticio;
+el ensayo de navegador intercepta la API y no modifica Supabase. La configuración
+oficial y el despliegue del validador siguen pendientes.
+
 Frontend estático React + TypeScript + Vite. Solo contiene datos que ya pueden publicarse. Copia el contenido de **esta carpeta**, incluidos sus archivos ocultos, a la raíz de un repositorio público independiente. Nunca copies `private-sync/` ni su historial Git.
 
 ## Desarrollo
@@ -232,7 +253,6 @@ The QR is generated locally without an external QR service or tracking redirect.
 When changing the invite link, regenerate both committed QR assets with
 `python3 scripts/generate-community-qr.py` (requires `qrcode` and `Pillow`),
 then scan the PNG to verify it matches the new link. Do not crop its white border.
-
 
 ## Preview de Extraordinarios II y Make a Wish
 

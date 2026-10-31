@@ -10,6 +10,7 @@ import type { WishEvent } from '../features/wishes/schema';
 export function SiteHeader({ recoveryWindow, wishEvent, now = Date.now() }: { recoveryWindow?: ExtraordinaryEvent; wishEvent?: WishEvent; now?: number }) {
   const { isUnseen, markViewed } = useContentIndicators();
   const communityIsNew = isUnseen(communityViewId);
+  const archived=editions.filter(e=>now>=Date.parse(e.closeAt)).sort((a,b)=>b.year-a.year);
   return (
 <header className="site-header">
         <RecoveryCountdown window={recoveryWindow} now={now} banner />
@@ -36,6 +37,12 @@ export function SiteHeader({ recoveryWindow, wishEvent, now = Date.now() }: { re
           <span aria-hidden="true">]</span>
         </a>}
         <div className="header-actions">
+          {archived.length>0&&<details className="edition-archive-menu" onKeyDown={event=>{
+            if(event.key==='Escape'){event.currentTarget.open=false;event.currentTarget.querySelector('summary')?.focus();}
+          }}>
+            <summary aria-label="Open edition archive" title="Edition archive"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" aria-hidden="true"><path d="M3 3h18v4H3zM5 7v14h14V7M9 11h6"/></svg></summary>
+            <nav aria-label="Browse past editions"><strong>Past editions</strong>{archived.map(e=><a key={e.year} href={editionURL(e.year)} aria-current={e.year===selectedEdition.year?'page':undefined}>Codetober {e.year}<span>Results &amp; problems →</span></a>)}</nav>
+          </details>}
           <a href="#community" className={`community-header-link${communityIsNew ? ' has-unseen-content' : ''}`}
             aria-label="WhatsApp community" aria-description={communityIsNew ? 'New community invitation' : undefined}
             title="WhatsApp community" onClick={() => markViewed(communityViewId)}>

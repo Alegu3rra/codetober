@@ -3,6 +3,7 @@ import { selectedEdition } from '../editions';
 import { releaseViewId, useContentIndicators } from '../hooks/useViewedContent';
 
 export const releaseNotes = [
+  { id: '2026-release-9', year: 2026, title: 'Release 9 · The final chapter, kept for later', date: 'October 31, 2026', kind: 'final-archive' },
   { id: '2026-release-8', year: 2026, title: 'Release 8 · One wish. One last surprise.', date: 'October 26, 2026', kind: 'closing-wish' },
   { id: '2026-release-7', year: 2026, title: 'Release 7 · A weekend of second chances & wishes', date: 'October 23, 2026', kind: 'wishes' },
   { id: '2026-release-6', year: 2026, title: 'Release 6 · Stay connected', date: 'October 16, 2026', kind: 'community' },
@@ -28,7 +29,13 @@ export function Releases() {
         <span className="muted">Read release</span>
       </summary>
       <div className="editorial-body">
-        {release.kind === 'closing-wish' ? <>
+        {release.kind === 'final-archive' ? <>
+          <h3>A final challenge and a lasting archive</h3>
+          <p>The answer-file workspace is ready for the reviewed final problem. Its availability follows the official published calendar and backend activation. Use your private email code, download your assigned input and upload your own UTF-8 output file. The first accepted result counts; safe network retries preserve its original time.</p>
+          <p>At closure, recorded results receive one recognition: Codetober Finisher for 62/62, Past Halfway for 32–61, or Took Part for 1–31. Tags do not change points or ranking time and may update after verified corrections or the final synchronization.</p>
+          <p>Problems, results and editorials remain available. Past dynamics move to a compact archive, and the header archive icon links closed editions. The Project journal records design decisions, limitations and local experiments separately from deployed behavior.</p>
+          <p>Codes are delivered privately by the organizer. There is no automatic email sender in the public site. Contact the organizer if access is missing; a demo code is never an official credential.</p>
+        </> : release.kind === 'closing-wish' ? <>
           <h3>Rafael’s choice: Choose the Last Problem</h3>
           <p>Rafael López (@Jirafa745) is the confirmed Make a Wish winner. He chose to propose one reviewed problem for October 31, replacing one of the two regular daily slots. His gold winner tag appears alongside his other scoreboard tags.</p>
           <p>The statement and input stay secret until October 31 at 06:00, Mexico City time. The official window closes November 1 at 06:00. Normal scoring and streak rules apply.</p>

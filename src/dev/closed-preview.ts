@@ -1,11 +1,14 @@
 import type { EventData } from "../data/schema";
 import { previewData } from './preview';
+import {wishPreviewData} from './wish-preview';
 
 // Entirely fictional archive. No private calendar or participant data is read.
 export const closedPreviewData: EventData = structuredClone(previewData);
 closedPreviewData.generatedAt = '2026-11-01T12:00:00Z';
 closedPreviewData.lastSuccessfulSyncAt = '2026-11-01T11:55:00Z';
 closedPreviewData.participantsLastSuccessAt = '2026-11-01T11:55:00Z';
+closedPreviewData.event.extraordinaryEvents=wishPreviewData('wish-winner').event.extraordinaryEvents;
+closedPreviewData.event.makeAWish=wishPreviewData('wish-winner').event.makeAWish;
 closedPreviewData.days = closedPreviewData.event.schedule.map((day, index) => ({
   ...day, id: `closed-demo-day-${index + 1}`, title: `Demo archive · Day ${index + 1}`,
   problems: [1, 2].map(number => ({
@@ -26,6 +29,7 @@ closedPreviewData.participants = closedPreviewData.participants.map((person, ind
     currentStreakLevel: counts[30], bestStreakGoldenDays: goldenDays,
     lastSyncedAt: '2026-11-01T11:55:00Z', syncFailed: false,
     dayProgress: closedPreviewData.days.map((d, i) => ({ date: d.date, onTimeProblems: counts[i] })),
+    badges:[...(person.badges??[]),{id:total===62?'codetober-finisher':total>31?'past-halfway':'took-part',category:'achievement' as const,ruleVersion:1 as const,evaluatedAt:closedPreviewData.generatedAt,evidence:{solved:total,total:62}}],
     results: closedPreviewData.days.flatMap((d, day) => d.problems.map((p, problem) => ({
       titleSlug: p.titleSlug,
       firstAcceptedAt: problem < counts[day] ? `${d.date}T${index === 1 ? '14' : '13'}:00:00Z` : null,
