@@ -1,7 +1,7 @@
 {
   "version": 1,
   "demo": false,
-  "generatedAt": "2026-10-31T10:10:19.628Z",
+  "generatedAt": "2026-10-31T12:00:17.375Z",
   "lastSuccessfulSyncAt": "2026-10-31T10:10:19.628Z",
   "participantsLastSuccessAt": "2026-10-31T10:10:19.628Z",
   "participantsFailed": false,
@@ -171,6 +171,23 @@
           }
         ]
       }
+    },
+    "answerChallenge": {
+      "eventId": "codetober-final-2026",
+      "endpoint": "https://aesipekutqmhdprrsgtw.supabase.co/functions/v1/validator",
+      "demo": false,
+      "opensAt": "2026-10-31T12:00:00Z",
+      "closesAt": "2026-11-01T12:00:00Z",
+      "archived": false,
+      "syncFailed": false,
+      "lastSyncedAt": null,
+      "problems": [
+        {
+          "problemId": "el-fin",
+          "problemVersion": 3,
+          "titleSlug": "el-fin"
+        }
+      ]
     }
   },
   "days": [
@@ -801,6 +818,29 @@
           "title": "Minimum Time to Make Rope Colorful",
           "difficulty": "Medium",
           "url": "https://leetcode.com/problems/minimum-time-to-make-rope-colorful/"
+        }
+      ]
+    },
+    {
+      "id": "day-31",
+      "date": "2026-10-31",
+      "title": "The Last Problem",
+      "description": "Close Codetober with a LeetCode challenge and the Make a Wish winner's original problem.",
+      "releaseAt": "2026-10-31T06:00:00-06:00",
+      "problems": [
+        {
+          "titleSlug": "interleaving-string",
+          "title": "Interleaving String",
+          "difficulty": "Medium",
+          "url": "https://leetcode.com/problems/interleaving-string/"
+        },
+        {
+          "titleSlug": "el-fin",
+          "title": "El fin",
+          "difficulty": "Easy",
+          "url": "#answer-el-fin",
+          "source": "answer-challenge",
+          "statement": "# El fin\n\nTristemente el Codetober ha llegado a su fin. Para recordarlo con cariño, Jirafa\nhizo una lista en la que le asignó una dificultad a cada problema y la ordenó de\nforma ascendente. Ahora se pregunta: si tuviera un nivel `q_i` de conocimiento,\n¿cuál es el problema más difícil que podría resolver?\n\nUn problema con dificultad `x` se puede resolver con un conocimiento `q` si y solo\nsi `x <= q`.\n\nAyuda a Jirafa con su misión y, al final, dile cuál fue tu problema favorito del\nCodetober.\n\n> Nota: los nombres de la lista no son letras al azar para tener casos de prueba\n> grandes. Son problemas que Jirafa ya conocía. Totalmente.\n\n## Entrada\n\n- La primera línea contiene dos enteros `n` y `q`: la cantidad de problemas y la\n  cantidad de consultas.\n- Las siguientes `n` líneas contienen una cadena `s_i` y un entero `x_i`: el nombre\n  del problema y su dificultad. Las dificultades vienen en orden estrictamente\n  ascendente: `x_1 < x_2 < ... < x_n`.\n- Las siguientes `q` líneas contienen un entero `q_i`: el conocimiento de Jirafa en\n  esa consulta.\n\n## Restricciones\n\n- `1 <= n <= 10000`\n- `1 <= q <= 10000`\n- `1 <= x_i <= 10^9`\n- `0 <= q_i <= 10^9`\n- `s_i` tiene entre 1 y 30 caracteres: letras (mayúsculas o minúsculas), dígitos y\n  `_`. Los nombres no contienen espacios y pueden repetirse.\n\n## Respuesta\n\nDebes enviar `q + 1` líneas:\n\n1. Para cada consulta `q_i`, en el orden en que aparecen, una línea con el nombre del\n   problema de mayor dificultad `x` tal que `x <= q_i`. Si Jirafa no puede resolver\n   ninguno, escribe `son_muy_dificiles`. Los nombres se escriben exactamente como\n   aparecen en la entrada.\n2. Una última línea con `Mi_problema_favorito_fue:` seguido de un espacio y **el\n   nombre de tu problema favorito del Codetober**, el que tú quieras. Debe ser un\n   solo texto sin espacios: si el nombre tiene más de una palabra, sepáralas con `_`\n   (por ejemplo `Merge_Intervals`).\n\nPara la entrega en Codetober, ese nombre libre puede tener hasta 128 caracteres.\n\nLas primeras `q` líneas deben ser correctas. En la última línea se revisa que\nempiece con `Mi_problema_favorito_fue:` y que después tenga un nombre; el nombre en\nsí no importa.\n\n## Ejemplo de entrada\n\n```text\n5 6\nValid_Palindrome 1\nIs_Subsequence 4\nBinary_Search 9\nClimbing_Stairs 20\nMin_Stack 50\n0\n1\n8\n9\n49\n100\n```\n\n## Ejemplo de respuesta\n\n```text\nson_muy_dificiles\nValid_Palindrome\nIs_Subsequence\nBinary_Search\nClimbing_Stairs\nMin_Stack\nMi_problema_favorito_fue: Binary_Search\n```\n\n## Explicación del ejemplo\n\nLas dificultades son `1, 4, 9, 20, 50`.\n\n- `q = 0`: ningún problema tiene dificultad `<= 0`, así que la respuesta es\n  `son_muy_dificiles`.\n- `q = 1`: solo `Valid_Palindrome` (dificultad 1) cumple.\n- `q = 8`: se pueden resolver las dificultades 1 y 4; la mayor es 4,\n  `Is_Subsequence`.\n- `q = 9`: la dificultad 9 cumple con igualdad, así que es `Binary_Search`.\n- `q = 49`: se pueden resolver 1, 4, 9 y 20; la mayor es 20, `Climbing_Stairs`.\n- `q = 100`: se pueden resolver todos; la mayor es 50, `Min_Stack`.\n\nLa última línea es el problema favorito de quien responde; en el ejemplo se eligió\n`Binary_Search`, pero cualquier nombre válido sería aceptado.\n\n## Entrega en Codetober\n\n- Recibirás un código privado por correo. Descarga la entrada asignada a tu código;\n  los archivos de otras personas pueden ser distintos.\n- Resuelve el problema en tu computadora y envía el archivo `.out` o `.txt` en UTF-8\n  con las `q + 1` líneas. No se envía ni se ejecuta tu código fuente.\n- La última línea es obligatoria; puedes escoger cualquier nombre válido como favorito.\n- Se aceptan finales de línea LF o CRLF y espacios al inicio y al final de cada línea.\n- La entrada se publica el **31 de octubre de 2026 a las 06:00** de Guadalajara\n  (`America/Mexico_City`). El cierre es el **1 de noviembre a las 06:00**, exclusivo.\n- Cuenta la primera respuesta correcta recibida durante la ventana oficial. El\n  ranking se actualizará con la siguiente sincronización; no es instantáneo.\n- Si el servicio no confirma el envío, reintenta el mismo archivo sin volver a\n  seleccionarlo. Si no puedes acceder, contacta a la organización antes del cierre.\n\n## Seguimiento\n\n¿Podrías resolverlo en `O(q log n)` por las consultas, en lugar de recorrer toda la\nlista en cada una? (Esta pregunta es solo un reto extra, no cambia tu respuesta.)\n\n\n"
         }
       ]
     }
