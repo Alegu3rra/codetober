@@ -12,8 +12,9 @@ const fixture: EventData = { version: 1, demo: true, generatedAt: '2026-10-01T13
   ] }],
   participants: [{ participant_id: 'fictional', display_name: 'Example Coder', leetcode_username: 'fictional_coder', rank: 1, problemsCompleted: 0, daysCompleted: 0, currentStreak: 0, bestStreak: 0, lastSyncedAt: null, syncFailed: true, results: [{ titleSlug: 'example-one', firstAcceptedAt: null }, { titleSlug: 'example-two', firstAcceptedAt: null }] }],
 };
-beforeEach(() => { vi.stubEnv('VITE_JOIN_FORM_EMBED_URL', ''); vi.stubEnv('VITE_JOIN_FORM_URL', ''); vi.stubEnv('BASE_URL', '/codetober/2026/'); window.history.replaceState(null, '', '/codetober/2026/'); vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, json: async () => fixture })); });
-afterEach(() => { vi.unstubAllGlobals(); vi.unstubAllEnvs(); });
+// These fixtures exercise the active event, independently of the build date.
+beforeEach(() => { vi.spyOn(Date, 'now').mockReturnValue(Date.parse(fixture.generatedAt)); vi.stubEnv('VITE_JOIN_FORM_EMBED_URL', ''); vi.stubEnv('VITE_JOIN_FORM_URL', ''); vi.stubEnv('BASE_URL', '/codetober/2026/'); window.history.replaceState(null, '', '/codetober/2026/'); vi.stubGlobal('fetch', vi.fn().mockResolvedValue({ ok: true, json: async () => fixture })); });
+afterEach(() => { vi.restoreAllMocks(); vi.unstubAllGlobals(); vi.unstubAllEnvs(); });
 test('base-path aware data and safe form URLs', () => {
   expect(new URL(dataURL('/codetober/2026/data/')).pathname).toBe('/codetober/2026/data/data.json');
   expect(dataURL('https://example.invalid/public')).toBe('https://example.invalid/public/data.json');
